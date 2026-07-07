@@ -10183,7 +10183,7 @@
     "categoria": "conduccion",
     "tipo": "multiple",
     "enunciado": "En esta situación, ¿a cuáles 3 riesgos debe estar usted principalmente atento?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-081.png",
     "alternativas": [
       "Al ciclista que viene en sentido contrario.",
       "Al tránsito en la intersección que hay más adelante.",
@@ -10208,7 +10208,7 @@
     "categoria": "conduccion",
     "tipo": "multiple",
     "enunciado": "Usted va conduciendo a 70 km/h que es la velocidad máxima permitida en esta vía. ¿Qué hace en esta situación?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-082.png",
     "alternativas": [
       "Está preparado para actuar ya que alguien puede salir corriendo a la calzada.",
       "Está preparado para actuar ya que el bus puede ponerse en marcha.",
