@@ -46,5 +46,15 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/historial/historial.component').then((m) => m.HistorialComponent),
   },
+  {
+    path: 'pregunta/:id',
+    loadComponent: () =>
+      import('./features/ver-pregunta/ver-pregunta.component').then((m) => m.VerPreguntaComponent),
+  },
+  {
+    path: 'pregunta',
+    loadComponent: () =>
+      import('./features/ver-pregunta/ver-pregunta.component').then((m) => m.VerPreguntaComponent),
+  },
   { path: '**', redirectTo: '' },
 ];

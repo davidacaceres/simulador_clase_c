@@ -35,6 +35,12 @@ export class BancoPreguntasService {
   obtenerPorFuente(fuente: string): Observable<Pregunta[]> {
     return of(this.preguntas.filter((p) => p.fuente === fuente));
   }
+
+  /** Busca una pregunta por su id (case-insensitive). undefined si no existe. */
+  obtenerPorId(id: string): Observable<Pregunta | undefined> {
+    const clave = id.trim().toUpperCase();
+    return of(this.preguntas.find((p) => p.id.toUpperCase() === clave));
+  }
 }
 
 /** Fuentes conocidas del banco (útiles para filtrar por modo). */

@@ -9910,7 +9910,7 @@
     "categoria": "normativa",
     "tipo": "unica",
     "enunciado": "Mire el dibujo. ¿Cuál es el peligro al que usted debe estar más atento(a)?",
-    "imagen": null,
+    "imagen": assets/img/situaciones/CU-069.png,
     "alternativas": [
       "El niño puede cruzar corriendo.",
       "El vendedor de helados puede poner su vehículo en movimiento.",
@@ -13132,7 +13132,7 @@
     "categoria": "conduccion",
     "tipo": "multiple",
     "enunciado": "El auto azul circula a 70 km/h y el rojo a 90 km/h. ¿Dónde es más probable que sus conductores estimen el punto en que se producirá el encuentro de ambos vehículos?",
-    "imagen": "assets/img/situaciones/CU-213.png",
+    "imagen": "assets/img/situaciones/encuentro-vehiculos.png",
     "alternativas": [
       "El conductor del auto rojo estima que dicho punto será el 3.",
       "El conductor del auto rojo estima que dicho punto será el 2.",
@@ -13155,7 +13155,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa la demarcación de centro de calzada que muestra la figura?",
-    "imagen": "assets/img/situaciones/CU-214.png",
+    "imagen": "assets/img/situaciones/demarcacion-ab.png",
     "alternativas": [
       "Que no puede ser traspasada por un conductor que viene por la pista A.",
       "Que no puede ser traspasada por un conductor que va por la pista B.",
@@ -13169,76 +13169,6 @@
     "esDoblePuntaje": false,
     "pesoExamen": 4,
     "explicacion": "Respuesta correcta: Que no puede ser traspasada por un conductor que va por la pista B. La línea de eje es segmentada hacia la pista A (puede traspasarse para adelantar) y continua hacia la pista B (no puede traspasarla).",
-    "referencia": "Cuestionario General Licencias Clase C",
-    "fuente": "Cuestionario Clase C – conducirmotos.cl"
-  },
-  {
-    "id": "CU-215",
-    "categoria": "senaletica",
-    "tipo": "unica",
-    "enunciado": "Observa la imagen. ¿Cuál de los siguientes tipos de señales le indica que NO haga algo? Elige la opción (a, b, c o d).",
-    "imagen": "assets/img/situaciones/CU-215.png",
-    "alternativas": [
-      "Opción a",
-      "Opción b",
-      "Opción c",
-      "Opción d"
-    ],
-    "indiceCorrecta": 2,
-    "indicesCorrectos": [
-      2
-    ],
-    "esDoblePuntaje": false,
-    "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: opción c. Es una señal reglamentaria de prohibición (círculo con borde rojo y línea diagonal), que indica que algo está prohibido. La azul cuadrada (a) es informativa y los rombos amarillos (b y d) son preventivas.",
-    "referencia": "Cuestionario General Licencias Clase C",
-    "fuente": "Cuestionario Clase C – conducirmotos.cl"
-  },
-  {
-    "id": "CU-216",
-    "categoria": "senaletica",
-    "tipo": "emparejamiento",
-    "enunciado": "Observa las señales numeradas y asocia cada una con su significado.",
-    "imagen": "assets/img/situaciones/CU-216.png",
-    "alternativas": [
-      "Curva a la derecha",
-      "Curvas sucesivas (primera a la izquierda)",
-      "Prohibido virar a la derecha",
-      "No adelantar",
-      "Pavimento resbaladizo",
-      "Curva y contracurva a la derecha"
-    ],
-    "indiceCorrecta": -1,
-    "indicesCorrectos": [],
-    "items": [
-      {
-        "etiqueta": "1",
-        "indiceCorrecto": 0
-      },
-      {
-        "etiqueta": "2",
-        "indiceCorrecto": 1
-      },
-      {
-        "etiqueta": "3",
-        "indiceCorrecto": 2
-      },
-      {
-        "etiqueta": "4",
-        "indiceCorrecto": 3
-      },
-      {
-        "etiqueta": "5",
-        "indiceCorrecto": 4
-      },
-      {
-        "etiqueta": "6",
-        "indiceCorrecto": 5
-      }
-    ],
-    "esDoblePuntaje": false,
-    "pesoExamen": 4,
-    "explicacion": "1: Curva a la derecha. 2: Curvas sucesivas (primera a la izquierda). 3: Prohibido virar a la derecha. 4: No adelantar. 5: Pavimento resbaladizo. 6: Curva y contracurva a la derecha.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   }
