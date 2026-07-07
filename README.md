@@ -127,6 +127,17 @@ src/
 > examen): 1 = normal, mayor = más probable, 0 = nunca aparece. La selección aleatoria del
 > examen es un muestreo ponderado por ese peso, así puedes priorizar o excluir preguntas
 > sin borrarlas del banco.
+>
+> Hay tres **tipos** de pregunta (`tipo`): `unica` (una respuesta correcta), `multiple`
+> (varias correctas — `indicesCorrectos`) y `emparejamiento` (asociar cada ítem numerado con
+> su significado — `items`). La interfaz indica el tipo en cada pregunta; múltiple y
+> emparejamiento se puntúan **todo o nada** (la selección debe coincidir exactamente).
+>
+> El banco tiene **594 preguntas** de tres **fuentes** (campo `fuente`): Libro del Nuevo
+> Conductor (211), Catálogo de Señales (171) y el **Cuestionario Clase C de conducirmotos.cl**
+> (212, con su clave de respuestas oficial). Las del cuestionario llevan `pesoExamen: 4`
+> porque son las que típicamente aparecen en el examen, así predominan en el sorteo (≈23 de
+> 35 preguntas por examen). En total: 528 de selección única y 66 de selección múltiple.
 
 ---
 

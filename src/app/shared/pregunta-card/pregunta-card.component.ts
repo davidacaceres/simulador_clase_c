@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Pregunta } from '../../core/models/pregunta.model';
 
 /**
- * Muestra una pregunta con sus alternativas.
- * - En Modo Examen: `mostrarFeedback` = false (no revela la respuesta).
- * - En Modo Práctica / revisión: `mostrarFeedback` = true (colorea correcta/incorrecta
- *   y muestra la explicación y la referencia).
+ * Muestra una pregunta con sus alternativas. Soporta selección ÚNICA (radio) y
+ * MÚLTIPLE (casillas). El padre decide cómo actualizar la selección al emitir el
+ * índice pulsado (reemplazar en única, alternar en múltiple).
+ * - En Modo Examen: `mostrarFeedback` = false.
+ * - En Práctica / revisión: `mostrarFeedback` = true (colorea correctas e incorrectas
+ *   y muestra explicación, referencia y fuente).
  */
 @Component({
   selector: 'app-pregunta-card',
@@ -14,6 +16,10 @@ import { Pregunta } from '../../core/models/pregunta.model';
   imports: [CommonModule],
   template: `
     <div class="card pregunta">
+      <span class="tipo-badge" [class.multi]="esMultiple">
+        {{ esMultiple ? '☑ Selección múltiple · marca todas las que correspondan' : '◉ Selección única' }}
+      </span>
+
       <p class="enunciado">{{ pregunta.enunciado }}</p>
 
       <img
@@ -23,20 +29,25 @@ import { Pregunta } from '../../core/models/pregunta.model';
         class="imagen"
       />
 
-      <div class="alternativas" role="radiogroup" [attr.aria-label]="pregunta.enunciado">
+      <div
+        class="alternativas"
+        [attr.role]="esMultiple ? 'group' : 'radiogroup'"
+        [attr.aria-label]="pregunta.enunciado"
+      >
         <button
           *ngFor="let alt of pregunta.alternativas; let i = index"
           type="button"
           class="alternativa"
-          [class.seleccionada]="indiceSeleccionado === i && !mostrarFeedback"
-          [class.correcta]="mostrarFeedback && i === pregunta.indiceCorrecta"
-          [class.incorrecta]="mostrarFeedback && i === indiceSeleccionado && i !== pregunta.indiceCorrecta"
+          [class.multi]="esMultiple"
+          [class.seleccionada]="!mostrarFeedback && seleccionados.includes(i)"
+          [class.correcta]="mostrarFeedback && pregunta.indicesCorrectos.includes(i)"
+          [class.incorrecta]="mostrarFeedback && seleccionados.includes(i) && !pregunta.indicesCorrectos.includes(i)"
           [disabled]="deshabilitado"
-          role="radio"
-          [attr.aria-checked]="indiceSeleccionado === i"
+          [attr.role]="esMultiple ? 'checkbox' : 'radio'"
+          [attr.aria-checked]="seleccionados.includes(i)"
           (click)="seleccionar.emit(i)"
         >
-          <span class="letra">{{ letras[i] }}</span>
+          <span class="marca" aria-hidden="true">{{ seleccionados.includes(i) ? '✓' : letras[i] }}</span>
           <span class="texto">{{ alt }}</span>
         </button>
       </div>
@@ -50,6 +61,20 @@ import { Pregunta } from '../../core/models/pregunta.model';
   `,
   styles: [
     `
+      .tipo-badge {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--color-texto-suave);
+        background: var(--color-superficie-2);
+        border: 1px solid var(--color-borde);
+        border-radius: 999px;
+        padding: 4px 10px;
+        margin-bottom: 12px;
+      }
+      .tipo-badge.multi { color: var(--color-acento); border-color: var(--color-acento); }
       .enunciado { font-size: 1.1rem; font-weight: 600; margin: 0 0 14px; }
       .imagen {
         display: block;
@@ -87,7 +112,7 @@ import { Pregunta } from '../../core/models/pregunta.model';
         border-color: var(--color-error);
         background: rgba(255, 69, 58, 0.15);
       }
-      .letra {
+      .marca {
         flex: 0 0 28px;
         height: 28px;
         display: inline-flex;
@@ -98,6 +123,8 @@ import { Pregunta } from '../../core/models/pregunta.model';
         font-weight: 700;
         font-size: 0.9rem;
       }
+      /* casilla cuadrada para selección múltiple */
+      .alternativa.multi .marca { border-radius: 6px; }
       .feedback { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--color-borde); }
       .explicacion { margin: 0 0 6px; font-size: 0.95rem; }
       .referencia { margin: 0; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
@@ -107,10 +134,15 @@ import { Pregunta } from '../../core/models/pregunta.model';
 })
 export class PreguntaCardComponent {
   @Input({ required: true }) pregunta!: Pregunta;
-  @Input() indiceSeleccionado: number | null = null;
+  /** Índices actualmente marcados por el usuario. */
+  @Input() seleccionados: number[] = [];
   @Input() mostrarFeedback = false;
   @Input() deshabilitado = false;
   @Output() seleccionar = new EventEmitter<number>();
 
   readonly letras = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+  get esMultiple(): boolean {
+    return this.pregunta.tipo === 'multiple';
+  }
 }

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 230" role="img" aria-label="Un auto azul a 70 km/h y uno rojo a 90 km/h separados por 300 metros a cada lado de los puntos 1, 2 y 3">
+  <!-- Fondo / calzada -->
+  <rect x="0" y="0" width="380" height="230" fill="#d9d9d9"/>
+  <!-- Bordes tipo vereda (morado) -->
+  <rect x="0" y="0" width="380" height="26" fill="#7b2d8b"/>
+  <rect x="0" y="204" width="380" height="26" fill="#7b2d8b"/>
+  <!-- Línea central discontinua (carril) -->
+  <line x1="10" y1="115" x2="370" y2="115" stroke="#ffffff" stroke-width="3" stroke-dasharray="16 12"/>
+
+  <!-- Puntos 1, 2, 3 (líneas verticales discontinuas) -->
+  <g stroke="#222" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="150" y1="40" x2="150" y2="185"/>
+    <line x1="176" y1="40" x2="176" y2="185"/>
+    <line x1="202" y1="40" x2="202" y2="185"/>
+  </g>
+  <g font-family="'DM Sans', Arial, sans-serif" font-size="13" font-weight="800" fill="#222" text-anchor="middle">
+    <text x="150" y="46">1</text>
+    <text x="176" y="46">2</text>
+    <text x="202" y="46">3</text>
+  </g>
+
+  <!-- Auto azul (70 km/h) a la izquierda -->
+  <g>
+    <rect x="34" y="120" width="60" height="26" rx="7" fill="#1f5fd0" stroke="#12386f" stroke-width="2"/>
+    <rect x="44" y="125" width="26" height="12" rx="3" fill="#bcd3f5"/>
+    <circle cx="48" cy="148" r="5" fill="#222"/>
+    <circle cx="82" cy="148" r="5" fill="#222"/>
+    <text x="64" y="112" text-anchor="middle" font-family="'DM Sans', Arial, sans-serif" font-size="13" font-weight="800" fill="#111">70 Km/h</text>
+  </g>
+
+  <!-- Auto rojo (90 km/h) a la derecha -->
+  <g>
+    <rect x="286" y="96" width="60" height="26" rx="7" fill="#e02424" stroke="#7f1414" stroke-width="2"/>
+    <rect x="296" y="101" width="26" height="12" rx="3" fill="#f6c9c9"/>
+    <circle cx="300" cy="124" r="5" fill="#222"/>
+    <circle cx="334" cy="124" r="5" fill="#222"/>
+    <text x="316" y="146" text-anchor="middle" font-family="'DM Sans', Arial, sans-serif" font-size="13" font-weight="800" fill="#111">90 Km/h</text>
+  </g>
+
+  <!-- Auto verde (decorativo, arriba derecha) -->
+  <g opacity="0.9">
+    <rect x="300" y="58" width="50" height="22" rx="6" fill="#1f9e6b" stroke="#0f5c3e" stroke-width="2"/>
+    <rect x="308" y="62" width="22" height="10" rx="3" fill="#bfe8d5"/>
+  </g>
+
+  <!-- Medidas 300 m -->
+  <g stroke="#222" stroke-width="1.5" fill="#222" font-family="'DM Sans', Arial, sans-serif" font-size="12" font-weight="700">
+    <line x1="40" y1="190" x2="174" y2="190"/>
+    <polygon points="40,190 47,187 47,193"/>
+    <polygon points="174,190 167,187 167,193"/>
+    <text x="107" y="202" text-anchor="middle">300 m</text>
+
+    <line x1="178" y1="190" x2="330" y2="190"/>
+    <polygon points="178,190 185,187 185,193"/>
+    <polygon points="330,190 323,187 323,193"/>
+    <text x="254" y="202" text-anchor="middle">300 m</text>
+  </g>
+</svg>

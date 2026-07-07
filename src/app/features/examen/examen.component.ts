@@ -9,13 +9,20 @@ import { Pregunta } from '../../core/models/pregunta.model';
 import { Intento } from '../../core/models/intento.model';
 
 import { PreguntaCardComponent } from '../../shared/pregunta-card/pregunta-card.component';
+import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/emparejamiento-card.component';
 import { CronometroComponent } from '../../shared/cronometro/cronometro.component';
 import { BarraProgresoComponent } from '../../shared/barra-progreso/barra-progreso.component';
 
 @Component({
   selector: 'app-examen',
   standalone: true,
-  imports: [CommonModule, PreguntaCardComponent, CronometroComponent, BarraProgresoComponent],
+  imports: [
+    CommonModule,
+    PreguntaCardComponent,
+    EmparejamientoCardComponent,
+    CronometroComponent,
+    BarraProgresoComponent,
+  ],
   template: `
     <div class="contenedor">
       <p *ngIf="cargando()">Preparando tu examen…</p>
@@ -53,11 +60,20 @@ import { BarraProgresoComponent } from '../../shared/barra-progreso/barra-progre
         <p class="sr-only" aria-live="polite">Pregunta {{ indiceActual() + 1 }} de {{ preguntas().length }}</p>
 
         <app-pregunta-card
+          *ngIf="pregunta.tipo !== 'emparejamiento'"
           class="mt-16"
           [pregunta]="pregunta"
-          [indiceSeleccionado]="respuestas()[indiceActual()]"
+          [seleccionados]="respuestas()[indiceActual()]"
           [mostrarFeedback]="false"
           (seleccionar)="responder($event)"
+        />
+        <app-emparejamiento-card
+          *ngIf="pregunta.tipo === 'emparejamiento'"
+          class="mt-16"
+          [pregunta]="pregunta"
+          [seleccionados]="respuestas()[indiceActual()]"
+          [mostrarFeedback]="false"
+          (emparejar)="emparejar($event)"
         />
 
         <div class="navegador mt-16" role="navigation" aria-label="Ir a pregunta">
@@ -66,9 +82,9 @@ import { BarraProgresoComponent } from '../../shared/barra-progreso/barra-progre
             type="button"
             class="chip"
             [class.actual]="i === indiceActual()"
-            [class.respondida]="respuestas()[i] !== null"
+            [class.respondida]="respondidaEn(i)"
             (click)="irA(i)"
-            [attr.aria-label]="'Pregunta ' + (i + 1) + (respuestas()[i] !== null ? ', respondida' : '')"
+            [attr.aria-label]="'Pregunta ' + (i + 1) + (respondidaEn(i) ? ', respondida' : '')"
             [attr.aria-current]="i === indiceActual() ? 'true' : null"
           >
             {{ i + 1 }}
@@ -189,7 +205,8 @@ export class ExamenComponent implements OnInit, OnDestroy {
   error = signal<string | null>(null);
   iniciado = signal(false);
   preguntas = signal<Pregunta[]>([]);
-  respuestas = signal<(number | null)[]>([]);
+  /** Una lista de índices marcados por pregunta (vacía = sin responder). */
+  respuestas = signal<number[][]>([]);
   indiceActual = signal(0);
   segundosRestantes = signal(EXAMEN_CONFIG.minutos * 60);
   mostrarConfirmar = signal(false);
@@ -198,7 +215,15 @@ export class ExamenComponent implements OnInit, OnDestroy {
   private finalizado = false;
 
   preguntaActual = computed(() => this.preguntas()[this.indiceActual()] ?? null);
-  respondidas = computed(() => this.respuestas().filter((r) => r !== null).length);
+  respondidas = computed(
+    () =>
+      this.respuestas().filter((r, i) => {
+        const p = this.preguntas()[i];
+        return p?.tipo === 'emparejamiento'
+          ? r.length > 0 && r.every((x) => x !== -1)
+          : r.length > 0;
+      }).length,
+  );
 
   ngOnInit(): void {
     this.banco.obtenerTodas().subscribe({
@@ -210,7 +235,11 @@ export class ExamenComponent implements OnInit, OnDestroy {
         }
         const preguntas = this.examenSrv.armarExamen(banco);
         this.preguntas.set(preguntas);
-        this.respuestas.set(new Array(preguntas.length).fill(null));
+        this.respuestas.set(
+          preguntas.map((p) =>
+            p.tipo === 'emparejamiento' ? new Array(p.items?.length ?? 0).fill(-1) : [],
+          ),
+        );
         this.cargando.set(false);
       },
       error: () => {
@@ -253,11 +282,38 @@ export class ExamenComponent implements OnInit, OnDestroy {
   }
 
   responder(indice: number): void {
+    const pregunta = this.preguntaActual();
+    if (!pregunta) return;
     this.respuestas.update((arr) => {
-      const copia = [...arr];
-      copia[this.indiceActual()] = indice;
+      const copia = arr.map((r) => [...r]);
+      const actual = copia[this.indiceActual()];
+      if (pregunta.tipo === 'multiple') {
+        // alternar el índice
+        const pos = actual.indexOf(indice);
+        if (pos >= 0) actual.splice(pos, 1);
+        else actual.push(indice);
+      } else {
+        // única: reemplazar
+        copia[this.indiceActual()] = [indice];
+      }
       return copia;
     });
+  }
+
+  /** Emparejamiento: asigna la opción elegida a un ítem. */
+  emparejar(e: { item: number; opcion: number }): void {
+    this.respuestas.update((arr) => {
+      const copia = arr.map((r) => [...r]);
+      copia[this.indiceActual()][e.item] = e.opcion;
+      return copia;
+    });
+  }
+
+  /** true si la pregunta i ya fue respondida (según su tipo). */
+  respondidaEn(i: number): boolean {
+    const r = this.respuestas()[i] ?? [];
+    const p = this.preguntas()[i];
+    return p?.tipo === 'emparejamiento' ? r.length > 0 && r.every((x) => x !== -1) : r.length > 0;
   }
 
   irA(i: number): void { this.indiceActual.set(i); }

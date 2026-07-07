@@ -9,17 +9,18 @@ import { HistorialService } from '../../core/services/historial.service';
 import { mezclar } from '../../core/utils/aleatorio';
 
 import { PreguntaCardComponent } from '../pregunta-card/pregunta-card.component';
+import { EmparejamientoCardComponent } from '../emparejamiento-card/emparejamiento-card.component';
 import { BarraProgresoComponent } from '../barra-progreso/barra-progreso.component';
 
 /**
  * Motor de práctica reutilizable (sin tiempo, con feedback inmediato).
- * Lo usan los modos Práctica, Por Tema y Repaso de errores: cada uno le pasa
- * la lista de preguntas y el `modo` con el que se guardará el intento.
+ * Soporta preguntas de selección única y múltiple: en las múltiples el usuario
+ * marca varias opciones y confirma antes de ver el feedback.
  */
 @Component({
   selector: 'app-practica-runner',
   standalone: true,
-  imports: [CommonModule, PreguntaCardComponent, BarraProgresoComponent],
+  imports: [CommonModule, PreguntaCardComponent, EmparejamientoCardComponent, BarraProgresoComponent],
   template: `
     <ng-container *ngIf="preguntasMezcladas().length > 0; else vacio">
       <ng-container *ngIf="!mostrarResumen(); else resumen">
@@ -29,13 +30,33 @@ import { BarraProgresoComponent } from '../barra-progreso/barra-progreso.compone
         </div>
 
         <app-pregunta-card
+          *ngIf="preguntaActual()!.tipo !== 'emparejamiento'"
           class="mt-16"
           [pregunta]="preguntaActual()!"
-          [indiceSeleccionado]="seleccionados()[indice()]"
-          [mostrarFeedback]="respondida()"
-          [deshabilitado]="respondida()"
+          [seleccionados]="seleccionados()[indice()]"
+          [mostrarFeedback]="revelada()"
+          [deshabilitado]="revelada()"
           (seleccionar)="responder($event)"
         />
+        <app-emparejamiento-card
+          *ngIf="preguntaActual()!.tipo === 'emparejamiento'"
+          class="mt-16"
+          [pregunta]="preguntaActual()!"
+          [seleccionados]="seleccionados()[indice()]"
+          [mostrarFeedback]="revelada()"
+          [deshabilitado]="revelada()"
+          (emparejar)="emparejar($event)"
+        />
+
+        <!-- Confirmar (múltiple y emparejamiento, antes de revelar) -->
+        <button
+          *ngIf="requiereConfirmar() && !revelada()"
+          class="btn btn-primario btn-bloque mt-16"
+          [disabled]="!puedeConfirmar()"
+          (click)="confirmar()"
+        >
+          Confirmar respuesta
+        </button>
 
         <div class="acciones mt-24">
           <button class="btn btn-secundario" (click)="anterior()" [disabled]="indice() === 0">← Anterior</button>
@@ -43,7 +64,7 @@ import { BarraProgresoComponent } from '../barra-progreso/barra-progreso.compone
             *ngIf="indice() < preguntasMezcladas().length - 1"
             class="btn btn-primario"
             (click)="siguiente()"
-            [disabled]="!respondida()"
+            [disabled]="!revelada()"
           >
             Siguiente →
           </button>
@@ -51,7 +72,7 @@ import { BarraProgresoComponent } from '../barra-progreso/barra-progreso.compone
             *ngIf="indice() === preguntasMezcladas().length - 1"
             class="btn btn-primario"
             (click)="finalizar()"
-            [disabled]="!respondida()"
+            [disabled]="!revelada()"
           >
             Ver resumen
           </button>
@@ -101,25 +122,32 @@ export class PracticaRunnerComponent implements OnInit {
   private historial = inject(HistorialService);
   private router = inject(Router);
 
-  /** Preguntas a practicar. */
   @Input({ required: true }) preguntas: Pregunta[] = [];
-  /** Modo con el que se guarda el intento. */
   @Input() modo: ModoIntento = 'practica';
-  /** Categoría (solo para modo 'tema'). */
   @Input() categoria?: Categoria;
-  /** Mensaje cuando no hay preguntas. */
   @Input() mensajeVacio = 'No hay preguntas para practicar.';
 
   preguntasMezcladas = signal<Pregunta[]>([]);
-  seleccionados = signal<(number | null)[]>([]);
+  seleccionados = signal<number[][]>([]);
+  reveladas = signal<boolean[]>([]);
   indice = signal(0);
   mostrarResumen = signal(false);
 
   preguntaActual = computed(() => this.preguntasMezcladas()[this.indice()] ?? null);
-  respondida = computed(() => this.seleccionados()[this.indice()] !== null);
+  revelada = computed(() => this.reveladas()[this.indice()] === true);
+  /** Múltiple y emparejamiento requieren confirmar antes de revelar. */
+  requiereConfirmar = computed(() => this.preguntaActual()?.tipo !== 'unica');
+  puedeConfirmar = computed(() => {
+    const p = this.preguntaActual();
+    const sel = this.seleccionados()[this.indice()] ?? [];
+    if (!p) return false;
+    if (p.tipo === 'emparejamiento') return sel.length > 0 && sel.every((x) => x !== -1);
+    return sel.length > 0;
+  });
+
   aciertos = computed(() =>
     this.preguntasMezcladas().reduce(
-      (acc, p, i) => acc + (this.seleccionados()[i] === p.indiceCorrecta ? 1 : 0),
+      (acc, p, i) => acc + (this.esCorrecta(p, this.seleccionados()[i] ?? []) ? 1 : 0),
       0,
     ),
   );
@@ -133,10 +161,43 @@ export class PracticaRunnerComponent implements OnInit {
   }
 
   responder(idx: number): void {
-    if (this.respondida()) return; // una sola respuesta por pregunta
+    if (this.revelada()) return; // bloqueada tras revelar
+    const p = this.preguntaActual();
+    if (!p) return;
     this.seleccionados.update((arr) => {
+      const copia = arr.map((r) => [...r]);
+      const actual = copia[this.indice()];
+      if (p.tipo === 'multiple') {
+        const pos = actual.indexOf(idx);
+        if (pos >= 0) actual.splice(pos, 1);
+        else actual.push(idx);
+      } else {
+        copia[this.indice()] = [idx];
+      }
+      return copia;
+    });
+    // en selección única, revelar de inmediato
+    if (p.tipo === 'unica') this.revelar();
+  }
+
+  /** Emparejamiento: asigna la opción a un ítem (no revela hasta confirmar). */
+  emparejar(e: { item: number; opcion: number }): void {
+    if (this.revelada()) return;
+    this.seleccionados.update((arr) => {
+      const copia = arr.map((r) => [...r]);
+      copia[this.indice()][e.item] = e.opcion;
+      return copia;
+    });
+  }
+
+  confirmar(): void {
+    if (this.puedeConfirmar()) this.revelar();
+  }
+
+  private revelar(): void {
+    this.reveladas.update((arr) => {
       const copia = [...arr];
-      copia[this.indice()] = idx;
+      copia[this.indice()] = true;
       return copia;
     });
   }
@@ -154,16 +215,31 @@ export class PracticaRunnerComponent implements OnInit {
   reiniciar(): void {
     const mezcladas = mezclar(this.preguntas);
     this.preguntasMezcladas.set(mezcladas);
-    this.seleccionados.set(new Array(mezcladas.length).fill(null));
+    this.seleccionados.set(
+      mezcladas.map((p) =>
+        p.tipo === 'emparejamiento' ? new Array(p.items?.length ?? 0).fill(-1) : [],
+      ),
+    );
+    this.reveladas.set(mezcladas.map(() => false));
     this.indice.set(0);
     this.mostrarResumen.set(false);
+  }
+
+  private esCorrecta(p: Pregunta, elegidos: number[]): boolean {
+    if (p.tipo === 'emparejamiento') {
+      const items = p.items ?? [];
+      return items.length > 0 && items.every((it, i) => elegidos[i] === it.indiceCorrecto);
+    }
+    if (elegidos.length !== p.indicesCorrectos.length) return false;
+    const s = new Set(elegidos);
+    return p.indicesCorrectos.every((x) => s.has(x));
   }
 
   private guardarIntento(): void {
     const preguntas = this.preguntasMezcladas();
     if (preguntas.length === 0) return;
     const idsFalladas = preguntas
-      .filter((p, i) => this.seleccionados()[i] !== p.indiceCorrecta)
+      .filter((p, i) => !this.esCorrecta(p, this.seleccionados()[i] ?? []))
       .map((p) => p.id);
 
     const intento: Intento = {
@@ -173,7 +249,7 @@ export class PracticaRunnerComponent implements OnInit {
       categoria: this.categoria,
       puntaje: this.aciertos(),
       puntajeMaximo: preguntas.length,
-      aprobado: false, // no aplica en práctica
+      aprobado: false,
       idsFalladas,
     };
     this.historial.guardarIntento(intento);

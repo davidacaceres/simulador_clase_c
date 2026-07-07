@@ -102,7 +102,7 @@ export class ExamenService {
    * - Aprueba si el puntaje alcanza el mínimo Y no falló TODAS las preguntas
    *   de doble puntaje (regla especial: fallar las 3 dobles reprueba de inmediato).
    */
-  calcularResultado(preguntas: Pregunta[], respuestas: (number | null)[]): Resultado {
+  calcularResultado(preguntas: Pregunta[], respuestas: number[][]): Resultado {
     let puntaje = 0;
     let puntajeMaximo = 0;
     let doblesTotales = 0;
@@ -114,8 +114,12 @@ export class ExamenService {
       puntajeMaximo += valor;
       if (pregunta.esDoblePuntaje) doblesTotales++;
 
-      const indiceElegido = respuestas[i] ?? null;
-      const correcta = indiceElegido === pregunta.indiceCorrecta;
+      const indicesElegidos = respuestas[i] ?? [];
+      // Correcta = todo o nada, según el tipo de pregunta.
+      const correcta =
+        pregunta.tipo === 'emparejamiento'
+          ? this.emparejamientoCorrecto(indicesElegidos, pregunta)
+          : this.mismoConjunto(indicesElegidos, pregunta.indicesCorrectos);
 
       if (correcta) {
         puntaje += valor;
@@ -123,7 +127,7 @@ export class ExamenService {
         doblesFalladas++;
       }
 
-      revision.push({ pregunta, indiceElegido, correcta });
+      revision.push({ pregunta, indicesElegidos, correcta });
     });
 
     // Regla especial: si falló todas las preguntas de doble puntaje del examen, reprueba.
@@ -140,5 +144,19 @@ export class ExamenService {
     };
     this.ultimoResultado.set(resultado);
     return resultado;
+  }
+
+  /** true si ambos arreglos contienen exactamente los mismos índices (sin importar el orden). */
+  private mismoConjunto(a: number[], b: number[]): boolean {
+    if (a.length !== b.length) return false;
+    const sa = new Set(a);
+    return b.every((x) => sa.has(x));
+  }
+
+  /** true si cada ítem del emparejamiento fue asociado con su significado correcto. */
+  private emparejamientoCorrecto(elegidos: number[], pregunta: Pregunta): boolean {
+    const items = pregunta.items ?? [];
+    if (items.length === 0) return false;
+    return items.every((it, i) => elegidos[i] === it.indiceCorrecto);
   }
 }

@@ -3,9 +3,9 @@ import { Pregunta } from './pregunta.model';
 /** Respuesta del postulante a una pregunta concreta. */
 export interface RespuestaUsuario {
   pregunta: Pregunta;
-  /** Índice elegido por el usuario, o null si no respondió. */
-  indiceElegido: number | null;
-  /** true si el índice elegido coincide con el correcto. */
+  /** Índices marcados por el usuario (vacío si no respondió). */
+  indicesElegidos: number[];
+  /** true si la selección coincide EXACTAMENTE con las correctas (todo o nada). */
   correcta: boolean;
 }
 

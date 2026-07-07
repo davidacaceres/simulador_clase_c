@@ -4,12 +4,13 @@ import { Router } from '@angular/router';
 
 import { ExamenService, EXAMEN_CONFIG } from '../../core/services/examen.service';
 import { PreguntaCardComponent } from '../../shared/pregunta-card/pregunta-card.component';
+import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/emparejamiento-card.component';
 import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-badge.component';
 
 @Component({
   selector: 'app-resultado',
   standalone: true,
-  imports: [CommonModule, PreguntaCardComponent, ResultadoBadgeComponent],
+  imports: [CommonModule, PreguntaCardComponent, EmparejamientoCardComponent, ResultadoBadgeComponent],
   template: `
     <div class="contenedor" *ngIf="resultado() as r; else sinResultado">
       <div class="card resumen text-centro">
@@ -39,13 +40,21 @@ import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-
           <div class="item-cabecera">
             <span class="num">{{ i + 1 }}</span>
             <span class="estado" [class.ok]="rev.correcta" [class.mal]="!rev.correcta">
-              {{ rev.correcta ? 'Correcta' : (rev.indiceElegido === null ? 'Sin responder' : 'Incorrecta') }}
+              {{ rev.correcta ? 'Correcta' : (rev.indicesElegidos.length === 0 ? 'Sin responder' : 'Incorrecta') }}
             </span>
             <span class="doble" *ngIf="rev.pregunta.esDoblePuntaje">Doble puntaje</span>
           </div>
           <app-pregunta-card
+            *ngIf="rev.pregunta.tipo !== 'emparejamiento'"
             [pregunta]="rev.pregunta"
-            [indiceSeleccionado]="rev.indiceElegido"
+            [seleccionados]="rev.indicesElegidos"
+            [mostrarFeedback]="true"
+            [deshabilitado]="true"
+          />
+          <app-emparejamiento-card
+            *ngIf="rev.pregunta.tipo === 'emparejamiento'"
+            [pregunta]="rev.pregunta"
+            [seleccionados]="rev.indicesElegidos"
             [mostrarFeedback]="true"
             [deshabilitado]="true"
           />
