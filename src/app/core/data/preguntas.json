@@ -10543,7 +10543,7 @@
     "categoria": "senaletica",
     "tipo": "multiple",
     "enunciado": "Usted está en una calle de un solo sentido de tránsito y desea virar a la izquierda. ¿Cuál o cuáles de las siguientes afirmaciones es(son) correcta(s)?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-097.png",
     "alternativas": [
       "Usted está bien situado para virar a la izquierda.",
       "Si después de virar usted volverá a virar nuevamente a la izquierda en el siguiente cruce, lo mejor es que se mantenga en la pista izquierda de la calle hacia la cual está virando.",
