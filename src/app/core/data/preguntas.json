@@ -12499,7 +12499,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué debe hacer usted cuando enfrenta esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-185.png",
     "alternativas": [
       "Detenerse sólo si viene algún vehículo por la otra vía.",
       "Detenerse sólo si hay peatones esperando para cruzar.",
@@ -12521,7 +12521,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-186.png",
     "alternativas": [
       "Semáforo fuera de servicio.",
       "Proximidad de semáforo.",
@@ -12565,7 +12565,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Para qué sirven las señales amarillas con forma de rombo?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-188.png",
     "alternativas": [
       "Para entregar información.",
       "Para dar órdenes.",
@@ -12609,7 +12609,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal? |",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-190.png",
     "alternativas": [
       "Angostamiento de la vía.",
       "Preferencia al tránsito que viene en sentido contrario.",
@@ -12631,7 +12631,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-191.png",
     "alternativas": [
       "Zona de escuela.",
       "Cruce de peatones.",
@@ -12653,7 +12653,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Cuál de estas señales le previene que más adelante hay una serie de curvas?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-192.png",
     "alternativas": [
       "A",
       "B",
@@ -12675,7 +12675,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-193.png",
     "alternativas": [
       "Que se cerca a una zona en la que no se permiten bicicletas.",
       "Que los ciclistas deben circular por la pista de la derecha.",
@@ -12697,7 +12697,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Cuál de estas señales le advierte la proximidad de un cruce de peatones?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-194.png",
     "alternativas": [
       "A",
       "B",
