@@ -10904,7 +10904,7 @@
     "categoria": "normativa",
     "tipo": "multiple",
     "enunciado": "¿En cuál o cuáles de las siguientes situaciones el conductor se ha detenido correctamente para recoger un pasajero?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-113.png",
     "alternativas": [
       "A",
       "B",
@@ -11090,7 +11090,7 @@
     "categoria": "conduccion",
     "tipo": "unica",
     "enunciado": "¿Qué haría usted ante esta situación?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-121.png",
     "alternativas": [
       "Continúa a la misma velocidad.",
       "Toca la bocina.",
@@ -11376,7 +11376,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "Usted va detrás de un camión articulado que se aproxima a un cruce. Su conductor señaliza hacia la derecha pero el vehículo se desplaza hacia la izquierda. ¿Qué debe hacer usted?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-134.png",
     "alternativas": [
       "Advertirle al conductor acerca de su señal equivocada.",
       "Esperar detrás del camión.",
@@ -11727,7 +11727,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿De qué le advierte esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-150.png",
     "alternativas": [
       "De la posible presencia de escolares.",
       "De la proximidad de un cruce de peatones.",
