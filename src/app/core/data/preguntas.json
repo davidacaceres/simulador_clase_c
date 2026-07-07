@@ -12389,7 +12389,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "Al ir circulando en su vehículo usted enfrenta esta señal. ¿Qué significa?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-180.png",
     "alternativas": [
       "Que usted puede conducir hasta un 10% más rápido, porque la señal es sólo una ecomendación.",
       "Que en días no hábiles, cuando hay poco tránsito, no rige tal restricción.",
@@ -12411,7 +12411,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-181.png",
     "alternativas": [
       "Usted no debe exceder la velocidad indicada.",
       "Es más seguro conducir a la velocidad indicada.",
@@ -12433,7 +12433,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Cuándo puede usted ingresar a un cruce en cuya calzada se han pintado franjas amarillas diagonales?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-182.png",
     "alternativas": [
       "Siempre que el semáforo esté en verde.",
       "Cuando en la salida del cruce tenga espacio suficiente como para no quedar detenido en él.",
@@ -12455,7 +12455,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal de tránsito?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-183.png",
     "alternativas": [
       "Gravilla suelta.",
       "Peligro de que se pinchen los neumáticos.",
@@ -12477,7 +12477,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa esta señal?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-184.png",
     "alternativas": [
       "No adelantar.",
       "Mantenga su derec ha.",
