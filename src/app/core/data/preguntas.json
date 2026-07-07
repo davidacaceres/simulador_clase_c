@@ -10881,7 +10881,7 @@
     "categoria": "normativa",
     "tipo": "multiple",
     "enunciado": "¿En cuál o cuáles situaciones el vehículo está mal estacionado?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-112.png",
     "alternativas": [
       "A",
       "B",
