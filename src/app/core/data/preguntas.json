@@ -10566,7 +10566,7 @@
     "categoria": "conduccion",
     "tipo": "multiple",
     "enunciado": "¿En cuál o cuáles de las siguientes situaciones puede usted virar a la izquierda sin que siempre deba detenerse antes?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-098.png",
     "alternativas": [
       "A",
       "B",
@@ -10590,7 +10590,7 @@
     "categoria": "senaletica",
     "tipo": "multiple",
     "enunciado": "¿Frente a cuál o cuáles de las siguientes señales e indicaciones del semáforo debe usted detenerse siempre?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-099.png",
     "alternativas": [
       "A",
       "B",
@@ -10634,7 +10634,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Cuál señalización con el brazo del conductor de un vehículo que va adelante le indica que va a virar a la izquierda?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-101.png",
     "alternativas": [
       "A",
       "B",
