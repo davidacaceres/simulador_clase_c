@@ -1,0 +1,45 @@
+import { Routes } from '@angular/router';
+
+/**
+ * Rutas de la aplicación. Los modos se cargan con lazy loading.
+ * Por ahora (Etapa 2) solo está implementada la pantalla de Inicio;
+ * el resto se agregará en las etapas siguientes.
+ */
+export const routes: Routes = [
+  {
+    path: '',
+    loadComponent: () =>
+      import('./features/inicio/inicio.component').then((m) => m.InicioComponent),
+  },
+  {
+    path: 'examen',
+    loadComponent: () =>
+      import('./features/examen/examen.component').then((m) => m.ExamenComponent),
+  },
+  {
+    path: 'resultado',
+    loadComponent: () =>
+      import('./features/resultado/resultado.component').then((m) => m.ResultadoComponent),
+  },
+  {
+    path: 'practica',
+    loadComponent: () =>
+      import('./features/practica/practica.component').then((m) => m.PracticaComponent),
+  },
+  {
+    path: 'por-tema',
+    loadComponent: () =>
+      import('./features/por-tema/por-tema.component').then((m) => m.PorTemaComponent),
+  },
+  {
+    path: 'repaso',
+    loadComponent: () =>
+      import('./features/repaso/repaso.component').then((m) => m.RepasoComponent),
+  },
+  {
+    path: 'historial',
+    loadComponent: () =>
+      import('./features/historial/historial.component').then((m) => m.HistorialComponent),
+  },
+  { path: '**', redirectTo: '' },
+];

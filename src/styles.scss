@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Estilos globales — mobile-first, accesibles
+   Look & feel alineado con conducirmotos.cl: tema oscuro, tipografía en
+   mayúsculas y bold, estética de escuela de motociclismo.
+   Todos los colores son variables → fácil de ajustar a la marca exacta.
+   ========================================================================== */
+
+:root {
+  /* Paleta — extraída de conducirmotos.cl (tema oscuro + acento dorado) */
+  --color-primario: #ffad33;        /* acento dorado de la marca */
+  --color-primario-oscuro: #f59e1a;
+  --color-acento: #ffc632;          /* dorado secundario */
+  --color-exito: #34c759;
+  --color-error: #ff453a;
+  --color-fondo: #1d1e20;           /* fondo oscuro de la marca */
+  --color-superficie: #26282b;      /* tarjetas */
+  --color-superficie-2: #303336;    /* tarjetas elevadas / hover */
+  --color-texto: #ffffff;
+  --color-texto-suave: #b4bac1;   /* gris claro: cumple contraste AA sobre el fondo oscuro */
+  --color-borde: #3a3e43;
+  /* Texto sobre botones dorados (contraste alto) */
+  --color-sobre-primario: #1d1e20;
+
+  /* Espaciado y radios */
+  --radio: 10px;
+  --sombra: 0 2px 10px rgba(0, 0, 0, 0.4);
+  --sombra-fuerte: 0 6px 20px rgba(0, 0, 0, 0.5);
+  --max-ancho: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* Los controles de formulario no heredan la tipografía por defecto */
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* Foco visible consistente para todo elemento interactivo (accesibilidad) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a { color: var(--color-primario); }
+
+body {
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Títulos en mayúsculas y bold, al estilo del sitio */
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+/* Contenedor centrado */
+.contenedor {
+  width: 100%;
+  max-width: var(--max-ancho);
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: var(--radio);
+  padding: 14px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.05s ease;
+  text-decoration: none;
+}
+.btn:active { transform: scale(0.98); }
+.btn:focus-visible { outline: 3px solid var(--color-acento); outline-offset: 2px; }
+
+.btn-primario { background: var(--color-primario); color: var(--color-sobre-primario); }
+.btn-primario:hover { background: var(--color-primario-oscuro); }
+
+.btn-secundario {
+  background: transparent;
+  color: var(--color-texto);
+  border: 2px solid var(--color-borde);
+}
+.btn-secundario:hover { border-color: var(--color-primario); }
+
+.btn-bloque { width: 100%; }
+
+/* Tarjetas */
+.card {
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 20px;
+}
+
+/* Utilidades */
+.text-centro { text-align: center; }
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+
+/* Accesibilidad: respeta preferencia de menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

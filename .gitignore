@@ -1,0 +1,22 @@
+# Dependencias
+/node_modules
+
+# Build
+/dist
+/tmp
+/out-tsc
+/.angular
+
+# IDE
+/.idea
+/.vscode
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+
+.vercel

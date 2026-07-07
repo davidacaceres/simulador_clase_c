@@ -1,0 +1,459 @@
+[
+  {
+    "id": "SEN-001",
+    "categoria": "senaletica",
+    "enunciado": "¿Qué indica una señal de forma octogonal y fondo rojo?",
+    "imagen": null,
+    "alternativas": ["Ceda el paso", "Detención obligatoria (PARE)", "Prohibido virar", "Zona de estacionamiento"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La señal PARE (R-1) es octogonal de fondo rojo y obliga a una detención total del vehículo antes de continuar, cediendo el paso a los demás.",
+    "referencia": "Señales reglamentarias — Manual de Señalización de Tránsito"
+  },
+  {
+    "id": "SEN-002",
+    "categoria": "senaletica",
+    "enunciado": "Una señal triangular con la punta hacia abajo y borde rojo significa:",
+    "imagen": null,
+    "alternativas": ["Ceda el paso", "Pare", "Cruce de peatones", "Fin de restricción"],
+    "indiceCorrecta": 0,
+    "esDoblePuntaje": false,
+    "explicacion": "La señal CEDA EL PASO (R-2) es un triángulo invertido de borde rojo; obliga a ceder el paso a los vehículos de la vía a la que se ingresa, deteniéndose solo si es necesario.",
+    "referencia": "Señales reglamentarias — Manual de Señalización de Tránsito"
+  },
+  {
+    "id": "SEN-003",
+    "categoria": "senaletica",
+    "enunciado": "Las señales preventivas (de advertencia) se caracterizan por ser:",
+    "imagen": null,
+    "alternativas": ["Rectangulares de fondo azul", "Circulares de fondo rojo", "Romboidales de fondo amarillo", "Octogonales de fondo rojo"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": false,
+    "explicacion": "Las señales preventivas tienen forma de rombo (cuadrado sobre una punta) y fondo amarillo con símbolos negros; advierten sobre riesgos o condiciones de la vía más adelante.",
+    "referencia": "Señales preventivas — Manual de Señalización de Tránsito"
+  },
+  {
+    "id": "SEN-004",
+    "categoria": "senaletica",
+    "enunciado": "El color de fondo de las señales informativas de servicios (hospital, teléfono, etc.) es habitualmente:",
+    "imagen": null,
+    "alternativas": ["Rojo", "Amarillo", "Azul", "Naranjo"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": false,
+    "explicacion": "Las señales informativas de servicio suelen ser rectangulares de fondo azul con un recuadro blanco; entregan información útil al conductor sin imponer obligaciones.",
+    "referencia": "Señales informativas — Manual de Señalización de Tránsito"
+  },
+  {
+    "id": "SEN-005",
+    "categoria": "senaletica",
+    "enunciado": "Una línea central continua pintada en la calzada indica que:",
+    "imagen": null,
+    "alternativas": ["Se puede adelantar con precaución", "Está prohibido cruzarla o adelantar", "Es una zona de estacionamiento", "Indica una ciclovía"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La línea continua no debe traspasarse ni pisarse; prohíbe el adelantamiento y el cambio de pista, generalmente por falta de visibilidad o riesgo.",
+    "referencia": "Demarcaciones — Manual de Señalización de Tránsito"
+  },
+  {
+    "id": "SEN-006",
+    "categoria": "senaletica",
+    "enunciado": "Cuando el semáforo está en luz amarilla fija, el conductor debe:",
+    "imagen": null,
+    "alternativas": ["Acelerar para pasar antes del rojo", "Detenerse si puede hacerlo con seguridad", "Continuar sin cambios", "Tocar la bocina y avanzar"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La luz amarilla advierte que está por cambiar a rojo. El conductor debe detenerse, salvo que se encuentre tan cerca del cruce que detenerse sea inseguro.",
+    "referencia": "Semáforos — Ley de Tránsito Nº 18.290"
+  },
+
+  {
+    "id": "NOR-001",
+    "categoria": "normativa",
+    "enunciado": "¿Cuál es la velocidad máxima general en zona urbana en Chile, salvo señalización que indique otra cosa?",
+    "imagen": null,
+    "alternativas": ["40 km/h", "50 km/h", "60 km/h", "80 km/h"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "Desde la Ley de Convivencia de Modos, el límite general en zonas urbanas es de 50 km/h, salvo que una señal indique un valor distinto.",
+    "referencia": "Velocidades máximas — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "NOR-002",
+    "categoria": "normativa",
+    "enunciado": "Para conducir legalmente, todo conductor debe portar:",
+    "imagen": null,
+    "alternativas": ["Solo la licencia de conducir", "Licencia, permiso de circulación y revisión técnica y seguro al día", "Solo el carné de identidad", "Nada, basta con saber conducir"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "El conductor debe portar su licencia vigente y el vehículo debe tener permiso de circulación, revisión técnica y seguro obligatorio (SOAP) al día.",
+    "referencia": "Documentación del conductor — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "NOR-003",
+    "categoria": "normativa",
+    "enunciado": "Respecto del uso del cinturón de seguridad en un vehículo, es correcto afirmar que:",
+    "imagen": null,
+    "alternativas": ["Solo lo usa el conductor", "Es obligatorio para todos los ocupantes, adelante y atrás", "Es opcional en trayectos cortos", "Solo es obligatorio en carretera"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "El uso del cinturón de seguridad es obligatorio para todos los ocupantes del vehículo, tanto en los asientos delanteros como traseros, en todo momento.",
+    "referencia": "Cinturón de seguridad — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "NOR-004",
+    "categoria": "normativa",
+    "enunciado": "Los niños menores de la edad establecida por ley deben viajar en un vehículo:",
+    "imagen": null,
+    "alternativas": ["En el asiento delantero, junto al conductor", "En el asiento trasero y con un sistema de retención infantil adecuado", "En brazos de un adulto", "De pie, sujetos del respaldo"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "Los menores deben viajar en el asiento trasero utilizando un sistema de retención infantil apropiado a su edad, peso y estatura. Es una medida clave de seguridad.",
+    "referencia": "Sistemas de retención infantil — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "NOR-005",
+    "categoria": "normativa",
+    "enunciado": "En una intersección sin señalización ni semáforos, ¿a quién se le cede el paso?",
+    "imagen": null,
+    "alternativas": ["Al vehículo que viene por la derecha", "Al vehículo más grande", "Al que llega más rápido", "Al que toca primero la bocina"],
+    "indiceCorrecta": 0,
+    "esDoblePuntaje": false,
+    "explicacion": "Ante igualdad de condiciones y sin señalización, tiene prioridad el vehículo que se aproxima por la derecha del conductor.",
+    "referencia": "Prioridad de paso — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "NOR-006",
+    "categoria": "normativa",
+    "enunciado": "La licencia Clase C habilita para conducir:",
+    "imagen": null,
+    "alternativas": ["Camiones de carga", "Motocicletas y motonetas", "Buses de pasajeros", "Maquinaria agrícola"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La licencia Clase C es una licencia no profesional que habilita para conducir motocicletas, motonetas y otros vehículos motorizados de dos o tres ruedas.",
+    "referencia": "Clases de licencia — Ley de Tránsito Nº 18.290"
+  },
+
+  {
+    "id": "CON-001",
+    "categoria": "conduccion",
+    "enunciado": "Antes de realizar un cambio de pista, el conductor debe:",
+    "imagen": null,
+    "alternativas": ["Cambiar de inmediato si no viene nadie de frente", "Señalizar, revisar los espejos y el punto ciego antes de maniobrar", "Solo mirar el espejo retrovisor central", "Acelerar al máximo"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Un cambio de pista seguro requiere señalizar con anticipación, mirar los espejos y girar la cabeza para revisar el punto ciego antes de mover el vehículo.",
+    "referencia": "Maniobras seguras — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "CON-002",
+    "categoria": "conduccion",
+    "enunciado": "El adelantamiento a otro vehículo debe realizarse, por regla general:",
+    "imagen": null,
+    "alternativas": ["Por la derecha", "Por la izquierda y solo cuando sea seguro", "Por la berma", "En cualquier momento"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "El adelantamiento se hace por la izquierda, asegurándose de tener visibilidad y espacio suficientes, sin línea continua y sin poner en riesgo a terceros.",
+    "referencia": "Adelantamiento — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "CON-003",
+    "categoria": "conduccion",
+    "enunciado": "Al tomar una curva en motocicleta, la velocidad adecuada se debe:",
+    "imagen": null,
+    "alternativas": ["Aumentar al entrar a la curva", "Reducir antes de entrar a la curva", "Mantener frenando dentro de la curva", "Es indiferente"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "Se debe reducir la velocidad antes de entrar a la curva. Frenar bruscamente dentro de la curva puede provocar la pérdida de control o la caída de la moto.",
+    "referencia": "Velocidad y maniobras — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "CON-004",
+    "categoria": "conduccion",
+    "enunciado": "Para ser más visible, una motocicleta debe circular durante el día:",
+    "imagen": null,
+    "alternativas": ["Con las luces apagadas para ahorrar batería", "Con las luces delanteras encendidas", "Solo con luces de emergencia", "Sin luces, usando la bocina"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Las motocicletas deben circular siempre con sus luces encendidas, incluso de día, para aumentar su visibilidad ante los demás vehículos.",
+    "referencia": "Visibilidad del motociclista — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "CON-005",
+    "categoria": "conduccion",
+    "enunciado": "Al virar en una esquina, el conductor debe:",
+    "imagen": null,
+    "alternativas": ["Virar desde cualquier pista", "Señalizar con anticipación y ubicarse en la pista correcta", "Virar sin señalizar si no viene nadie", "Acelerar durante el viraje"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Antes de virar se debe señalizar con anticipación, reducir la velocidad y ubicarse en la pista correspondiente al sentido del giro.",
+    "referencia": "Virajes — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "CON-006",
+    "categoria": "conduccion",
+    "enunciado": "La circulación entre pistas de vehículos detenidos o en marcha (\"culebrear\") por parte de una motocicleta es:",
+    "imagen": null,
+    "alternativas": ["Recomendable para avanzar más rápido", "Una maniobra riesgosa que se debe evitar", "Obligatoria en congestión", "Permitida siempre"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Zigzaguear entre vehículos es peligroso: reduce el tiempo de reacción de todos y aumenta el riesgo de colisión. El motociclista debe respetar su pista.",
+    "referencia": "Conducción segura — Libro del Nuevo Conductor"
+  },
+
+  {
+    "id": "DIS-001",
+    "categoria": "distancias",
+    "enunciado": "La distancia total de detención de un vehículo corresponde a:",
+    "imagen": null,
+    "alternativas": ["Solo la distancia de frenado", "La distancia recorrida durante el tiempo de reacción más la distancia de frenado", "Solo el tiempo de reacción", "La distancia hasta el vehículo de adelante"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La distancia de detención es la suma de la distancia recorrida durante el tiempo de reacción del conductor y la distancia que recorre el vehículo mientras frena.",
+    "referencia": "Distancia de detención — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "DIS-002",
+    "categoria": "distancias",
+    "enunciado": "Si se duplica la velocidad, la distancia de frenado:",
+    "imagen": null,
+    "alternativas": ["Se mantiene igual", "Aproximadamente se cuadruplica", "Se reduce a la mitad", "Solo se duplica"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La distancia de frenado aumenta con el cuadrado de la velocidad: al duplicar la velocidad, la distancia necesaria para detenerse se hace aproximadamente cuatro veces mayor.",
+    "referencia": "Distancia de frenado — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "DIS-003",
+    "categoria": "distancias",
+    "enunciado": "Sobre pavimento mojado, la distancia de frenado:",
+    "imagen": null,
+    "alternativas": ["Disminuye", "Aumenta por la menor adherencia", "No cambia", "Solo cambia de noche"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Con el pavimento mojado disminuye la adherencia de los neumáticos, por lo que la distancia de frenado aumenta. Se debe reducir la velocidad y aumentar la distancia de seguimiento.",
+    "referencia": "Condiciones de la vía — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "DIS-004",
+    "categoria": "distancias",
+    "enunciado": "En una motocicleta, para frenar de forma eficiente y segura se debe:",
+    "imagen": null,
+    "alternativas": ["Usar solo el freno trasero", "Usar solo el freno delantero con fuerza", "Usar ambos frenos de forma progresiva", "Frenar bruscamente con el motor"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": false,
+    "explicacion": "Lo correcto es accionar ambos frenos de forma progresiva. Usar solo uno reduce la eficacia y puede provocar el bloqueo de la rueda y la caída.",
+    "referencia": "Frenado en motocicleta — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "DIS-005",
+    "categoria": "distancias",
+    "enunciado": "La regla de los dos segundos sirve para:",
+    "imagen": null,
+    "alternativas": ["Calcular la velocidad máxima", "Mantener una distancia de seguimiento segura respecto al vehículo de adelante", "Medir el tiempo en un semáforo", "Estimar el consumo de combustible"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La regla de los dos segundos ayuda a mantener una distancia de seguimiento segura: al pasar el vehículo de adelante por un punto fijo, deben transcurrir al menos dos segundos antes de que uno pase por el mismo punto.",
+    "referencia": "Distancia de seguimiento — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "DIS-006",
+    "categoria": "distancias",
+    "enunciado": "El tiempo de reacción del conductor aumenta cuando:",
+    "imagen": null,
+    "alternativas": ["Está descansado y atento", "Está cansado, distraído o bajo efectos del alcohol", "Conduce a baja velocidad", "El clima es despejado"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La fatiga, las distracciones (como el teléfono) y el alcohol aumentan el tiempo de reacción, lo que alarga la distancia de detención y el riesgo de accidente.",
+    "referencia": "Tiempo de reacción — Libro del Nuevo Conductor"
+  },
+
+  {
+    "id": "ALC-001",
+    "categoria": "alcohol",
+    "enunciado": "Según la Ley de Tolerancia Cero, conducir con una alcoholemia entre 0,3 y menos de 0,8 gramos por litro de sangre corresponde a:",
+    "imagen": null,
+    "alternativas": ["Conducción normal permitida", "Conducir bajo la influencia del alcohol", "Conducir en estado de ebriedad", "No constituye infracción"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "Entre 0,3 y menos de 0,8 g/l se configura la conducción bajo la influencia del alcohol, sancionada por la Ley de Tolerancia Cero. Desde 0,8 g/l se considera estado de ebriedad.",
+    "referencia": "Ley Tolerancia Cero — Ley Nº 20.580"
+  },
+  {
+    "id": "ALC-002",
+    "categoria": "alcohol",
+    "enunciado": "Se considera conducción en estado de ebriedad cuando la alcoholemia es igual o superior a:",
+    "imagen": null,
+    "alternativas": ["0,3 g/l", "0,5 g/l", "0,8 g/l", "1,0 g/l"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": true,
+    "explicacion": "Desde 0,8 gramos de alcohol por litro de sangre se configura la conducción en estado de ebriedad, con sanciones más graves que la conducción bajo la influencia del alcohol.",
+    "referencia": "Ley Tolerancia Cero — Ley Nº 20.580"
+  },
+  {
+    "id": "ALC-003",
+    "categoria": "alcohol",
+    "enunciado": "La Ley Emilia establece, entre otras cosas, que quien conduce en estado de ebriedad y causa lesiones graves gravísimas o la muerte:",
+    "imagen": null,
+    "alternativas": ["Solo paga una multa", "Cumple pena de cárcel efectiva", "Pierde puntos de su licencia", "Recibe una amonestación"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "La Ley Emilia contempla un año de cárcel efectiva (sin beneficios) para quien, conduciendo en estado de ebriedad, provoca lesiones graves gravísimas o la muerte. También sanciona darse a la fuga.",
+    "referencia": "Ley Emilia — Ley Nº 20.770"
+  },
+  {
+    "id": "ALC-004",
+    "categoria": "alcohol",
+    "enunciado": "El consumo de alcohol antes de conducir afecta al conductor porque:",
+    "imagen": null,
+    "alternativas": ["Mejora los reflejos", "Aumenta la concentración", "Disminuye los reflejos y altera la percepción y el juicio", "No tiene ningún efecto en dosis bajas"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": true,
+    "explicacion": "El alcohol disminuye los reflejos, altera la percepción de distancias y velocidad, reduce el campo visual y afecta el juicio, aumentando fuertemente el riesgo de accidente incluso en dosis bajas.",
+    "referencia": "Efectos del alcohol — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "ALC-005",
+    "categoria": "alcohol",
+    "enunciado": "Respecto de conducir bajo el efecto de drogas o estupefacientes, la ley chilena:",
+    "imagen": null,
+    "alternativas": ["Lo permite si son medicamentos", "Lo prohíbe y sanciona igual que el alcohol", "Solo lo sanciona de noche", "No lo regula"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "Conducir bajo la influencia de drogas o sustancias estupefacientes está prohibido y es sancionado. Algunos medicamentos también afectan la capacidad de conducir; siempre revise las advertencias.",
+    "referencia": "Drogas y conducción — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "ALC-006",
+    "categoria": "alcohol",
+    "enunciado": "Para eliminar el alcohol del organismo y poder conducir con seguridad, lo único efectivo es:",
+    "imagen": null,
+    "alternativas": ["Tomar café cargado", "Darse una ducha fría", "Esperar el tiempo necesario, ya que el cuerpo lo metaboliza lentamente", "Comer mucho"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": true,
+    "explicacion": "No existen atajos: el hígado metaboliza el alcohol a un ritmo lento y constante. El café, la ducha fría o la comida no aceleran su eliminación. Lo único que funciona es esperar.",
+    "referencia": "Metabolismo del alcohol — Libro del Nuevo Conductor"
+  },
+
+  {
+    "id": "FAT-001",
+    "categoria": "fatiga",
+    "enunciado": "Una señal de que el conductor está fatigado y debe detenerse es:",
+    "imagen": null,
+    "alternativas": ["Sentirse muy concentrado", "Bostezos frecuentes, pesadez de párpados y pérdida de atención", "Aumento de la energía", "Mejor visión nocturna"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Los bostezos frecuentes, la dificultad para mantener los ojos abiertos, la pérdida de concentración y no recordar los últimos kilómetros son señales claras de fatiga: hay que detenerse a descansar.",
+    "referencia": "Fatiga al conducir — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "FAT-002",
+    "categoria": "fatiga",
+    "enunciado": "Si siente sueño mientras conduce, lo más seguro es:",
+    "imagen": null,
+    "alternativas": ["Abrir la ventana y seguir", "Subir el volumen de la radio", "Detenerse en un lugar seguro y descansar o dormir una siesta breve", "Conducir más rápido para llegar antes"],
+    "indiceCorrecta": 2,
+    "esDoblePuntaje": false,
+    "explicacion": "Ni el aire ni la música reemplazan el descanso. Ante el sueño, lo correcto es detenerse en un lugar seguro y descansar; una siesta breve de 15 a 20 minutos ayuda a recuperar la atención.",
+    "referencia": "Prevención de la fatiga — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "FAT-003",
+    "categoria": "fatiga",
+    "enunciado": "El \"micro-sueño\" al conducir es peligroso porque:",
+    "imagen": null,
+    "alternativas": ["Solo dura un instante y no afecta", "Es una pérdida breve de conciencia en la que se recorren muchos metros sin control", "Mejora la reacción", "Ocurre solo de día"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Un micro-sueño de pocos segundos basta para recorrer decenas de metros sin control del vehículo, provocando salidas de pista o colisiones graves.",
+    "referencia": "Fatiga y sueño — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "FAT-004",
+    "categoria": "fatiga",
+    "enunciado": "Para prevenir la fatiga en viajes largos se recomienda:",
+    "imagen": null,
+    "alternativas": ["No detenerse nunca para llegar antes", "Hacer pausas periódicas, descansar bien antes de salir e hidratarse", "Conducir de noche siempre", "Comer en abundancia antes de conducir"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Descansar bien antes de salir, hacer pausas cada cierto tiempo (aproximadamente cada dos horas), hidratarse y evitar las horas de mayor sueño ayudan a prevenir la fatiga.",
+    "referencia": "Prevención de la fatiga — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "FAT-005",
+    "categoria": "fatiga",
+    "enunciado": "El café u otras bebidas con cafeína, frente a la fatiga real:",
+    "imagen": null,
+    "alternativas": ["Eliminan completamente el sueño", "Dan un alivio temporal, pero no reemplazan el descanso", "Aumentan el sueño", "No tienen ningún efecto"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La cafeína puede dar un alivio momentáneo, pero no elimina la necesidad de dormir. Si el cuerpo está fatigado, el único remedio efectivo es descansar.",
+    "referencia": "Prevención de la fatiga — Libro del Nuevo Conductor"
+  },
+
+  {
+    "id": "MOT-001",
+    "categoria": "motocicleta",
+    "enunciado": "Respecto del casco en motocicleta, es obligatorio que:",
+    "imagen": null,
+    "alternativas": ["Lo use solo el conductor", "Lo usen el conductor y el acompañante, certificado y bien abrochado", "Se use solo en carretera", "Se use solo de noche"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "El casco es obligatorio tanto para el conductor como para el acompañante. Debe estar certificado, en buen estado y correctamente abrochado para cumplir su función de protección.",
+    "referencia": "Uso del casco — Ley de Tránsito Nº 18.290"
+  },
+  {
+    "id": "MOT-002",
+    "categoria": "motocicleta",
+    "enunciado": "La principal función del casco para motociclista es:",
+    "imagen": null,
+    "alternativas": ["Proteger del sol", "Reducir el riesgo de lesiones graves en la cabeza ante un accidente", "Mejorar la aerodinámica", "Verse más elegante"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": true,
+    "explicacion": "El casco protege la cabeza, la zona más vulnerable en un accidente de motocicleta, reduciendo significativamente el riesgo de lesiones graves y muerte.",
+    "referencia": "Uso del casco — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "MOT-003",
+    "categoria": "motocicleta",
+    "enunciado": "El uso de vestimenta con elementos reflectantes por parte del motociclista sirve para:",
+    "imagen": null,
+    "alternativas": ["Abrigarse mejor", "Ser más visible para los demás conductores, sobre todo de noche", "Ir más rápido", "Cumplir una moda"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Los elementos reflectantes aumentan la visibilidad del motociclista ante los demás vehículos, especialmente de noche o con poca luz, reduciendo el riesgo de que no lo vean.",
+    "referencia": "Vestimenta de seguridad — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "MOT-004",
+    "categoria": "motocicleta",
+    "enunciado": "Además del casco, la vestimenta de protección recomendada para el motociclista incluye:",
+    "imagen": null,
+    "alternativas": ["Sandalias y polera", "Guantes, chaqueta resistente, pantalón largo y calzado cerrado", "Solo lentes de sol", "Ropa suelta y liviana"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "La protección adecuada incluye guantes, chaqueta resistente (idealmente con protecciones), pantalón largo y calzado cerrado, que protegen la piel ante una caída o roce.",
+    "referencia": "Vestimenta de seguridad — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "MOT-005",
+    "categoria": "motocicleta",
+    "enunciado": "Dentro de una pista de circulación, el motociclista debe ubicarse:",
+    "imagen": null,
+    "alternativas": ["Siempre pegado al borde derecho", "En una posición visible que le dé espacio de maniobra y le permita ser visto", "En medio de dos pistas", "Lo más cerca posible del vehículo de adelante"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "El motociclista debe circular en una posición dentro de su pista que maximice su visibilidad ante otros conductores y le deje espacio para maniobrar o frenar con seguridad.",
+    "referencia": "Posición en la vía — Libro del Nuevo Conductor"
+  },
+  {
+    "id": "MOT-006",
+    "categoria": "motocicleta",
+    "enunciado": "Transportar a un acompañante en la motocicleta es seguro cuando:",
+    "imagen": null,
+    "alternativas": ["El acompañante va de pie", "La moto está diseñada para dos personas, ambos usan casco y el acompañante se sienta correctamente", "El acompañante es un niño pequeño sin casco", "Van tres personas en la moto"],
+    "indiceCorrecta": 1,
+    "esDoblePuntaje": false,
+    "explicacion": "Solo se debe llevar acompañante si la moto está habilitada para dos personas, ambos usan casco, el acompañante va sentado correctamente con los pies en los estribos y sujeto de forma segura.",
+    "referencia": "Transporte de acompañante — Libro del Nuevo Conductor"
+  }
+]
