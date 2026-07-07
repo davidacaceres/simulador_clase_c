@@ -57,6 +57,8 @@ import { Pregunta } from '../../core/models/pregunta.model';
         <p class="referencia">{{ pregunta.referencia }}</p>
         <p class="fuente"><strong>Fuente:</strong> {{ pregunta.fuente }}</p>
       </div>
+
+      <span class="id-interno" title="Identificador interno de la pregunta">{{ pregunta.id }}</span>
     </div>
   `,
   styles: [
@@ -129,6 +131,17 @@ import { Pregunta } from '../../core/models/pregunta.model';
       .explicacion { margin: 0 0 6px; font-size: 0.95rem; }
       .referencia { margin: 0; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
       .fuente { margin: 4px 0 0; font-size: 0.78rem; color: var(--color-texto-suave); }
+      .pregunta { position: relative; padding-bottom: 26px; }
+      .id-interno {
+        position: absolute;
+        bottom: 6px;
+        right: 10px;
+        font-size: 0.68rem;
+        font-family: monospace;
+        color: var(--color-texto-suave);
+        opacity: 0.6;
+        user-select: all;
+      }
     `,
   ],
 })
