@@ -12768,7 +12768,7 @@
     "categoria": "motocicleta",
     "tipo": "unica",
     "enunciado": "El vehículo indicado con la flecha se encuentra detenido sobre una zona achurada esperando poder efectuar un viraje en U, ¿es esto correcto?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-197.png",
     "alternativas": [
       "Sí, la zona achurada sólo separa sentidos de circulación.",
       "Sí, siempre que la zona achurada no esté reforzada con tachas o tachones reflectantes.",
@@ -12790,7 +12790,7 @@
     "categoria": "normativa",
     "tipo": "unica",
     "enunciado": "De acuerdo a las circunstancias que se aprecian en la fotografía, ¿sería correcto que el automóvil indicado con la flecha continuara derecho ?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-198.png",
     "alternativas": [
       "Sí",
       "No"
@@ -12810,7 +12810,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué le indica la señal de tránsito que se observa en la fotografía?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-199.png",
     "alternativas": [
       "Que usted está obligado a detenerse a la altura de la señal.",
       "Advierte que el cruce al que usted se aproxima es peligroso.",
