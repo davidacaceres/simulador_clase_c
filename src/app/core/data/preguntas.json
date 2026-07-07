@@ -10117,7 +10117,7 @@
     "categoria": "conduccion",
     "tipo": "unica",
     "enunciado": "¿Cuál es el principal peligro cuando usted sobrepasa al bus que está detenido en la parada?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-078.png",
     "alternativas": [
       "Que usted debe ceder el paso al bus si éste se pone en marcha.",
       "Que el auto que va adelante puede detenerse para ceder el paso a un peatón.",
@@ -10139,7 +10139,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué significa la señal que está efectuando el camión?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-079.png",
     "alternativas": [
       "El camión va a disminuir la velocidad y va a detenerse.",
       "El conductor del camión le está indicando a usted que lo puede adelantar.",
@@ -10161,7 +10161,7 @@
     "categoria": "normativa",
     "tipo": "unica",
     "enunciado": "¿Hacia dónde es más importante que usted mire en este momento?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-080.png",
     "alternativas": [
       "A",
       "B",
