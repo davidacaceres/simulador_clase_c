@@ -1,37 +1,33 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, shareReplay, map } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Pregunta } from '../models/pregunta.model';
 import { Categoria } from '../enums/categoria.enum';
+// El banco se importa en tiempo de COMPILACIÓN y queda dentro del bundle JS.
+// No se sirve como archivo (assets/data/preguntas.json ya no existe), por lo que
+// no hay una URL directa para descargar las preguntas y respuestas.
+import bancoJson from '../data/preguntas.json';
 
 /**
- * Carga el banco de preguntas desde el JSON estático (assets/data/preguntas.json)
- * y ofrece utilidades de filtrado. La carga se cachea con shareReplay para no
- * pedir el archivo más de una vez.
+ * Provee el banco de preguntas ya empaquetado en la aplicación.
+ * Mantiene una API basada en Observable para no cambiar los componentes.
  */
 @Injectable({ providedIn: 'root' })
 export class BancoPreguntasService {
-  private readonly ruta = 'assets/data/preguntas.json';
-  private preguntas$?: Observable<Pregunta[]>;
+  private readonly preguntas = bancoJson as unknown as Pregunta[];
 
-  constructor(private http: HttpClient) {}
-
-  /** Devuelve todas las preguntas del banco (cacheado). */
+  /** Devuelve todas las preguntas del banco. */
   obtenerTodas(): Observable<Pregunta[]> {
-    if (!this.preguntas$) {
-      this.preguntas$ = this.http.get<Pregunta[]>(this.ruta).pipe(shareReplay(1));
-    }
-    return this.preguntas$;
+    return of(this.preguntas);
   }
 
   /** Devuelve solo las preguntas de una categoría. */
   obtenerPorCategoria(categoria: Categoria): Observable<Pregunta[]> {
-    return this.obtenerTodas().pipe(map((ps) => ps.filter((p) => p.categoria === categoria)));
+    return of(this.preguntas.filter((p) => p.categoria === categoria));
   }
 
   /** Devuelve las preguntas cuyos ids estén en la lista (para Repaso de errores). */
   obtenerPorIds(ids: string[]): Observable<Pregunta[]> {
     const set = new Set(ids);
-    return this.obtenerTodas().pipe(map((ps) => ps.filter((p) => set.has(p.id))));
+    return of(this.preguntas.filter((p) => set.has(p.id)));
   }
 }

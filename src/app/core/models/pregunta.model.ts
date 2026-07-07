@@ -18,8 +18,16 @@ export interface Pregunta {
   indiceCorrecta: number;
   /** true si pertenece a un tema de doble puntaje (velocidad, alcohol, cinturón, casco, retención infantil). */
   esDoblePuntaje: boolean;
+  /**
+   * Peso / probabilidad relativa de aparecer en el Modo Examen.
+   * 1 = normal, mayor = más probable, 0 = nunca aparece en el examen.
+   * (No afecta a los modos de práctica, que usan todo el banco.)
+   */
+  pesoExamen: number;
   /** Explicación que se muestra en la revisión / práctica. */
   explicacion: string;
-  /** Referencia al artículo de ley o sección del libro CONASET. */
+  /** Referencia al artículo de ley o sección específica del material. */
   referencia: string;
+  /** Fuente / documento de origen de la pregunta (ej: "Libro del Nuevo Conductor Clase C"). */
+  fuente: string;
 }

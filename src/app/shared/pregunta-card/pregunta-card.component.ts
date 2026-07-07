@@ -44,6 +44,7 @@ import { Pregunta } from '../../core/models/pregunta.model';
       <div class="feedback" *ngIf="mostrarFeedback">
         <p class="explicacion"><strong>Explicación:</strong> {{ pregunta.explicacion }}</p>
         <p class="referencia">{{ pregunta.referencia }}</p>
+        <p class="fuente"><strong>Fuente:</strong> {{ pregunta.fuente }}</p>
       </div>
     </div>
   `,
@@ -52,9 +53,10 @@ import { Pregunta } from '../../core/models/pregunta.model';
       .enunciado { font-size: 1.1rem; font-weight: 600; margin: 0 0 14px; }
       .imagen {
         display: block;
-        max-width: 100%;
+        max-width: min(100%, 300px);
+        height: auto;
         border-radius: var(--radio);
-        margin: 0 0 14px;
+        margin: 0 auto 16px;
       }
       .alternativas { display: flex; flex-direction: column; gap: 10px; }
       .alternativa {
@@ -99,6 +101,7 @@ import { Pregunta } from '../../core/models/pregunta.model';
       .feedback { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--color-borde); }
       .explicacion { margin: 0 0 6px; font-size: 0.95rem; }
       .referencia { margin: 0; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
+      .fuente { margin: 4px 0 0; font-size: 0.78rem; color: var(--color-texto-suave); }
     `,
   ],
 })

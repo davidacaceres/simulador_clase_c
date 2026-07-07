@@ -1,7 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 import { Pregunta } from '../models/pregunta.model';
 import { Resultado, RespuestaUsuario } from '../models/resultado.model';
-import { mezclar } from '../utils/aleatorio';
+import { mezclar, elegirPonderado } from '../utils/aleatorio';
 
 /** Parámetros oficiales del Modo Examen. */
 export const EXAMEN_CONFIG = {
@@ -10,6 +10,22 @@ export const EXAMEN_CONFIG = {
   puntajeMinimo: 33,
   minutos: 45,
 } as const;
+
+/**
+ * Distribución de las 32 preguntas de PUNTAJE SIMPLE por categoría (suma 32).
+ * Las otras 3 son de doble puntaje (temas velocidad, alcohol, cinturón, casco,
+ * retención infantil), elegidas aparte. Evita que la señalética domine el examen
+ * aunque el banco tenga muchas señales; el banco completo sigue disponible en los
+ * modos de práctica.
+ */
+export const DISTRIBUCION_EXAMEN: Record<string, number> = {
+  senaletica: 11,
+  normativa: 6,
+  conduccion: 5,
+  distancias: 4,
+  fatiga: 3,
+  motocicleta: 3,
+};
 
 /**
  * Lógica de negocio del examen: arma el set de preguntas, calcula el resultado
@@ -22,15 +38,62 @@ export class ExamenService {
   readonly ultimoResultado = signal<Resultado | null>(null);
 
   /**
-   * Arma un examen tomando `totalDobles` preguntas de doble puntaje y el resto
-   * de puntaje simple, hasta `totalPreguntas`, todo al azar y mezclado.
-   * Si el banco no alcanza (banco de ejemplo), toma tantas como haya disponibles.
+   * Arma un examen realista:
+   * 1) Toma `totalDobles` (3) preguntas de doble puntaje al azar.
+   * 2) Completa cada categoría hasta su cupo (DISTRIBUCION_EXAMEN) con preguntas
+   *    de puntaje simple, para un mix equilibrado.
+   * 3) Si alguna categoría no alcanza, rellena con cualquier pregunta disponible
+   *    hasta llegar a `totalPreguntas`.
+   * Todo al azar y mezclado. Con bancos pequeños toma las que haya.
    */
   armarExamen(banco: Pregunta[]): Pregunta[] {
-    const dobles = mezclar(banco.filter((p) => p.esDoblePuntaje)).slice(0, EXAMEN_CONFIG.totalDobles);
-    const faltantes = EXAMEN_CONFIG.totalPreguntas - dobles.length;
-    const normales = mezclar(banco.filter((p) => !p.esDoblePuntaje)).slice(0, faltantes);
-    return mezclar([...dobles, ...normales]);
+    const usados = new Set<string>();
+    const seleccion: Pregunta[] = [];
+    // peso de aparición de cada pregunta (por defecto 1 si no viene en el JSON)
+    const peso = (p: Pregunta) => (typeof p.pesoExamen === 'number' ? p.pesoExamen : 1);
+
+    // 1) preguntas de doble puntaje (selección ponderada por pesoExamen)
+    const dobles = elegirPonderado(
+      banco.filter((p) => p.esDoblePuntaje),
+      EXAMEN_CONFIG.totalDobles,
+      peso,
+    );
+    for (const d of dobles) {
+      seleccion.push(d);
+      usados.add(d.id);
+    }
+
+    // 2) llenar cada categoría con preguntas de PUNTAJE SIMPLE según la distribución,
+    //    eligiendo de forma ponderada por pesoExamen
+    for (const cat of Object.keys(DISTRIBUCION_EXAMEN)) {
+      const n = DISTRIBUCION_EXAMEN[cat];
+      const disponibles = elegirPonderado(
+        banco.filter((p) => p.categoria === cat && !p.esDoblePuntaje && !usados.has(p.id)),
+        n,
+        peso,
+      );
+      for (const q of disponibles) {
+        seleccion.push(q);
+        usados.add(q.id);
+      }
+    }
+
+    // 3) completar si faltan (categorías cortas), solo con puntaje simple para
+    //    mantener exactamente 3 preguntas de doble puntaje
+    if (seleccion.length < EXAMEN_CONFIG.totalPreguntas) {
+      const faltan = EXAMEN_CONFIG.totalPreguntas - seleccion.length;
+      const extra = elegirPonderado(
+        banco.filter((p) => !p.esDoblePuntaje && !usados.has(p.id)),
+        faltan,
+        peso,
+      );
+      for (const q of extra) {
+        seleccion.push(q);
+        usados.add(q.id);
+      }
+    }
+
+    return mezclar(seleccion).slice(0, EXAMEN_CONFIG.totalPreguntas);
   }
 
   /**

@@ -112,12 +112,21 @@ src/
 - [x] **Etapa 2** — Esqueleto Angular, modelos, servicio de banco y preguntas de ejemplo.
 - [x] **Etapa 3** — Modo Examen (cronómetro 45 min, reglas, puntaje y revisión) + guardado del intento.
 - [x] **Etapa 4** — Modo Práctica, Práctica por Tema y Repaso de errores.
-- [ ] **Etapa 5** — Banco completo de preguntas (150–300) desde el material CONASET. *(pendiente)*
+- [x] **Etapa 5** — Banco completo: **366 preguntas** del *Libro del Nuevo Conductor* CONASET,
+  sus módulos y el catálogo de señales (171 señales con imagen).
 - [x] **Etapa 6** — Historial y estadísticas en `localStorage`.
 
-> Nota: con el banco de ejemplo actual (~41 preguntas) el examen arma menos de 35 (usa las
-> disponibles). Al completar el banco en la Etapa 5, el Modo Examen entregará exactamente
-> 35 preguntas con 3 de doble puntaje.
+> El banco tiene 366 preguntas: señalética 196 (171 con imagen del catálogo de señales),
+> normativa 35, conducción 30, distancias 22, alcohol 28, fatiga 20, motocicleta 35. Cada
+> pregunta incluye explicación, referencia y **fuente** (extensible a nuevas fuentes).
+> El Modo Examen arma 35 preguntas con distribución realista por categoría (ver
+> `DISTRIBUCION_EXAMEN`) y exactamente 3 de doble puntaje. El banco completo está disponible
+> en los modos de práctica.
+>
+> Cada pregunta tiene un campo **`pesoExamen`** (probabilidad relativa de aparecer en el
+> examen): 1 = normal, mayor = más probable, 0 = nunca aparece. La selección aleatoria del
+> examen es un muestreo ponderado por ese peso, así puedes priorizar o excluir preguntas
+> sin borrarlas del banco.
 
 ---
 
