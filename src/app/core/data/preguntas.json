@@ -9822,7 +9822,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué debería hacer el conductor del auto señalado con la flecha?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-065.png",
     "alternativas": [
       "Detenerse y esperar a que el peatón cruce.",
       "Señalizar con la mano al peatón para que retroceda.",
@@ -9954,7 +9954,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "Usted va conduciendo al lado de una fila de autos estacionados. De pronto ve una pelota rebotando en la calzada un poco más adelante. ¿Qué debería hacer usted?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-071.png",
     "alternativas": [
       "Continuar a la misma velocidad, tocando la bocina.",
       "Continuar a la misma velocidad, pero encendiendo y apagando su luz delantera.",
@@ -10048,7 +10048,7 @@
     "categoria": "normativa",
     "tipo": "multiple",
     "enunciado": "¿A qué debe estar especialmente atento el conductor del vehículo indicado con la flecha?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-075.png",
     "alternativas": [
       "Peatones que puedan aparecer s orpresivamente entre autos estacionados para cruzar.",
       "Autos que abandonen sus lugares de estacionamiento.",
@@ -10073,7 +10073,7 @@
     "categoria": "normativa",
     "tipo": "unica",
     "enunciado": "¿Qué debería hacer el conductor del auto indicado con la flecha?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-076.png",
     "alternativas": [
       "Hacer señas con la mano a los peatones que están esperando poder cruzar.",
       "Pasar rápidamente por detrás del peatón que va cruzando la calzada.",
@@ -10095,7 +10095,7 @@
     "categoria": "senaletica",
     "tipo": "unica",
     "enunciado": "¿Qué debería hacer el conductor del auto señalado con la flecha?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-077.png",
     "alternativas": [
       "Retrocer para salir del cruce.",
       "Esperar en el mismo lugar hasta tener luz verde.",
