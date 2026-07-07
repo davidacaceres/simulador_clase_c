@@ -173,6 +173,7 @@ export class InicioComponent {
   modos: ModoTarjeta[] = [
     { icono: '📝', titulo: 'Modo Examen', descripcion: '35 preguntas, 45 minutos y reglas reales del examen.', ruta: '/examen', etapa: 'Etapa 3' },
     { icono: '🎯', titulo: 'Modo Práctica', descripcion: 'Sin tiempo, con feedback inmediato tras cada respuesta.', ruta: '/practica', etapa: 'Etapa 4' },
+    { icono: '🏍️', titulo: 'Práctica Conducir Motos', descripcion: 'Solo preguntas del cuestionario de conducirmotos.cl.', ruta: '/conducir-motos', etapa: '' },
     { icono: '📚', titulo: 'Práctica por Tema', descripcion: 'Estudia una categoría específica del temario.', ruta: '/por-tema', etapa: 'Etapa 4' },
     { icono: '🔁', titulo: 'Repaso de errores', descripcion: 'Repite solo las preguntas que fallaste.', ruta: '/repaso', etapa: 'Etapa 4' },
     { icono: '📊', titulo: 'Historial y estadísticas', descripcion: 'Revisa tus intentos y tu progreso.', ruta: '/historial', etapa: 'Etapa 6' },

@@ -27,6 +27,11 @@ export const routes: Routes = [
       import('./features/practica/practica.component').then((m) => m.PracticaComponent),
   },
   {
+    path: 'conducir-motos',
+    loadComponent: () =>
+      import('./features/conducir-motos/conducir-motos.component').then((m) => m.ConducirMotosComponent),
+  },
+  {
     path: 'por-tema',
     loadComponent: () =>
       import('./features/por-tema/por-tema.component').then((m) => m.PorTemaComponent),

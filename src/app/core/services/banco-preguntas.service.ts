@@ -30,4 +30,14 @@ export class BancoPreguntasService {
     const set = new Set(ids);
     return of(this.preguntas.filter((p) => set.has(p.id)));
   }
+
+  /** Devuelve solo las preguntas de una fuente concreta (ej. el cuestionario de conducirmotos.cl). */
+  obtenerPorFuente(fuente: string): Observable<Pregunta[]> {
+    return of(this.preguntas.filter((p) => p.fuente === fuente));
+  }
 }
+
+/** Fuentes conocidas del banco (útiles para filtrar por modo). */
+export const FUENTES = {
+  conducirMotos: 'Cuestionario Clase C – conducirmotos.cl',
+} as const;
