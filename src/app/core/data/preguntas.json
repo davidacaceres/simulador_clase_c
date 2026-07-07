@@ -10727,7 +10727,7 @@
     "categoria": "conduccion",
     "tipo": "unica",
     "enunciado": "Usted desea adelantar. ¿Cuál o cuáles de las siguientes afirmaciones es(son) verdadera(s)?",
-    "imagen": null,
+    "imagen": "assets/img/situaciones/CU-105.png",
     "alternativas": [
       "El camión tiene la obligación de correrse hacia la berma para dejarle a usted más espacio.",
       "El auto que viene en sentido contrario tiene la obligación de correrse a la berma para aumentar la seguridad.",
