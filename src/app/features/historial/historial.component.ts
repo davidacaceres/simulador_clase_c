@@ -68,14 +68,14 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
               <ng-container *ngIf="it.certificado as c; else formEmision">
                 <span class="folio">N° {{ c.folio }} · {{ c.nombre }}</span>
                 <button class="btn btn-secundario btn-sm" (click)="reimprimir(it)">
-                  Reimprimir certificado (PDF)
+                  Reimprimir y enviar por WhatsApp
                 </button>
               </ng-container>
               <ng-template #formEmision>
                 <form class="cert-form" (submit)="emitir(it, nom.value, cor.value); $event.preventDefault()">
                   <input #nom type="text" placeholder="Nombre completo" />
                   <input #cor type="email" placeholder="Correo" />
-                  <button class="btn btn-primario btn-sm" type="submit">Emitir certificado</button>
+                  <button class="btn btn-primario btn-sm" type="submit">Emitir y enviar por WhatsApp</button>
                 </form>
               </ng-template>
             </div>
@@ -171,6 +171,7 @@ export class HistorialComponent implements OnInit {
       emitido: new Date(c.emitido),
       reimpresion: new Date(),
     });
+    this.certificadoSrv.abrirWhatsApp(c.folio, it.puntaje, it.puntajeMaximo);
   }
 
   /** Emite por primera vez el certificado desde el historial y lo guarda. */
@@ -190,6 +191,7 @@ export class HistorialComponent implements OnInit {
     });
     this.historial.guardarCertificado(it.id, { folio, nombre: n, correo: co, emitido: emitido.toISOString() });
     this.intentos.set(this.historial.obtenerIntentos());
+    this.certificadoSrv.abrirWhatsApp(folio, it.puntaje, it.puntajeMaximo);
   }
 
   tasaAprobacion = computed(() => {

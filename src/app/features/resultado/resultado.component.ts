@@ -45,11 +45,12 @@ import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-
           >
             <input #nombreRef type="text" placeholder="Nombre completo" aria-label="Nombre completo" />
             <input #correoRef type="email" placeholder="Correo electrónico" aria-label="Correo electrónico" />
-            <button class="btn btn-primario" type="submit">Descargar certificado (PDF)</button>
+            <button class="btn btn-primario" type="submit">Descargar y enviar por WhatsApp</button>
           </form>
           <p class="cert-error" *ngIf="certError()">{{ certError() }}</p>
           <p class="cert-nota">
-            Documento de práctica; no es oficial ni acredita la aprobación del examen municipal.
+            Se descarga el PDF y se abre el WhatsApp de Conducir Motos con un mensaje listo; solo
+            adjunta el archivo descargado para enviarlo. Documento de práctica, no oficial.
           </p>
         </div>
       </div>
@@ -201,6 +202,8 @@ export class ResultadoComponent implements OnInit {
         emitido: emitido.toISOString(),
       });
     }
+    // abre WhatsApp de Conducir Motos con el mensaje (el PDF se adjunta manualmente)
+    this.certificadoSrv.abrirWhatsApp(folio, r.puntaje, r.puntajeMaximo);
   }
 
   inicio(): void { this.router.navigate(['/']); }
