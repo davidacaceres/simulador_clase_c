@@ -3,6 +3,8 @@ import { jsPDF } from 'jspdf';
 import { Resultado, RespuestaUsuario } from '../models/resultado.model';
 // Formato/textos del certificado, editables en este JSON (se aplica al recompilar).
 import cfg from '../data/certificado.config.json';
+// Timbre de aprobación (imagen base64) que se estampa en el certificado.
+import { TIMBRE_APROBADO } from '../data/timbre.data';
 
 /** Datos del postulante para el certificado. */
 export interface DatosCertificado {
@@ -64,9 +66,17 @@ export class CertificadoService {
     doc.setLineWidth(2);
     doc.rect(margen / 2, margen / 2, W - margen, H - margen);
 
-    let y = margen + 24;
+    let y = margen + 4;
 
-    // Encabezado
+    // Encabezado de página: N° certificado (izq) y fecha de emisión (der)
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    setTxt(doc, col.suave);
+    doc.text(`${et.numero}: ${folio}`, margen, y);
+    doc.text(`${et.emitido}: ${this.fechaHora(emitido)}`, W - margen, y, { align: 'right' });
+    y += 24;
+
+    // Título
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(22);
     setTxt(doc, col.primario);
@@ -78,18 +88,6 @@ export class CertificadoService {
     doc.text(cfg.subtitulo, W / 2, y, { align: 'center' });
     y += 14;
     doc.text(cfg.organizacion, W / 2, y, { align: 'center' });
-
-    // Marca de reimpresión
-    if (reimpresion) {
-      y += 18;
-      doc.setFont('helvetica', 'bold');
-      doc.setFontSize(11);
-      setTxt(doc, col.incorrecta);
-      const banner = cfg.reimpresionBanner
-        .replace('{folio}', folio)
-        .replace('{fecha}', this.fechaHora(reimpresion));
-      doc.text(banner, W / 2, y, { align: 'center' });
-    }
 
     // Línea
     y += 18;
@@ -124,20 +122,7 @@ export class CertificadoService {
       margen,
       y,
     );
-    y += 20;
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(10);
-    setTxt(doc, col.suave);
-    doc.text(`${et.numero}: ${folio}`, margen, y);
-    doc.text(`${et.emitido}: ${this.fechaHora(emitido)}`, W - margen, y, { align: 'right' });
-    y += 14;
-    if (reimpresion) {
-      setTxt(doc, col.incorrecta);
-      doc.text(`${et.reimpreso}: ${this.fechaHora(reimpresion)}`, W - margen, y, { align: 'right' });
-      setTxt(doc, col.suave);
-      y += 12;
-    }
-    y += 8;
+    y += 22;
 
     // Tabla de detalle en DOS columnas (para que las 35 preguntas quepan en una página)
     doc.setDrawColor(200, 200, 200);
@@ -194,9 +179,34 @@ export class CertificadoService {
     doc.setDrawColor(200, 200, 200);
     doc.line(margen, y, W - margen, y);
     y += 16;
+    // Aviso a la izquierda para dejar espacio al timbre a la derecha
     doc.setFontSize(8);
     setTxt(doc, col.suave);
-    doc.text(doc.splitTextToSize(cfg.aviso, W - margen * 2), margen, y);
+    doc.text(doc.splitTextToSize(cfg.aviso, W - margen * 2 - 150), margen, y);
+
+    // Timbre de aprobación (esquina inferior derecha) con enlace a la web
+    const timbre = 130;
+    const tx = W - margen - timbre;
+    const ty = H - margen - timbre;
+    try {
+      doc.addImage(TIMBRE_APROBADO, 'PNG', tx, ty, timbre, timbre);
+      if (cfg.timbreEnlace) {
+        doc.link(tx, ty, timbre, timbre, { url: cfg.timbreEnlace });
+      }
+    } catch {
+      /* si el timbre no está disponible, se omite */
+    }
+
+    // Pie de página: aviso de reimpresión (único lugar donde se indica)
+    if (reimpresion) {
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(9);
+      setTxt(doc, col.incorrecta);
+      const banner = cfg.reimpresionBanner
+        .replace('{folio}', folio)
+        .replace('{fecha}', this.fechaHora(reimpresion));
+      doc.text(banner, W / 2, H - margen / 2 - 8, { align: 'center' });
+    }
 
     doc.save(`${cfg.nombreArchivo}-${folio}.pdf`);
   }

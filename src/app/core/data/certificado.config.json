@@ -20,6 +20,7 @@
   "reimpresionBanner": "REIMPRESIÓN · Copia del certificado {folio} · Reimpreso el {fecha}",
   "aviso": "Este documento es generado por un simulador de práctica con fines de estudio. NO constituye un documento oficial ni acredita la aprobación del examen teórico municipal ni la obtención de la licencia de conducir. El examen oficial se rinde en las direcciones de tránsito municipales.",
   "nombreArchivo": "certificado-clase-c",
+  "timbreEnlace": "https://www.conducirmotos.cl/",
   "colores": {
     "primario": [20, 33, 61],
     "acento": [245, 166, 35],
