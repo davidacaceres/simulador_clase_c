@@ -78,6 +78,20 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
               [mostrarFeedback]="true"
               [deshabilitado]="true"
             />
+
+            <div class="nav-preg mt-16">
+              <button class="btn btn-secundario" (click)="anterior()" [disabled]="indiceActual() <= 0">
+                ← Anterior
+              </button>
+              <span class="pos">{{ indiceActual() + 1 }} / {{ filtradas().length }}</span>
+              <button
+                class="btn btn-secundario"
+                (click)="siguiente()"
+                [disabled]="indiceActual() < 0 || indiceActual() >= filtradas().length - 1"
+              >
+                Siguiente →
+              </button>
+            </div>
           </ng-container>
           <ng-template #vacio>
             <div class="card"><p>Elige una pregunta del panel de la izquierda.</p></div>
@@ -141,6 +155,8 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
       .id-btn:hover { border-color: var(--color-primario); color: var(--color-texto); }
       .id-btn.conimg { border-left: 3px solid var(--color-acento); }
       .id-btn.activa { background: var(--color-primario); color: var(--color-sobre-primario); border-color: var(--color-primario); }
+      .nav-preg { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+      .nav-preg .pos { font-size: 0.85rem; color: var(--color-texto-suave); font-variant-numeric: tabular-nums; }
     `,
   ],
 })
@@ -163,6 +179,11 @@ export class VerPreguntaComponent implements OnInit {
         (this.categoriaSel() === '' || p.categoria === this.categoriaSel()),
     ),
   );
+  /** Posición de la pregunta seleccionada dentro de la lista filtrada (-1 si no está). */
+  indiceActual = computed(() => {
+    const sel = this.seleccionada();
+    return sel ? this.filtradas().findIndex((q) => q.id === sel.id) : -1;
+  });
 
   ngOnInit(): void {
     this.banco.obtenerTodas().subscribe((ps) => {
@@ -179,6 +200,17 @@ export class VerPreguntaComponent implements OnInit {
     this.seleccionada.set(q);
     // refleja el id en la URL sin recargar
     this.router.navigate(['/pregunta', q.id]);
+  }
+
+  anterior(): void {
+    const i = this.indiceActual();
+    if (i > 0) this.elegir(this.filtradas()[i - 1]);
+  }
+
+  siguiente(): void {
+    const i = this.indiceActual();
+    const lista = this.filtradas();
+    if (i >= 0 && i < lista.length - 1) this.elegir(lista[i + 1]);
   }
 
   vacioEmparejamiento(p: Pregunta): number[] {
