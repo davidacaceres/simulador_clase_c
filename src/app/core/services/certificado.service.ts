@@ -32,20 +32,19 @@ export interface OpcionesCertificado {
 @Injectable({ providedIn: 'root' })
 export class CertificadoService {
   private readonly letras = ['A', 'B', 'C', 'D', 'E', 'F'];
-  /** Número de WhatsApp de Conducir Motos (formato internacional sin +). */
-  private readonly whatsapp = '56991206186';
 
   /**
-   * Abre el chat de WhatsApp de Conducir Motos con un mensaje listo referenciando
-   * el certificado. NOTA: por seguridad, el navegador/WhatsApp NO permiten adjuntar
-   * el archivo automáticamente; el usuario adjunta el PDF descargado manualmente.
+   * Abre el chat de WhatsApp de Conducir Motos con un mensaje listo (definido en
+   * certificado.config.json) referenciando el certificado. NOTA: por seguridad, el
+   * navegador/WhatsApp NO permiten adjuntar el archivo automáticamente; el usuario
+   * adjunta el PDF descargado manualmente.
    */
   abrirWhatsApp(folio: string, puntaje: number, puntajeMaximo: number): void {
-    const msg =
-      `Hola Conducir Motos 🏍️. Aprobé el examen teórico del simulador Clase C.\n` +
-      `Certificado N° ${folio} — ${puntaje}/${puntajeMaximo} puntos.\n` +
-      `Adjunto el PDF del certificado.`;
-    const url = `https://wa.me/${this.whatsapp}?text=${encodeURIComponent(msg)}`;
+    const msg = cfg.whatsappMensaje
+      .replace('{folio}', folio)
+      .replace('{puntaje}', String(puntaje))
+      .replace('{max}', String(puntajeMaximo));
+    const url = `https://wa.me/${cfg.whatsappNumero}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
   }
 
