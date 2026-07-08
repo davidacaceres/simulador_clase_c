@@ -163,6 +163,7 @@ import { BarraProgresoComponent } from '../../shared/barra-progreso/barra-progre
         gap: 12px;
         flex-wrap: wrap;
       }
+      .barra-superior app-barra-progreso { flex: 1 1 200px; }
       .navegador { display: flex; flex-wrap: wrap; gap: 6px; }
       .chip {
         width: 36px;

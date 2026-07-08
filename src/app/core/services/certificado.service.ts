@@ -123,40 +123,51 @@ export class CertificadoService {
     }
     y += 8;
 
-    // Tabla de detalle
+    // Tabla de detalle en DOS columnas (para que las 35 preguntas quepan en una página)
     doc.setDrawColor(200, 200, 200);
     doc.setLineWidth(0.5);
+    const total = resultado.revision.length;
+    const mitad = Math.ceil(total / 2);
+    const colGap = 20;
+    const anchoCol = (W - 2 * margen - colGap) / 2;
+    const xL = margen;
+    const xR = margen + anchoCol + colGap;
+    const off = { n: 0, cod: 20, sel: 68, res: anchoCol - 52 };
+    const rowH = 15;
+
+    // Cabecera de ambas columnas
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(10);
+    doc.setFontSize(9);
     setTxt(doc, col.texto);
-    const cols = { n: margen, cod: margen + 40, sel: margen + 160, res: W - margen - 80 };
-    doc.text(et.colNumero, cols.n, y);
-    doc.text(et.colCodigo, cols.cod, y);
-    doc.text(et.colSeleccion, cols.sel, y);
-    doc.text(et.colResultado, cols.res, y);
-    y += 6;
+    for (const xBase of [xL, xR]) {
+      doc.text(et.colNumero, xBase + off.n, y);
+      doc.text(et.colCodigo, xBase + off.cod, y);
+      doc.text(et.colSeleccion, xBase + off.sel, y);
+      doc.text(et.colResultado, xBase + off.res, y);
+    }
+    y += 5;
     doc.line(margen, y, W - margen, y);
-    y += 14;
+    const tablaTop = y + 12;
 
     doc.setFont('helvetica', 'normal');
     resultado.revision.forEach((rev, i) => {
-      if (y > H - margen - 40) {
-        doc.addPage();
-        y = margen + 20;
-      }
+      const enSegunda = i >= mitad;
+      const xBase = enSegunda ? xR : xL;
+      const fila = enSegunda ? i - mitad : i;
+      const yRow = tablaTop + fila * rowH;
       setTxt(doc, col.texto);
-      doc.text(String(i + 1), cols.n, y);
-      doc.text(rev.pregunta.id, cols.cod, y);
-      doc.text(this.formatoSeleccion(rev), cols.sel, y, { maxWidth: cols.res - cols.sel - 10 });
+      doc.text(String(i + 1), xBase + off.n, yRow);
+      doc.text(rev.pregunta.id, xBase + off.cod, yRow);
+      doc.text(this.formatoSeleccion(rev), xBase + off.sel, yRow, { maxWidth: off.res - off.sel - 6 });
       if (rev.correcta) {
         setTxt(doc, col.correcta);
-        doc.text(et.correcta, cols.res, y);
+        doc.text(et.correcta, xBase + off.res, yRow);
       } else {
         setTxt(doc, col.incorrecta);
-        doc.text(rev.indicesElegidos.length ? et.incorrecta : et.sinResponder, cols.res, y);
+        doc.text(rev.indicesElegidos.length ? et.incorrecta : et.sinResponder, xBase + off.res, yRow);
       }
-      y += 16;
     });
+    y = tablaTop + mitad * rowH + 4;
 
     // Aviso legal
     if (y > H - margen - 60) {

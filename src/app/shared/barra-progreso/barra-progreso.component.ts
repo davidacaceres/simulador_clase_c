@@ -25,13 +25,16 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [
     `
+      :host { display: block; width: 100%; }
       .wrap { width: 100%; }
       .etiqueta {
         display: flex;
         justify-content: space-between;
+        gap: 12px;
         font-size: 0.8rem;
         color: var(--color-texto-suave);
         margin-bottom: 6px;
+        white-space: nowrap;
       }
       .pista {
         height: 8px;
