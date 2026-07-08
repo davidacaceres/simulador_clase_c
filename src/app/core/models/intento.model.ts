@@ -23,4 +23,27 @@ export interface Intento {
   aprobado: boolean;
   /** Ids de preguntas falladas, para el modo Repaso de errores. */
   idsFalladas: string[];
+  /** Detalle por pregunta (para reimprimir el certificado desde el historial). */
+  detalle?: DetalleRespuesta[];
+  /** Datos del certificado emitido (para reimpresión desde el historial). */
+  certificado?: EmisionCertificado;
+}
+
+/** Datos de la emisión original del certificado (para reimpresión). */
+export interface EmisionCertificado {
+  folio: string;
+  nombre: string;
+  correo: string;
+  /** Fecha ISO de emisión original. */
+  emitido: string;
+}
+
+/** Detalle mínimo de una respuesta, guardado para reconstruir el certificado. */
+export interface DetalleRespuesta {
+  /** Código de la pregunta. */
+  id: string;
+  /** Índices elegidos por el postulante. */
+  seleccion: number[];
+  /** true si la respuesta fue correcta. */
+  correcta: boolean;
 }

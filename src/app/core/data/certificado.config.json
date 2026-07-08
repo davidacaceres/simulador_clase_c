@@ -1,0 +1,31 @@
+{
+  "titulo": "CERTIFICADO DIGITAL",
+  "subtitulo": "Simulador Examen Teórico · Licencia de Conducir Clase C (Motocicletas)",
+  "organizacion": "Conducir Motos · conducirmotos.cl",
+  "cuerpo": "Se certifica que la persona individualizada a continuación rindió satisfactoriamente el examen teórico simulado para la Licencia de Conducir Clase C, obteniendo el resultado APROBADO.",
+  "etiquetas": {
+    "puntaje": "Puntaje obtenido",
+    "resultado": "Resultado: APROBADO",
+    "numero": "N° certificado",
+    "emitido": "Emitido",
+    "reimpreso": "Reimpreso",
+    "colNumero": "N°",
+    "colCodigo": "Código",
+    "colSeleccion": "Tu selección",
+    "colResultado": "Resultado",
+    "correcta": "Correcta",
+    "incorrecta": "Incorrecta",
+    "sinResponder": "Sin resp."
+  },
+  "reimpresionBanner": "REIMPRESIÓN · Copia del certificado {folio} · Reimpreso el {fecha}",
+  "aviso": "Este documento es generado por un simulador de práctica con fines de estudio. NO constituye un documento oficial ni acredita la aprobación del examen teórico municipal ni la obtención de la licencia de conducir. El examen oficial se rinde en las direcciones de tránsito municipales.",
+  "nombreArchivo": "certificado-clase-c",
+  "colores": {
+    "primario": [20, 33, 61],
+    "acento": [245, 166, 35],
+    "correcta": [46, 125, 50],
+    "incorrecta": [198, 40, 40],
+    "texto": [30, 30, 30],
+    "suave": [90, 90, 90]
+  }
+}

@@ -341,8 +341,15 @@ export class ExamenComponent implements OnInit, OnDestroy {
       puntajeMaximo: resultado.puntajeMaximo,
       aprobado: resultado.aprobado,
       idsFalladas: resultado.revision.filter((r) => !r.correcta).map((r) => r.pregunta.id),
+      // detalle para poder reimprimir el certificado desde el historial
+      detalle: resultado.revision.map((r) => ({
+        id: r.pregunta.id,
+        seleccion: r.indicesElegidos,
+        correcta: r.correcta,
+      })),
     };
     this.historial.guardarIntento(intento);
+    this.examenSrv.ultimoIntentoId.set(intento.id);
 
     this.router.navigate(['/resultado']);
   }

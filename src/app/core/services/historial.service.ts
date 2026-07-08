@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Intento } from '../models/intento.model';
+import { Intento, EmisionCertificado } from '../models/intento.model';
 
 const CLAVE_HISTORIAL = 'sim_clasec_historial';
 const CLAVE_FALLADAS = 'sim_clasec_falladas';
@@ -37,6 +37,16 @@ export class HistorialService {
     } catch {
       return [];
     }
+  }
+
+  /** Guarda los datos del certificado emitido en el intento correspondiente. */
+  guardarCertificado(intentoId: string, emision: EmisionCertificado): void {
+    if (!this.disponible) return;
+    const historial = this.obtenerIntentos();
+    const it = historial.find((x) => x.id === intentoId);
+    if (!it) return;
+    it.certificado = emision;
+    localStorage.setItem(CLAVE_HISTORIAL, JSON.stringify(historial));
   }
 
   /** Ids de las preguntas falladas en el último intento (para Repaso de errores). */

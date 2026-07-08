@@ -1,8 +1,10 @@
-import { Component, OnInit, computed, inject } from '@angular/core';
+import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 import { ExamenService, EXAMEN_CONFIG } from '../../core/services/examen.service';
+import { CertificadoService } from '../../core/services/certificado.service';
+import { HistorialService } from '../../core/services/historial.service';
 import { PreguntaCardComponent } from '../../shared/pregunta-card/pregunta-card.component';
 import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/emparejamiento-card.component';
 import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-badge.component';
@@ -29,6 +31,26 @@ import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-
         <div class="acciones mt-16">
           <button class="btn btn-secundario" (click)="inicio()">Inicio</button>
           <button class="btn btn-primario" (click)="repetir()">Repetir examen</button>
+        </div>
+
+        <!-- Certificado digital (solo si aprobó) -->
+        <div class="certificado mt-24" *ngIf="r.aprobado">
+          <h3>🎓 Certificado digital</h3>
+          <p class="cert-ayuda">
+            Genera un certificado en PDF de esta práctica aprobada, con tu puntaje y el detalle.
+          </p>
+          <form
+            class="cert-form"
+            (submit)="emitirCertificado(nombreRef.value, correoRef.value); $event.preventDefault()"
+          >
+            <input #nombreRef type="text" placeholder="Nombre completo" aria-label="Nombre completo" />
+            <input #correoRef type="email" placeholder="Correo electrónico" aria-label="Correo electrónico" />
+            <button class="btn btn-primario" type="submit">Descargar certificado (PDF)</button>
+          </form>
+          <p class="cert-error" *ngIf="certError()">{{ certError() }}</p>
+          <p class="cert-nota">
+            Documento de práctica; no es oficial ni acredita la aprobación del examen municipal.
+          </p>
         </div>
       </div>
 
@@ -109,15 +131,37 @@ import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-
         font-weight: 700;
         text-transform: uppercase;
       }
+      .certificado {
+        width: 100%;
+        border-top: 1px solid var(--color-borde);
+        padding-top: 16px;
+      }
+      .certificado h3 { margin: 0 0 4px; }
+      .cert-ayuda { margin: 0 0 12px; font-size: 0.9rem; color: var(--color-texto-suave); }
+      .cert-form { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+      .cert-form input {
+        flex: 1 1 220px;
+        padding: 12px;
+        border-radius: var(--radio);
+        border: 2px solid var(--color-borde);
+        background: var(--color-superficie-2);
+        color: var(--color-texto);
+        font-size: 1rem;
+      }
+      .cert-error { color: var(--color-error); font-size: 0.85rem; margin: 8px 0 0; }
+      .cert-nota { margin: 10px 0 0; font-size: 0.75rem; color: var(--color-texto-suave); }
     `,
   ],
 })
 export class ResultadoComponent implements OnInit {
   private examenSrv = inject(ExamenService);
+  private certificadoSrv = inject(CertificadoService);
+  private historialSrv = inject(HistorialService);
   private router = inject(Router);
 
   readonly minimo = EXAMEN_CONFIG.puntajeMinimo;
   resultado = this.examenSrv.ultimoResultado;
+  certError = signal('');
 
   reproboPorDobles = computed(() => {
     const r = this.resultado();
@@ -127,6 +171,35 @@ export class ResultadoComponent implements OnInit {
   ngOnInit(): void {
     if (!this.resultado()) {
       this.router.navigate(['/']);
+    }
+  }
+
+  emitirCertificado(nombre: string, correo: string): void {
+    const n = nombre.trim();
+    const c = correo.trim();
+    if (n.length < 3) {
+      this.certError.set('Ingresa tu nombre completo.');
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c)) {
+      this.certError.set('Ingresa un correo electrónico válido.');
+      return;
+    }
+    const r = this.resultado();
+    if (!r || !r.aprobado) return;
+    this.certError.set('');
+    const emitido = new Date();
+    const folio = this.certificadoSrv.generarFolio(emitido);
+    this.certificadoSrv.generar({ datos: { nombre: n, correo: c }, resultado: r, folio, emitido });
+    // guarda la emisión en el intento para poder reimprimir desde el historial
+    const idIntento = this.examenSrv.ultimoIntentoId();
+    if (idIntento) {
+      this.historialSrv.guardarCertificado(idIntento, {
+        folio,
+        nombre: n,
+        correo: c,
+        emitido: emitido.toISOString(),
+      });
     }
   }
 

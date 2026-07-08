@@ -51,6 +51,7 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
             <button
               *ngFor="let q of filtradas()"
               class="id-btn"
+              [attr.id]="'idbtn-' + q.id"
               [class.activa]="seleccionada()?.id === q.id"
               [class.conimg]="q.imagen"
               (click)="elegir(q)"
@@ -200,6 +201,10 @@ export class VerPreguntaComponent implements OnInit {
     this.seleccionada.set(q);
     // refleja el id en la URL sin recargar
     this.router.navigate(['/pregunta', q.id]);
+    // desplaza el botón activo a la vista dentro de la lista
+    setTimeout(() => {
+      document.getElementById('idbtn-' + q.id)?.scrollIntoView({ block: 'nearest' });
+    });
   }
 
   anterior(): void {

@@ -36,6 +36,8 @@ export const DISTRIBUCION_EXAMEN: Record<string, number> = {
 export class ExamenService {
   /** Último resultado calculado (en memoria, no se persiste). */
   readonly ultimoResultado = signal<Resultado | null>(null);
+  /** Id del último intento guardado en el historial (para vincular el certificado). */
+  readonly ultimoIntentoId = signal<string | null>(null);
 
   /**
    * Arma un examen realista:
