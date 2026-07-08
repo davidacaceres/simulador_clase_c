@@ -18,37 +18,14 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
   standalone: true,
   imports: [CommonModule, RouterLink, PreguntaCardComponent, EmparejamientoCardComponent],
   template: `
-    <div class="contenedor">
+    <div class="wrap">
       <div class="cab">
         <h2>Verificador de preguntas</h2>
         <a class="btn btn-secundario" routerLink="/">Inicio</a>
       </div>
 
       <div class="layout">
-        <!-- Detalle (izquierda) -->
-        <div class="detalle">
-          <ng-container *ngIf="seleccionada() as p; else vacio">
-            <app-pregunta-card
-              *ngIf="p.tipo !== 'emparejamiento'"
-              [pregunta]="p"
-              [seleccionados]="[]"
-              [mostrarFeedback]="true"
-              [deshabilitado]="true"
-            />
-            <app-emparejamiento-card
-              *ngIf="p.tipo === 'emparejamiento'"
-              [pregunta]="p"
-              [seleccionados]="vacioEmparejamiento(p)"
-              [mostrarFeedback]="true"
-              [deshabilitado]="true"
-            />
-          </ng-container>
-          <ng-template #vacio>
-            <div class="card"><p>Elige una pregunta del panel de la derecha.</p></div>
-          </ng-template>
-        </div>
-
-        <!-- Panel (derecha): filtros + ids -->
+        <!-- Panel (izquierda): filtros + ids -->
         <aside class="panel">
           <label class="campo">
             <span>Fuente</span>
@@ -83,24 +60,52 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
             </button>
           </div>
         </aside>
+
+        <!-- Detalle (derecha) -->
+        <div class="detalle">
+          <ng-container *ngIf="seleccionada() as p; else vacio">
+            <app-pregunta-card
+              *ngIf="p.tipo !== 'emparejamiento'"
+              [pregunta]="p"
+              [seleccionados]="[]"
+              [mostrarFeedback]="true"
+              [deshabilitado]="true"
+            />
+            <app-emparejamiento-card
+              *ngIf="p.tipo === 'emparejamiento'"
+              [pregunta]="p"
+              [seleccionados]="vacioEmparejamiento(p)"
+              [mostrarFeedback]="true"
+              [deshabilitado]="true"
+            />
+          </ng-container>
+          <ng-template #vacio>
+            <div class="card"><p>Elige una pregunta del panel de la izquierda.</p></div>
+          </ng-template>
+        </div>
       </div>
     </div>
   `,
   styles: [
     `
+      /* Ancho completo del browser (layout fluido, se adapta solo) */
+      .wrap { width: 100%; padding: 16px 24px; box-sizing: border-box; }
       .cab { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-      .layout { display: flex; gap: 20px; align-items: flex-start; margin-top: 12px; flex-wrap: wrap; }
-      .detalle { flex: 1 1 340px; min-width: 0; }
+      .layout { display: flex; gap: 24px; align-items: flex-start; margin-top: 12px; flex-wrap: wrap; }
+      /* Panel de filtros + ids a la izquierda (ancho fijo) */
       .panel {
-        flex: 0 0 260px;
+        flex: 0 0 340px;
         position: sticky;
         top: 12px;
         display: flex;
         flex-direction: column;
         gap: 10px;
       }
-      @media (max-width: 700px) {
-        .panel { flex: 1 1 100%; position: static; order: -1; }
+      /* Detalle de la pregunta a la derecha (ocupa el resto del ancho) */
+      .detalle { flex: 1 1 480px; min-width: 0; }
+      @media (max-width: 760px) {
+        .wrap { padding: 12px; }
+        .panel { flex: 1 1 100%; position: static; }
       }
       .campo { display: flex; flex-direction: column; gap: 4px; font-size: 0.8rem; color: var(--color-texto-suave); }
       .campo select {
@@ -116,7 +121,7 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
         display: flex;
         flex-wrap: wrap;
         gap: 6px;
-        max-height: 60vh;
+        max-height: 72vh;
         overflow-y: auto;
         padding: 4px;
         border: 1px solid var(--color-borde);
