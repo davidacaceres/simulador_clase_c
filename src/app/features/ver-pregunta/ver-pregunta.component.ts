@@ -1,15 +1,17 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 import { BancoPreguntasService } from '../../core/services/banco-preguntas.service';
 import { Pregunta } from '../../core/models/pregunta.model';
+import { CATEGORIAS } from '../../core/enums/categoria.enum';
 import { PreguntaCardComponent } from '../../shared/pregunta-card/pregunta-card.component';
 import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/emparejamiento-card.component';
 
 /**
- * Muestra UNA pregunta por su id (desde la URL: /#/pregunta/CU-051), con la
- * respuesta correcta y la explicación reveladas. Sirve para revisar y corregir.
+ * Verificador de preguntas: filtra por fuente y categoría, lista los ids como
+ * botones a la derecha y muestra a la izquierda la pregunta seleccionada con su
+ * respuesta correcta, explicación, referencia y fuente reveladas.
  */
 @Component({
   selector: 'app-ver-pregunta',
@@ -17,55 +19,123 @@ import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/em
   imports: [CommonModule, RouterLink, PreguntaCardComponent, EmparejamientoCardComponent],
   template: `
     <div class="contenedor">
-      <h2>Ver pregunta por id</h2>
-
-      <form class="buscador" (submit)="buscar(idInput.value); $event.preventDefault()">
-        <input #idInput type="text" [value]="id()" placeholder="Ej: CU-051" aria-label="Id de la pregunta" />
-        <button class="btn btn-primario" type="submit">Ir</button>
+      <div class="cab">
+        <h2>Verificador de preguntas</h2>
         <a class="btn btn-secundario" routerLink="/">Inicio</a>
-      </form>
+      </div>
 
-      <ng-container *ngIf="!cargando()">
-        <ng-container *ngIf="pregunta() as p; else noExiste">
-          <app-pregunta-card
-            *ngIf="p.tipo !== 'emparejamiento'"
-            class="mt-16"
-            [pregunta]="p"
-            [seleccionados]="[]"
-            [mostrarFeedback]="true"
-            [deshabilitado]="true"
-          />
-          <app-emparejamiento-card
-            *ngIf="p.tipo === 'emparejamiento'"
-            class="mt-16"
-            [pregunta]="p"
-            [seleccionados]="vacioEmparejamiento(p)"
-            [mostrarFeedback]="true"
-            [deshabilitado]="true"
-          />
-        </ng-container>
-        <ng-template #noExiste>
-          <div class="card mt-16" *ngIf="id()">
-            <p>No existe una pregunta con id <strong>{{ id() }}</strong>.</p>
+      <div class="layout">
+        <!-- Detalle (izquierda) -->
+        <div class="detalle">
+          <ng-container *ngIf="seleccionada() as p; else vacio">
+            <app-pregunta-card
+              *ngIf="p.tipo !== 'emparejamiento'"
+              [pregunta]="p"
+              [seleccionados]="[]"
+              [mostrarFeedback]="true"
+              [deshabilitado]="true"
+            />
+            <app-emparejamiento-card
+              *ngIf="p.tipo === 'emparejamiento'"
+              [pregunta]="p"
+              [seleccionados]="vacioEmparejamiento(p)"
+              [mostrarFeedback]="true"
+              [deshabilitado]="true"
+            />
+          </ng-container>
+          <ng-template #vacio>
+            <div class="card"><p>Elige una pregunta del panel de la derecha.</p></div>
+          </ng-template>
+        </div>
+
+        <!-- Panel (derecha): filtros + ids -->
+        <aside class="panel">
+          <label class="campo">
+            <span>Fuente</span>
+            <select (change)="fuenteSel.set($any($event.target).value)">
+              <option value="">Todas las fuentes</option>
+              <option *ngFor="let f of fuentes()" [value]="f" [selected]="fuenteSel() === f">{{ f }}</option>
+            </select>
+          </label>
+
+          <label class="campo">
+            <span>Categoría</span>
+            <select (change)="categoriaSel.set($any($event.target).value)">
+              <option value="">Todas las categorías</option>
+              <option *ngFor="let c of categorias" [value]="c.clave" [selected]="categoriaSel() === c.clave">
+                {{ c.nombre }}
+              </option>
+            </select>
+          </label>
+
+          <p class="conteo">{{ filtradas().length }} preguntas</p>
+
+          <div class="ids">
+            <button
+              *ngFor="let q of filtradas()"
+              class="id-btn"
+              [class.activa]="seleccionada()?.id === q.id"
+              [class.conimg]="q.imagen"
+              (click)="elegir(q)"
+              [title]="q.enunciado"
+            >
+              {{ q.id }}
+            </button>
           </div>
-        </ng-template>
-      </ng-container>
+        </aside>
+      </div>
     </div>
   `,
   styles: [
     `
-      .buscador { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-      .buscador input {
-        flex: 1 1 160px;
-        padding: 12px;
+      .cab { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+      .layout { display: flex; gap: 20px; align-items: flex-start; margin-top: 12px; flex-wrap: wrap; }
+      .detalle { flex: 1 1 340px; min-width: 0; }
+      .panel {
+        flex: 0 0 260px;
+        position: sticky;
+        top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      @media (max-width: 700px) {
+        .panel { flex: 1 1 100%; position: static; order: -1; }
+      }
+      .campo { display: flex; flex-direction: column; gap: 4px; font-size: 0.8rem; color: var(--color-texto-suave); }
+      .campo select {
+        padding: 10px;
         border-radius: var(--radio);
         border: 2px solid var(--color-borde);
         background: var(--color-superficie-2);
         color: var(--color-texto);
-        font-size: 1rem;
-        font-family: monospace;
-        text-transform: uppercase;
+        font-size: 0.9rem;
       }
+      .conteo { margin: 4px 0; font-size: 0.8rem; color: var(--color-texto-suave); }
+      .ids {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        max-height: 60vh;
+        overflow-y: auto;
+        padding: 4px;
+        border: 1px solid var(--color-borde);
+        border-radius: var(--radio);
+        background: var(--color-superficie);
+      }
+      .id-btn {
+        font-family: monospace;
+        font-size: 0.72rem;
+        padding: 5px 7px;
+        border-radius: 6px;
+        border: 1px solid var(--color-borde);
+        background: var(--color-superficie-2);
+        color: var(--color-texto-suave);
+        cursor: pointer;
+      }
+      .id-btn:hover { border-color: var(--color-primario); color: var(--color-texto); }
+      .id-btn.conimg { border-left: 3px solid var(--color-acento); }
+      .id-btn.activa { background: var(--color-primario); color: var(--color-sobre-primario); border-color: var(--color-primario); }
     `,
   ],
 })
@@ -74,33 +144,38 @@ export class VerPreguntaComponent implements OnInit {
   private ruta = inject(ActivatedRoute);
   private router = inject(Router);
 
-  id = signal('');
-  pregunta = signal<Pregunta | null>(null);
-  cargando = signal(true);
+  readonly categorias = CATEGORIAS;
+  todas = signal<Pregunta[]>([]);
+  fuenteSel = signal('');
+  categoriaSel = signal('');
+  seleccionada = signal<Pregunta | null>(null);
+
+  fuentes = computed(() => [...new Set(this.todas().map((p) => p.fuente))].sort());
+  filtradas = computed(() =>
+    this.todas().filter(
+      (p) =>
+        (this.fuenteSel() === '' || p.fuente === this.fuenteSel()) &&
+        (this.categoriaSel() === '' || p.categoria === this.categoriaSel()),
+    ),
+  );
 
   ngOnInit(): void {
-    this.ruta.paramMap.subscribe((params) => {
-      const id = params.get('id') ?? '';
-      this.id.set(id);
-      if (!id) {
-        this.pregunta.set(null);
-        this.cargando.set(false);
-        return;
+    this.banco.obtenerTodas().subscribe((ps) => {
+      this.todas.set(ps);
+      const id = this.ruta.snapshot.paramMap.get('id');
+      if (id) {
+        const q = ps.find((p) => p.id.toUpperCase() === id.toUpperCase());
+        if (q) this.seleccionada.set(q);
       }
-      this.cargando.set(true);
-      this.banco.obtenerPorId(id).subscribe((p) => {
-        this.pregunta.set(p ?? null);
-        this.cargando.set(false);
-      });
     });
   }
 
-  buscar(valor: string): void {
-    const id = valor.trim();
-    if (id) this.router.navigate(['/pregunta', id.toUpperCase()]);
+  elegir(q: Pregunta): void {
+    this.seleccionada.set(q);
+    // refleja el id en la URL sin recargar
+    this.router.navigate(['/pregunta', q.id]);
   }
 
-  /** Arreglo de -1 (sin elegir) del largo de los ítems, para mostrar el emparejamiento sin respuestas. */
   vacioEmparejamiento(p: Pregunta): number[] {
     return new Array(p.items?.length ?? 0).fill(-1);
   }
