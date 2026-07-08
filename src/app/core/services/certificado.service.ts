@@ -132,7 +132,7 @@ export class CertificadoService {
     const anchoCol = (W - 2 * margen - colGap) / 2;
     const xL = margen;
     const xR = margen + anchoCol + colGap;
-    const off = { n: 0, cod: 20, sel: 68, res: anchoCol - 52 };
+    const off = { n: 0, cod: 22, res: 74 };
     const rowH = 15;
 
     // Cabecera de ambas columnas
@@ -142,7 +142,6 @@ export class CertificadoService {
     for (const xBase of [xL, xR]) {
       doc.text(et.colNumero, xBase + off.n, y);
       doc.text(et.colCodigo, xBase + off.cod, y);
-      doc.text(et.colSeleccion, xBase + off.sel, y);
       doc.text(et.colResultado, xBase + off.res, y);
     }
     y += 5;
@@ -158,13 +157,16 @@ export class CertificadoService {
       setTxt(doc, col.texto);
       doc.text(String(i + 1), xBase + off.n, yRow);
       doc.text(rev.pregunta.id, xBase + off.cod, yRow);
-      doc.text(this.formatoSeleccion(rev), xBase + off.sel, yRow, { maxWidth: off.res - off.sel - 6 });
+      // Columna Resultado: "Correcta" o, si es errónea, incluye la selección marcada
       if (rev.correcta) {
         setTxt(doc, col.correcta);
         doc.text(et.correcta, xBase + off.res, yRow);
       } else {
         setTxt(doc, col.incorrecta);
-        doc.text(rev.indicesElegidos.length ? et.incorrecta : et.sinResponder, xBase + off.res, yRow);
+        const texto = rev.indicesElegidos.length
+          ? `${et.incorrecta} (${this.formatoSeleccion(rev)})`
+          : et.sinResponder;
+        doc.text(texto, xBase + off.res, yRow, { maxWidth: anchoCol - off.res });
       }
     });
     y = tablaTop + mitad * rowH + 4;
