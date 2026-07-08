@@ -8390,7 +8390,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Detenerse e investigar el problema..",
+    "explicacion": "Un fuerte olor a gasolina indica una posible fuga en el sistema de combustible (estanque, conductos o carburador), y los vapores de la gasolina son inflamables y peligrosos, por lo que constituyen un riesgo real de incendio. Por eso lo correcto es detenerse e investigar el problema antes de seguir. No es cierto que sean 'sólo gases de escape', pues éstos tienen otro olor y contienen monóxido de carbono, y continuar circulando, aunque sea lento o poca distancia, mantiene y agrava el peligro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8412,7 +8412,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para tener un adecuado control de los pedales..",
+    "explicacion": "El calzado del motociclista debe ser cerrado, firme y con planta antideslizante porque los pies operan los pedales de la moto (palanca de cambios y freno trasero); un zapato adecuado permite accionarlos con precisión y sin resbalar, dando un control seguro del vehículo. Las demás alternativas mencionan aspectos secundarios (desgaste de gomas, rapidez de cambios o caminar), que no son la razón principal de seguridad para usar un calzado apropiado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8434,7 +8434,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando los neumáticos están fríos..",
+    "explicacion": "La presión debe medirse siempre con los neumáticos fríos, ya que al rodar o circular a alta velocidad el aire se calienta y se dilata, mostrando una presión más alta que la real. Por eso medirla después de un viaje largo, tras alta velocidad o con los neumáticos calientes entrega un valor falso; el libro recomienda que el neumático lleve al menos 2 horas sin rodar o menos de 3 km a baja velocidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8455,7 +8455,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando los neumáticos están fríos..",
+    "explicacion": "La presión debe revisarse con los neumáticos fríos porque el calor generado al rodar dilata el aire y aumenta la lectura, dando una medición equivocada. No da lo mismo el momento ni sirve medir en caliente: sólo en frío se obtiene el valor correcto que indica el fabricante.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8477,7 +8477,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para ayudar a evitar que el vehículo se roncee..",
+    "explicacion": "Mantener la presión indicada por el fabricante asegura la superficie de contacto y la adherencia correctas del neumático con el pavimento, lo que ayuda a evitar que el vehículo derrape o se ronce, sobre todo al frenar o en curvas. Una presión demasiado baja provoca dirección pesada e inestabilidad (zigzagueo) y una demasiado alta reduce el agarre; en cambio, la presión correcta no busca 'la altura del vehículo' ni proteger el motor, sino la seguridad al conducir.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8499,7 +8499,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Frecuentes frenadas y aceleraciones..",
+    "explicacion": "Las frenadas y aceleraciones frecuentes obligan al motor a entregar y perder energía de forma repetida, lo que eleva notoriamente el consumo de combustible; por eso el libro recomienda planificar la conducción, anticiparse y soltar el acelerador a tiempo para ahorrar combustible y frenos. Conducir en marchas altas y de forma suave reduce el consumo, y las fallas de dirección no son la causa típica de un alto gasto de combustible.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8521,7 +8521,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Fumar.",
+    "explicacion": "En una estación de servicio nunca se debe fumar, porque los vapores de la gasolina son altamente inflamables y una llama o brasa puede provocar un incendio o explosión. Circular por ella, comer o lavar la motocicleta no representan ese riesgo directo de ignición de los vapores del combustible.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8543,7 +8543,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: reduce el control del conductor..",
+    "explicacion": "Desenganchar el motor (circular con el embrague presionado o en punto muerto) elimina el freno motor y desconecta la tracción, de modo que el conductor pierde dominio sobre el vehículo. Por eso la afirmación correcta es que reduce el control del conductor; no lo mejora ni facilita las maniobras, y el efecto principal es la pérdida de control, no el consumo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8565,7 +8565,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque no hay frenado del motor..",
+    "explicacion": "Al desenganchar el motor se pierde el frenado del motor, es decir, la retención que éste ejerce cuando está engranado y se suelta el acelerador; sin ese freno motor la moto rueda libre y es más difícil controlar la velocidad. El motor no se detiene ni hace resbalar al vehículo por sí mismo; el problema concreto es quedarse sin ese apoyo de frenado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8589,7 +8589,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque tendrá menor control del frenado y dirección. | Porque el vehículo agarrará velocidad..",
+    "explicacion": "Al ir cuesta abajo no debe desengancharse el motor porque, sin freno motor ni tracción, el conductor tiene menor control del frenado y la dirección y, además, el vehículo agarra velocidad por acción de la gravedad. El libro recomienda bajar en una marcha baja para que el motor ayude a frenar y no se recalienten los frenos; el mayor consumo, el desgaste de neumáticos o el daño al motor no son las razones principales.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8611,7 +8611,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque reduce su control sobre el vehículo..",
+    "explicacion": "No se debe circular con el embrague presionado más tiempo del necesario porque al hacerlo se desengancha el motor y se pierde el freno motor y la tracción, reduciendo el control sobre la motocicleta. El libro advierte expresamente no mantener accionado el embrague de más; el desgaste de la caja o el consumo son consecuencias menores frente a la pérdida de control, que es el riesgo principal.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8633,7 +8633,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Sí, porque el mayor o menor desgaste de los neumáticos, entre otros factores, determinará que dicha distancia sea mayor o menor..",
+    "explicacion": "En pavimento mojado el estado de los neumáticos sí influye en la distancia de frenado: la profundidad de los surcos permite desalojar el agua y mantener la adherencia, por lo que a mayor desgaste hay menos agarre y mayor distancia para detenerse. La distancia de frenado no depende sólo de la velocidad ni es fija para cada vehículo; varía según el estado del camino y de los neumáticos, entre otros factores.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8656,7 +8656,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La misión del silenciador es reducir el nivel de ruido. | Los gases de escape contienen monóxido de carbono, que carece de olor y es incoloro..",
+    "explicacion": "Son verdaderas que la misión del silenciador es reducir el nivel de ruido y que los gases de escape contienen monóxido de carbono, un gas tóxico incoloro y sin olor. Son falsas las otras: los gases de escape sí son peligrosos para la salud y los vapores de la gasolina no son inocuos, sino inflamables y nocivos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8678,7 +8678,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conducir con neumáticos desgastados irregularmente hace más riesgosa la conducción..",
+    "explicacion": "Es verdadera que conducir con neumáticos desgastados irregularmente hace más riesgosa la conducción, porque disminuye y hace irregular la adherencia con el pavimento. Las demás son falsas: 1 mm de surco no es suficiente (se requiere cambiar bajo 1,6 mm), el desgaste central se debe a exceso de aire (sobreinflado) y no a poco aire, y los rayos sueltos o cortados sí afectan la seguridad y la estabilidad de la moto.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8703,7 +8703,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Debe ser del tipo integral. | Debe tener una visera o mica sin manchas ni rayas. | Debe ser del tamaño adecuado, de modo que quede bien ajustado. | No debe haber sufrido un impacto fuerte..",
+    "explicacion": "Todas las condiciones son necesarias para que el casco sea un verdadero elemento de seguridad: el tipo integral es el que más protege, la visera o mica debe estar sin manchas ni rayas para no obstaculizar la visión, debe ser de la talla adecuada para quedar bien ajustado y girar junto con la cabeza, y no debe haber sufrido un impacto fuerte, porque un casco golpeado pierde su capacidad de protección aunque no muestre daños visibles y debe desecharse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8727,7 +8727,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Es conveniente que el motociclista use un traje de seguridad, de cuero y con protecciones especiales para la espalda, rodillas, hombros y codos. | La mejor protección para los pies y pantorrillas de un motociclista la puede brindar un buen par de botas de seguridad. | Los cascos de buena calidad tienen fecha de vencimiento..",
+    "explicacion": "Son verdaderas que conviene usar un traje de seguridad de cuero con protecciones para espalda, rodillas, hombros y codos, que las botas de seguridad son la mejor protección para pies y pantorrillas, y que los cascos de buena calidad tienen fecha de vencimiento porque sus materiales se degradan con el tiempo. Es falsa la afirmación sobre los guantes: precisamente el libro recomienda usar guantes (de cuero) como parte del equipo de protección del motociclista.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8749,7 +8749,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Las luces | Los espejos.",
+    "explicacion": "Debe mantener limpios las luces y los espejos, porque las luces sucias reducen su visibilidad y la de los demás, y los espejos sucios impiden ver claramente lo que ocurre detrás. Los neumáticos no requieren mantenerse 'limpios' como elemento de visión o señalización; en ellos lo importante es su presión, desgaste y estado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8771,7 +8771,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se ven más afectados por las condiciones y estado de la carpeta de rodado..",
+    "explicacion": "El motociclista es más vulnerable porque se ve mucho más afectado por las condiciones y el estado de la carpeta de rodado: al apoyarse sólo en dos ruedas y con menor superficie de contacto, cualquier bache, derrame, gravilla o mojado puede hacerle perder el equilibrio y el control. No es que circule o vire necesariamente más rápido ni que acelere más que un auto; su fragilidad frente al estado del camino es el factor determinante.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8793,7 +8793,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: 52 metros.",
+    "explicacion": "La distancia de detención es la suma de la distancia de reacción y la de frenado. Al duplicar la velocidad, la distancia de reacción se duplica (de 10 a 20 m) y la de frenado se cuadruplica porque crece con el cuadrado de la velocidad (de 8 a 32 m); sumadas dan 20 + 32 = 52 metros, por lo que la respuesta correcta es 52 metros.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8815,7 +8815,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se duplica la energía cinética..",
+    "explicacion": "La afirmación falsa es que 'se duplica la energía cinética', porque al pasar de 30 a 60 km/h (el doble de velocidad) la energía cinética se cuadruplica, no se duplica. Son verdaderas las otras: la energía cinética se cuadruplica, la distancia de reacción se duplica (crece de forma proporcional a la velocidad) y la distancia de frenado se cuadruplica (crece con el cuadrado de la velocidad).",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8837,7 +8837,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Entre 800 y 1000 metros..",
+    "explicacion": "Un tren que circula a unos 100 km/h necesita aproximadamente entre 800 y 1000 metros para detenerse, debido a su enorme masa y a la escasa fricción entre las ruedas de acero y los rieles. Por eso jamás debe cruzar ni disputarle el paso: no puede frenar en distancias cortas como un vehículo, y las cifras menores (100 o 200 m) subestiman gravemente esa realidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8859,7 +8859,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mantener una adecuada distancia de separación entre vehículos..",
+    "explicacion": "Lo más importante para no chocar al vehículo de adelante es mantener una adecuada distancia de separación, ya que ese espacio le da tiempo para reaccionar y frenar si el otro se detiene bruscamente. Aunque tener buenos frenos y neumáticos ayuda, de nada sirven si va demasiado cerca; y una velocidad constante por sí sola no garantiza el espacio necesario para detenerse a tiempo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8881,7 +8881,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se cuadruplica..",
+    "explicacion": "La distancia de frenado crece con el cuadrado de la velocidad, de modo que al duplicar la velocidad la distancia de frenado se cuadruplica (aumenta cuatro veces). Por eso conviene reducir la velocidad con anticipación: pequeños aumentos de velocidad producen incrementos mucho mayores en la distancia necesaria para detenerse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8903,7 +8903,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Seleccionar una marcha baja..",
+    "explicacion": "En una pendiente larga conviene seleccionar una marcha baja para que el motor ayude a frenar (freno motor) y controle la velocidad sin recalentar los frenos por su uso continuo. Poner neutro o presionar el embrague desengancha el motor y hace perder ese frenado y el dominio del vehículo; tomar firme el manubrio no regula la velocidad de descenso.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8925,7 +8925,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Guiar cuidadosamente hacia la izquierda..",
+    "explicacion": "Cuando la rueda trasera resbala (patina) hacia la izquierda al virar a la derecha, se debe guiar cuidadosamente hacia la izquierda, es decir, girar suavemente en el mismo sentido de la patinada para recuperar el control y realinear la moto. Frenar con fuerza o accionar el embrague de golpe agrava el derrape, y girar hacia la derecha (contra la patinada) haría perder aún más la estabilidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8947,7 +8947,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Seleccionar un cambio bajo y usar los frenos cuidadosamente..",
+    "explicacion": "Antes de una pendiente muy pronunciada conviene seleccionar un cambio bajo, para aprovechar el freno motor, y usar los frenos con cuidado, aplicándolos de forma suave e intermitente para no recalentarlos ni bloquear las ruedas. Un cambio alto no aporta retención del motor y frenar firmemente de manera continua recalienta los frenos y puede provocar pérdida de control; tampoco se debe evitar del todo el freno.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8972,7 +8972,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La velocidad. | El estado de los frenos y neumáticos. | Las condiciones climáticas..",
+    "explicacion": "En la distancia de frenado influyen la velocidad (crece con su cuadrado), el estado de los frenos y neumáticos (adherencia y capacidad de frenado) y las condiciones climáticas (un pavimento mojado alarga la distancia). El alumbrado público y la hora del día no afectan la distancia física de frenado; sólo influyen en la visibilidad y en la distancia de reacción, no en cuánto recorre el vehículo una vez accionado el freno.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -8994,7 +8994,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Unos 20 metros..",
+    "explicacion": "El tramo que se recorre desde que se percibe el peligro hasta que se empieza a frenar es la distancia de reacción. El libro indica que puede estimarse multiplicando por tres la primera cifra de la velocidad: a 70 km/h, 7 x 3 da unos 21 metros, es decir, aproximadamente 20 metros. Las cifras de 5, 8 o 30 metros no corresponden a ese cálculo ni a la velocidad indicada.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9016,7 +9016,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: 1 segundo.",
+    "explicacion": "Según el libro, un tiempo normal de reacción de un conductor ante un imprevisto es de un segundo. Por eso la respuesta correcta es 1 segundo. Un valor de 2 segundos ya sería excesivo para una persona atenta, y 0,1 segundo o 0,1 minuto (6 segundos) son físicamente irreales para reaccionar frente al tránsito.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9041,7 +9041,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Quien sobrestima sus habilidades para conducir conduce con frecuencia demasiado rápido. | Quien sobrestima sus habilidades para conducir crea situaciones de riesgo a menudo. | Con frecuencia, los muchachos jóvenes sobrestiman sus habilidades, conducen a velocidades excesivas y se ven más involucrados en accidentes que otros. | Muchos conductores jóvenes muestran deficiencias en su madurez personal..",
+    "explicacion": "Las cuatro afirmaciones son verdaderas y así lo describe el libro: quien sobrestima sus habilidades tiende a conducir demasiado rápido y a generar situaciones de riesgo. Además, señala expresamente que los conductores jóvenes sobrestiman sus capacidades, conducen a velocidades excesivas, se ven más involucrados en siniestros y muestran deficiencias en su madurez personal. Por ello todas las alternativas deben marcarse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9065,7 +9065,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Durante la infancia, antes de llegar a la edad escolar, las personas son egocéntricas y piensan sobre todo en ellas mismas. | Los conocimientos y la experiencia hacen que las personas se vuelvan más comprensivas. | El comportamiento que tiene una persona como conductor muestra cuánto ha avanzado en el desarrollo de su moral..",
+    "explicacion": "El libro explica que durante la infancia las personas son egocéntricas y piensan sobre todo en sí mismas, que los conocimientos y la experiencia las vuelven más comprensivas, y que la conducta al conducir refleja cuánto se ha avanzado en el desarrollo moral (opciones a, b y d). La afirmación de que la moral es innata e inmodificable es falsa, precisamente porque el texto presenta la moral como algo que se desarrolla y evoluciona con el tiempo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9088,7 +9088,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No sobrestima sus habilidades; tiene un buen conocimiento de sí mismo. | Cuenta con que otros pueden cometer errores y los acepta..",
+    "explicacion": "La madurez personal se demuestra teniendo un buen conocimiento de sí mismo sin sobrestimar las propias habilidades, y aceptando que los demás pueden cometer errores, considerando su conducta producto de ignorancia y no intencionada (opciones a y d). Mantener el vehículo en buen estado o conocer las normas del tránsito son cualidades valiosas, pero corresponden a la aptitud técnica y al conocimiento, no a la madurez personal que pregunta el enunciado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9110,7 +9110,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: En situaciones reales, que requieren reacciones complejas, los conductores experimentados reaccionan en un tiempo más corto que los jóvenes inexpertos..",
+    "explicacion": "El libro aclara que en situaciones reales que exigen reacciones complejas, donde hay que interpretar rápidamente muchas impresiones, los conductores experimentados reaccionan en un tiempo más corto que los jóvenes inexpertos, siendo el grupo de 35 a 50 años el más rápido. Por eso la ventaja de reacción del joven se limita a estímulos simples y esperados. Las demás alternativas son falsas porque el texto desmiente que el joven reaccione siempre más rápido o que no existan diferencias.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9135,7 +9135,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conduce con prudencia y hace todo lo posible por evitar accidentes. | Es considerado y amable con los demás conductores y con los peatones. | Es respetuoso, no obstaculiza ni perturba al resto. | Conduce con buen criterio..",
+    "explicacion": "Un conductor seguro reúne las cuatro características: conduce con prudencia evitando siniestros, es considerado y amable con conductores y peatones, es respetuoso y no obstaculiza a los demás, y conduce con buen criterio. El libro vincula la seguridad con la responsabilidad, la consideración hacia los demás y el respeto por el espíritu de las normas, por lo que todas las alternativas son correctas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9159,7 +9159,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Por lo general, son muy inseguras de sí mismas. | Sienten temor a ser motivo de bromas y risas de los demás..",
+    "explicacion": "El libro señala que las personas que ceden con facilidad a la presión del grupo suelen ser muy inseguras de sí mismas y temen quedar en ridículo o ser objeto de bromas y risas (opciones a y b). En cambio, tener mayor autonomía, ser seguro de sí mismo o poder soportar que lo tilden de cobarde son rasgos de quienes resisten esa presión, por lo que no corresponden a la pregunta.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9182,7 +9182,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que el conductor esté muy cansado o bajo los efectos del alcohol. | Que el conductor sobrestime sus capacidades y conduzca a exceso de velocidad..",
+    "explicacion": "En los siniestros de carretera con un solo vehículo involucrado, los factores más frecuentes son el conductor muy cansado o bajo los efectos del alcohol, y la sobrestimación de las propias capacidades con exceso de velocidad (opciones b y d). El libro asocia estos siniestros con la fatiga, el alcohol y la velocidad inadecuada. No tener licencia o consumir medicamentos son factores menos determinantes en este tipo específico de accidente.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9204,7 +9204,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Los errores de los conductores..",
+    "explicacion": "El factor que con mayor frecuencia se presenta en los siniestros de tránsito es el error del conductor, es decir, el factor humano, que el libro identifica como el principal causante de las situaciones de riesgo. Las condiciones climáticas, el estado de calles y caminos y las fallas mecánicas influyen, pero intervienen con mucha menor frecuencia que las conductas y errores de las personas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9226,7 +9226,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El estrés no influye en absoluto en los actos de un conductor..",
+    "explicacion": "La afirmación falsa es que el estrés no influye en absoluto en los actos del conductor. El libro explica que un grado demasiado alto de estrés reduce el campo de atención, puede provocar reacciones impulsivas o de pánico, y que un cierto grado moderado de estrés puede incluso mejorar el rendimiento. Por lo tanto, sostener que no tiene ninguna influencia contradice lo que el texto describe.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9249,7 +9249,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que actúe sin pensar en las consecuencias. | Que efectúe maniobras sorpresivas que sorprendan a los demás..",
+    "explicacion": "El conductor impulsivo actúa sin pensar en las consecuencias y realiza maniobras sorpresivas que sorprenden a los demás usuarios de la vía (opciones b y d). El libro define la impulsividad como actuar sin prever las consecuencias, lo que hace perder el control del vehículo o sorprender al resto. Por eso no cabe esperar que reaccione adecuadamente ni que conduzca con excesiva precaución.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9271,7 +9271,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Contar siempre con tiempo de sobra al conducir..",
+    "explicacion": "El mejor consejo para conducir con seguridad es contar siempre con tiempo de sobra, porque el apuro lleva a subestimar los riesgos, a exceder la velocidad y a reprimir la percepción del peligro. Mantener el vehículo en buen estado, respetar los límites de velocidad y evitar conducir de noche son medidas útiles, pero la disponibilidad de tiempo es la que más previene las conductas riesgosas descritas en el libro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9294,7 +9294,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Contando siempre con tiempo de sobra para conducir. | Conduciendo a la defensiva..",
+    "explicacion": "Se contribuye con mayor eficacia a la seguridad de tránsito contando siempre con tiempo de sobra para conducir y conduciendo a la defensiva (opciones a y d). El libro destaca que el apuro lleva a subestimar riesgos y que anticiparse a los posibles errores de los demás previene siniestros. Mantener el vehículo óptimo o evitar la noche ayudan, pero no son las dos formas más eficaces frente al factor humano.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9317,7 +9317,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La capacidad de reacción de una persona se ve afectada con pequeñas concentraciones de alcohol en su organismo. | Con pequeñas concentraciones de alcohol en el organismo de un individuo, disminuyen ciertas inhibiciones y tiende a sobrestimar sus capacidades..",
+    "explicacion": "Son verdaderas que la capacidad de reacción se ve afectada con pequeñas concentraciones de alcohol y que estas disminuyen las inhibiciones haciendo que la persona sobrestime sus capacidades (opciones a y c), tal como describe el libro. Es falso que el café acelere la eliminación del alcohol, pues la metabolización ocurre a un ritmo constante que no se apura, y también es falso que dos tragos no afecten el juicio del conductor experimentado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9339,7 +9339,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Si la cantidad de alcohol ingerida en cada ocasión es exactamente la misma, la concentración de alcohol en la sangre también será la misma..",
+    "explicacion": "La afirmación falsa es que, ingiriendo la misma cantidad de alcohol, la concentración en la sangre será siempre la misma. El libro indica que la alcoholemia depende de varios factores como la masa corporal, el sexo, el tiempo que dura la ingesta y la comida ingerida, por lo que puede variar de una ocasión a otra aunque se beba lo mismo. Las demás afirmaciones son correctas porque reconocen esa variabilidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9362,7 +9362,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El campo visual se reduce, ya que a esa velocidad se tiende a fijar la mirada recta a lo lejos. | Resulta más difícil percibir movimientos a los lados de la carretera..",
+    "explicacion": "A unos 100 km/h el campo visual se reduce (fenómeno de visión de túnel), ya que a mayor velocidad se fija la mirada más lejos y recta, y resulta más difícil percibir los movimientos a los lados de la carretera (opciones b y c). El libro describe este encogimiento del campo visual con la velocidad. Es falso que la visión se adapte automáticamente y se perciba igual que a baja velocidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9384,7 +9384,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se comienza a sentir falta de interés y aparecen los bostezos..",
+    "explicacion": "El libro señala que la primera señal de cansancio se manifiesta como falta de interés e indolencia por la actividad, y que poco a poco aparece el primer bostezo. Por eso la respuesta correcta es la falta de interés y los bostezos. El calor, la dificultad para mantener la dirección o los párpados que se cierran son síntomas de fases más avanzadas del cansancio, no los primeros.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9406,7 +9406,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Varios conductores que ven lo mismo perciben las situaciones de tránsito también del mismo modo..",
+    "explicacion": "La afirmación falsa es que varios conductores que ven lo mismo perciben las situaciones del mismo modo. El libro explica, mediante el concepto de percepción selectiva, que cada persona ve principalmente lo que le interesa y espera ver, y que la interpretación de un hecho puede ser muy diferente entre una persona y otra. Las demás afirmaciones son verdaderas, incluso que a conductores experimentados les pasan inadvertidas informaciones importantes.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9431,7 +9431,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El factor humano es el principal causante de que surjan situaciones de riesgo en el tránsito. | La falta de atención a las condiciones del tránsito es una de las principales causa de accidentes. | Un conductor que va con mucha prisa tiende a subestimar los riesgos. | Estar pendiente de la música de su “personal stereo” aumenta las posibilidades de pasar por alto circunstancias importantes en el tránsito..",
+    "explicacion": "Las cuatro afirmaciones son verdaderas: el factor humano es el principal causante de las situaciones de riesgo, la falta de atención es una de las principales causas de siniestros, el conductor apurado tiende a subestimar los riesgos, y distraerse con la música de un personal stereo aumenta la probabilidad de pasar por alto circunstancias importantes. El libro respalda todas estas ideas al tratar las distracciones y la percepción selectiva.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9453,7 +9453,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Los conductores inexpertos c oncentran su mirada en puntos fijos..",
+    "explicacion": "La afirmación verdadera es que los conductores inexpertos concentran su mirada en puntos fijos y en lo que está cerca del vehículo. El libro indica que, en cambio, los conductores con experiencia aprovechan mejor su visión periférica gracias a una técnica de localización más sistemática. Por eso son falsas las opciones que atribuyen al inexperto un buen uso de la visión periférica o una observación más sistemática, o que niegan diferencias entre ambos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9477,7 +9477,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El tener una buena visión es imprescindible para poder captar las diversas situaciones que se presentan a conducir. | Existe un alto riesgo de que los conductores cuyo campo visual no es lo suficientemente amplio, no alcancen a reaccionar a tiempo ante peligros provenientes de los lados. | Si usted conduce durante un largo tiempo en condiciones difíciles, puede tener problemas para apreciar correctamente lo que ve y, por lo tanto, tomar decisiones equivocadas..",
+    "explicacion": "Son verdaderas que una buena visión es imprescindible para captar las situaciones del tránsito, que un campo visual insuficiente eleva el riesgo de no reaccionar a tiempo ante peligros laterales, y que conducir largo tiempo en condiciones difíciles puede llevar a apreciar mal lo que se ve y a decidir equivocadamente (opciones a, b y c). Es falso que los jóvenes sean más sensibles al deslumbramiento que los mayores; la sensibilidad a la luz deslumbrante aumenta con la edad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9501,7 +9501,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando va por un camino montañoso y con muchas sinuosidades, y la visibilidad es muy mala. | Cuando usted está muy cansado, especialmente si conduce de noche. | Cuando va por carretera y existe una densa niebla..",
+    "explicacion": "El riesgo de interpretar erróneamente la realidad es alto cuando la visibilidad es mala en un camino montañoso y sinuoso, cuando se está muy cansado y sobre todo conduciendo de noche, y cuando hay densa niebla (opciones a, b y c). El libro relaciona estas condiciones difíciles con errores de percepción e interpretación. En cambio, con buena visibilidad y buenas demarcaciones el riesgo de malinterpretar la realidad es bajo, por lo que esa opción no corresponde.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9523,7 +9523,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Preguntar a su doctor..",
+    "explicacion": "Si toma un remedio para la tos y no está seguro de cómo afecta su conducción, debe preguntar a su médico. El libro advierte que algunos medicamentos disminuyen la atención y aumentan el tiempo de reacción, y recomienda informarse consultando al médico tratante o el prospecto, sin automedicarse ni guiarse por consejos de amigos o parientes. Por eso esperar un rato o conducir por sentirse bien no reemplaza la orientación profesional.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9545,7 +9545,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Solicitar consejo médico antes de conducir..",
+    "explicacion": "Si toma remedios que probablemente afectarán su conducción, lo correcto es solicitar consejo médico antes de conducir. El libro subraya que es responsabilidad del conductor informarse sobre los efectos de los medicamentos con su médico tratante. Limitar el viaje, ir acompañado o conducir solo distancias cortas no elimina el riesgo de que el fármaco disminuya la atención o aumente el tiempo de reacción.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9567,7 +9567,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque algunas medicinas pueden hacer que sus reacciones sean más lentas..",
+    "explicacion": "Debe consultar al médico porque algunas medicinas pueden hacer que sus reacciones sean más lentas. El libro señala que ciertos medicamentos disminuyen la atención y aumentan el tiempo de reacción al conducir, lo que compromete la seguridad. Es falso que las drogas o medicinas aceleren las reacciones; ese es el efecto contrario al real, por lo que las demás alternativas no reflejan la razón principal para consultar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9593,7 +9593,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Su capacidad de coordinación se reducirá. | Su autoconfianza se incrementará. | Su juicio empeorará..",
+    "explicacion": "Tras ingerir alcohol lo más probable es que se reduzca la capacidad de coordinación, aumente la autoconfianza y empeore el juicio (opciones a, b y e). El libro indica que el alcohol afecta la coordinación y la reacción, fortalece la autoconfianza llevando a sobrestimar las propias capacidades y deteriora la interpretación y la decisión. Por eso son falsas la ceguera al color, las reacciones más rápidas y el aumento de la concentración, que en realidad disminuye.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9615,7 +9615,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Reduce su concentración..",
+    "explicacion": "El libro señala que los primeros efectos del alcohol se manifiestan en el ámbito psicológico: atención, percepción y procesamiento de la información, afectando además la capacidad de reacción y coordinación. Por eso lo correcto es que el alcohol reduce su concentración. Las otras alternativas son falsas: el alcohol no acelera las reacciones (las hace más lentas), no aumenta la lucidez ni mejora la coordinación, sino todo lo contrario.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9637,7 +9637,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que se vuelva a casa en taxi..",
+    "explicacion": "La única tasa de alcohol segura para conducir es cero, y el organismo elimina el alcohol a un ritmo constante que no se acelera con café ni con esperar un rato. Por ello, si ya se ha bebido, lo correcto es no conducir y volver a casa en taxi. Tomar café o conducir lento y cuidadoso no eliminan el alcohol ni recuperan las capacidades deterioradas, y esperar un rato rara vez basta para reducir la tasa a cero.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9659,7 +9659,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Tratar de no reaccionar..",
+    "explicacion": "El libro advierte que responder con agresividad a la conducta de otro conductor solo genera nuevas reacciones agresivas y lleva a decisiones impulsivas y peligrosas. Por eso lo prudente es tratar de no reaccionar y mantener la calma. Hacerle saber su molestia, encender y apagar las luces o tocar la bocina solo escalan el conflicto y aumentan el riesgo de un siniestro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9681,7 +9681,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: no manejar..",
+    "explicacion": "El estado físico y de salud del conductor influye directamente en su capacidad de atención y reacción, por lo que conducir enfermo aumenta el riesgo de siniestro. Lo correcto es no manejar. Automedicarse antes de conducir puede empeorar la situación (muchos remedios producen somnolencia), y acortar el viaje o conducir solo distancias cortas no elimina el deterioro de las capacidades mientras se está enfermo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9703,7 +9703,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Si un conductor está cansado, lo mejor es que escuche música de un “personal stereo”..",
+    "explicacion": "El libro indica que el cansancio es una causa importante de siniestros en carretera y que empeora la capacidad de reacción, la atención y la concentración, siendo la desorientación un síntoma claro de fatiga. La afirmación falsa es que ante el cansancio lo mejor sea escuchar música de un personal stereo: eso no combate el sueño y distrae del tránsito. Frente a la somnolencia lo único eficaz es detenerse a descansar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9725,7 +9725,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Detenerse y dormir una pequeña siesta o detenerse y tomar un poco de café..",
+    "explicacion": "El libro recomienda que, ante los primeros síntomas de cansancio, hay que detenerse a descansar, estirar las piernas, tomar aire fresco y dormir una siesta breve (20 minutos) o tomar café. Por eso la respuesta correcta combina detenerse y dormir una pequeña siesta o tomar café. Comer una gran comida da somnolencia, respirar profundo no repone el descanso y terminar el viaje antes de dormir prolonga la conducción riesgosa.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9747,7 +9747,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Evitar consumir alcohol..",
+    "explicacion": "El libro es enfático en que la única tasa de alcohol segura para conducir es cero, por lo que si se va a conducir se debe evitar el consumo de alcohol. Beber café no acelera la eliminación del alcohol, y cambiar de calles o beber con el estómago lleno no evita el deterioro de las capacidades: el alcohol igualmente afecta la reacción, la atención y la coordinación.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9769,7 +9769,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mayor conciencia del peligro..",
+    "explicacion": "El alcohol genera una falsa sensación de confianza, disminuye el control del vehículo y deteriora el juicio sobre la velocidad, tal como describe el libro al reducir las inhibiciones y sobrestimar las capacidades. Lo que NO produce el alcohol es una mayor conciencia del peligro; al contrario, la reduce, haciendo que el conductor subestime los riesgos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9791,7 +9791,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La percepción de colores..",
+    "explicacion": "Según el libro, el alcohol afecta el tiempo de reacción, la coordinación y el juicio sobre la velocidad, y a mayores concentraciones incluso produce visión doble. Sin embargo, la percepción de los colores no es una capacidad que se vea alterada por el alcohol, por lo que esa es la respuesta correcta a lo que no se ve afectado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9813,7 +9813,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Su estado de salud..",
+    "explicacion": "El tiempo de reacción es el que transcurre desde que se percibe el peligro hasta que se actúa, y depende de las condiciones del propio conductor, como su estado de salud, cansancio o consumo de alcohol o medicamentos. Por eso el factor correcto es su estado de salud. El estado de la calzada, la velocidad y el clima influyen en la distancia de frenado o de detención, pero no en el tiempo de reacción de la persona.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9835,7 +9835,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Continuar conduciendo lentamente..",
+    "explicacion": "Cuando el peatón ya ha comenzado a cruzar la calzada, el conductor debe cederle el paso, pero en la situación mostrada puede continuar avanzando lentamente y con precaución mientras evalúa el paso del peatón, sin invadir su trayectoria. No corresponde hacerle señas para que retroceda ni detenerse solo si vienen autos detrás: la prioridad del peatón no depende del tránsito posterior.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9857,7 +9857,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para tener una mejor visual sobre el camino..",
+    "explicacion": "El libro destaca la importancia de mirar lejos y anticiparse, especialmente al enfrentar una curva. Al aproximarse a una curva hacia la izquierda, mantenerse bien a la derecha amplía el ángulo de visión y permite ver antes lo que hay más allá de la curva. No se hace para superar la pendiente ni para facilitar adelantamientos, sino para tener una mejor visual del camino y anticipar peligros.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9879,7 +9879,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Un espacio equivalente al que usted recorre en 3 segundos..",
+    "explicacion": "El libro establece la Regla de los Tres Segundos como distancia de seguimiento imprescindible al conducir a velocidad, es decir, mantener respecto del vehículo de adelante el espacio que se recorre en 3 segundos. Las medidas fijas en metros o en largos de auto no sirven, porque la distancia segura depende de la velocidad: a mayor velocidad, mayor debe ser la separación.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9901,7 +9901,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mantenerse bien a la derecha para tener una mejor visual sobre la curva..",
+    "explicacion": "Al aproximarse a una curva hacia la izquierda, mantenerse bien a la derecha entrega una mejor visual sobre la curva y permite anticipar obstáculos o vehículos que vengan en sentido contrario, en coherencia con el principio de mirar lejos. No se hace para tardar menos ni para suavizar la curva; ubicarse a la izquierda reduciría la visibilidad y acercaría al tránsito que viene de frente.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9923,7 +9923,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El niño puede cruzar corriendo..",
+    "explicacion": "El libro advierte que los niños actúan de forma impulsiva y pueden aparecer repentinamente en la calzada, por lo que el conductor debe anticiparse a su conducta. El peligro principal es que el niño cruce corriendo de improviso. Un vehículo detenido, como el del vendedor de helados, es un factor de riesgo justamente porque tras él puede surgir un niño, pero la amenaza inmediata es el niño que cruza.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9945,7 +9945,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Detenerse, luego avanzar lentamente hasta que tenga una visual plena..",
+    "explicacion": "Cuando vehículos estacionados obstruyen la visual en un cruce, el libro recomienda avanzar con máxima precaución hasta lograr ver. Lo correcto es detenerse y luego avanzar lentamente hasta tener una visual plena antes de doblar. Avanzar rápido o confiar en la bocina no reemplaza la visibilidad y expone a colisionar con vehículos o peatones que no se alcanzan a ver.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9967,7 +9967,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Disminuir la velocidad y estar preparado para detenerse si aparece un niño..",
+    "explicacion": "Una pelota rebotando en la calzada junto a autos estacionados es una señal clásica de que un niño puede aparecer corriendo detrás de ella. El libro insiste en reducir la velocidad y estar preparado para detenerse ante la posible aparición de un niño entre vehículos estacionados. Continuar a la misma velocidad tocando bocina o luces no evita el atropello, y hacer señas para que crucen los pone en riesgo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -9989,7 +9989,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: acelerar el motor o tocar la bocina..",
+    "explicacion": "El libro indica que ante la presencia de animales en la vía, como caballos, ovejas o ganado, no se deben hacer señales acústicas ni acelerar el motor, porque el ruido puede asustarlos y provocar una reacción imprevista. Por eso lo que no debe hacerse es acelerar el motor o tocar la bocina. Reducir la marcha, señalizar y mantener las luces encendidas sí son maniobras adecuadas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10014,7 +10014,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Deja un espacio lateral suficiente. | Conduce lentamente. | Está preparado para detenerse..",
+    "explicacion": "El libro recomienda reducir la velocidad y prepararse para detenerse ante animales en el camino, evitando asustarlos. Por eso, al adelantar una manada de ovejas se debe conducir lentamente, dejar un espacio lateral suficiente y estar preparado para detenerse. Adelantar rápido y sin vacilaciones o tocar la bocina asustaría a los animales y provocaría movimientos peligrosos e impredecibles.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10039,7 +10039,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Pueden salir vehículos de su estacionamiento. | Alguien puede abrir una puerta de un auto estacionado. | Entre los autos estacionados puede aparecer un niño corriendo..",
+    "explicacion": "El libro advierte que junto a vehículos estacionados hay que anticipar peligros: que un vehículo salga del estacionamiento, que alguien abra una puerta y que un niño o peatón aparezca sorpresivamente entre los autos. Esas son las tres razones para disminuir la velocidad. Activar alarmas o ser visto por el tránsito contrario no son motivos válidos de reducción de velocidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10064,7 +10064,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Peatones que puedan aparecer s orpresivamente entre autos estacionados para cruzar. | Autos que abandonen sus lugares de estacionamiento. | Puertas de automóviles estacionados que se abran..",
+    "explicacion": "Al circular junto a una fila de autos estacionados, el libro señala que el conductor debe estar atento a peatones que crucen sorpresivamente entre los vehículos, a autos que abandonen su estacionamiento y a puertas que se abran. Estos son los tres riesgos principales. Buscar lugares para estacionar o vigilar a los autos que vienen detrás no son las amenazas relevantes en esta situación.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10086,7 +10086,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Esperar a que pas e el peatón que va por la calzada..",
+    "explicacion": "Cuando un peatón ya va cruzando la calzada tiene prioridad, y el conductor debe esperar a que termine de pasar antes de continuar. Pasar rápidamente por detrás o hacerle señas para apurarlo lo pone en riesgo, y reprocharle su cruce no corresponde: la obligación del conductor es cederle el paso y esperar con seguridad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10108,7 +10108,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Continuar con precaución..",
+    "explicacion": "Cuando el conductor ya se encuentra dentro del cruce y la vía por delante está despejada, lo correcto es continuar con precaución para despejar la intersección, en coherencia con una conducción prudente y anticipada. Retroceder es peligroso e ilegal dentro del cruce, y quedarse detenido esperando otra luz bloquearía la intersección y generaría riesgo para el resto del tránsito.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10130,7 +10130,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que algún pasajero que se baje del bus puede aparecer repentinamente delante del mismo para cruzar..",
+    "explicacion": "El libro recomienda reducir la velocidad y estar preparado para detenerse al pasar cerca de un bus detenido en una parada, porque un pasajero que baja puede aparecer repentinamente en la calzada delante o detrás del bus para cruzar. Ese es el principal peligro al sobrepasarlo. Las demás situaciones son menos probables o menos graves que un peatón surgiendo de improviso frente al bus.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10152,7 +10152,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El camión va a virar a la derecha..",
+    "explicacion": "Las señales de brazo permiten comunicar las maniobras a los demás conductores; el brazo extendido horizontalmente indica la intención de virar hacia ese lado. En este caso, la señal significa que el camión va a virar a la derecha. No indica que vaya a detenerse ni autoriza a adelantar, y no debe interpretarse como un olvido de las luces de viraje.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10174,7 +10174,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: C.",
+    "explicacion": "El libro subraya la importancia de dirigir la mirada hacia el punto de donde puede surgir el mayor peligro y anticiparse a él. En esta situación lo prioritario es mirar hacia C, que corresponde a la zona de mayor riesgo (por ejemplo, la trayectoria por la que puede aparecer un vehículo o peatón que cruce su camino), sobre la cual conviene tener la máxima atención antes de continuar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10199,7 +10199,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Al ciclista que viene en sentido contrario. | A las puertas de autos que pueden ser abiertas. | A niños que pueden salir a la calzada por entre los autos..",
+    "explicacion": "Al circular junto a autos estacionados y con tránsito en sentido contrario, el libro indica anticipar varios riesgos simultáneos: el ciclista que viene de frente, las puertas de los autos estacionados que pueden abrirse y los niños que pueden salir a la calzada por entre los vehículos. Esos son los tres riesgos principales. El tránsito de la intersección lejana y los vehículos que vienen detrás son menos inmediatos que estos peligros cercanos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10222,7 +10222,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Está preparado para actuar ya que alguien puede salir corriendo a la calzada. | Está preparado para actuar ya que el bus puede ponerse en marcha..",
+    "explicacion": "La conducción defensiva exige anticipar los imprevistos aunque se respete el límite de velocidad: junto a un bus detenido en la parada, un pasajero puede aparecer corriendo a cruzar la calzada y el propio bus puede reincorporarse al tránsito, por lo que debe ir preparado para actuar (alternativas a y b). Por eso es falsa la alternativa d, ya que tener dominio del vehículo no elimina los riesgos externos; y no corresponde simplemente frenar y cederle el paso al bus (c), sino mantenerse alerta ante ambos peligros.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10244,7 +10244,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mantenerse bien atrás del camión hasta que pueda ver que tiene espacio suficiente como para adelantarlo..",
+    "explicacion": "Antes de adelantar a un vehículo largo, como un camión con remolque, el libro recomienda mantenerse suficientemente atrás para tener una buena visual del camino y comprobar que hay espacio real y seguro para completar la maniobra (alternativa a). No debe esperar que el otro conductor le \"autorice\" el adelantamiento (b) ni presionar con las luces a quienes vienen en contra (c); tampoco seguir muy de cerca desplazándose al centro (d), porque eso reduce la visibilidad y aumenta el riesgo de choque frontal.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10268,7 +10268,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que reduzca siempre la velocidad ante la presencia de barro en la calzada. | Que si lleva a un acompañante, éste vaya siempre sentado a horcajadas. | Que procure ser siempre visible para el resto de los conductores..",
+    "explicacion": "El motociclista debe reducir la velocidad ante barro en la calzada porque disminuye la adherencia (a), llevar al acompañante sentado a horcajadas y con ambos pies firmes en las estriberas (c) y procurar ser siempre visible para el resto de los conductores, ya que la moto es un vehículo pequeño y vulnerable (d). Es incorrecto acelerar antes de entrar a una curva (b): la regla es reducir la velocidad antes de la curva y acelerar suavemente recién al ir saliendo de ella.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10292,7 +10292,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que al ir detrás de otro vehículo recuerde que hay una zona que no es cubierta por los espejos retrovisores de éste. | Que es importante que el casco le quede bien ajustado. | Que reduzca su velocidad ante la presencia de arena en la calzada, especialmente en las curvas..",
+    "explicacion": "Son consejos correctos recordar que existe un punto ciego que no cubren los espejos retrovisores del vehículo de adelante (b), que el casco debe quedar bien ajustado para cumplir su función de protección (c) y reducir la velocidad ante arena en la calzada, sobre todo en curvas, por la pérdida de adherencia (d). En cambio, es peligroso circular siguiendo muy de cerca a vehículos grandes para protegerse del viento (a), ya que se pierde visibilidad y distancia de reacción, quedando además en su punto ciego.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10314,7 +10314,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Intersecciones.",
+    "explicacion": "Según el libro, la mayoría de los siniestros de tránsito se registra en los cruces de calles o intersecciones, lugares donde confluyen distintos flujos de vehículos y peatones (alternativa d). Por eso no son la respuesta las carreteras, los caminos rurales ni las salidas de colegios, que concentran una proporción menor de accidentes en comparación con las intersecciones urbanas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10336,7 +10336,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Los atropellos..",
+    "explicacion": "El libro señala que en Chile los atropellos, si bien representan alrededor del 15% de los siniestros, concentran cerca del 40% de las personas fallecidas, siendo el tipo de accidente que origina la mayor cantidad de muertos (alternativa c). El peatón es el usuario más vulnerable y sin protección, por lo que los choques entre vehículos, los choques contra obstáculos fijos y los volcamientos, aunque frecuentes, provocan proporcionalmente menos fallecidos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10358,7 +10358,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Avanzar, porque las instrucciones de un Carabinero prevalecen sobre las señales del tránsito..",
+    "explicacion": "El libro indica que cuando se enfrenta más de una instrucción, por ejemplo la de un Carabinero y la de un semáforo, prevalecen siempre las indicaciones dadas por Carabineros de Chile (alternativa b). Por eso debe avanzar cuando el Carabinero se lo ordena aunque el semáforo esté en rojo, y es incorrecto quedarse detenido por la luz roja o condicionar la maniobra a que no vengan otros vehículos o a que la luz esté por cambiar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10380,7 +10380,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando trata de prevenir a otros acerca de un peligro..",
+    "explicacion": "El libro es claro en que, como regla general, está prohibido tocar la bocina, y el único caso en que se permite es para prevenir un siniestro o advertir un peligro (alternativa c). Por lo tanto, no debe usarse para saludar, para manifestar disgusto ni para ceder el derecho a vía, usos que solo generan ruido innecesario.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10402,7 +10402,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para prevenir la ocurrencia de un accidente..",
+    "explicacion": "Al igual que en el caso anterior, el libro establece que el uso de la bocina está prohibido salvo para prevenir la ocurrencia de un accidente (alternativa d). No es correcto hacerla sonar para llamar la atención de un amigo, para que le cedan el paso ni para apurar a un conductor más lento, ya que la bocina solo cumple una función de seguridad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10424,7 +10424,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando pasado el cruce su pista no esté lo suficientemente despejada..",
+    "explicacion": "El libro advierte que, aun teniendo luz verde, no debe avanzar si pasado el cruce no dispone de espacio suficiente para despejarlo (al menos el largo de su vehículo), porque quedaría detenido bloqueando la intersección (alternativa b). No corresponde abstenerse por haber peatones esperando en la vereda, por creer que la luz cambiará ni por ir a virar a la derecha; el motivo válido es no obstruir el cruce.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10445,7 +10445,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Por la pista de la derecha..",
+    "explicacion": "El libro establece que en autopistas y carreteras se debe circular por la pista de la derecha, reservando la izquierda solo para sobrepasar. Como usted va a 90 km/h, por debajo del máximo de 100, y no hay vehículos delante, debe mantenerse en la pista derecha (alternativa b).",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10468,7 +10468,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando va a virar a la izquierda. | Al pasar a otro vehículo que va más lento..",
+    "explicacion": "La pista izquierda de una calzada con dos pistas por sentido se utiliza solo cuando se va a virar a la izquierda (a) o cuando se pasa a otro vehículo que va más lento (b); en el resto de los casos rige la obligación de circular por la derecha. Por eso son incorrectas circular normalmente por la izquierda (c) o hacerlo a velocidad muy baja (d), situaciones en que corresponde la pista derecha.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10490,7 +10490,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Sólo si recibe indicación expresa de un Carabinero..",
+    "explicacion": "En un cruce solo puede retroceder cuando se lo indique expresamente un Carabinero (alternativa d), ya que retroceder en una intersección es una maniobra riesgosa e imprevisible para el resto del tránsito y los peatones. Por eso no basta con que no venga nadie detrás, ni el haber quedado sobre el paso de peatones justifica retroceder por cuenta propia.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10512,7 +10512,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El otro vehículo, siempre que él se venga acercando al cruce por el lado derecho suyo..",
+    "explicacion": "El libro indica que al aproximarse a un cruce sin semáforo, sin Carabinero y sin señales PARE o CEDA EL PASO, usted debe dar preferencia a los vehículos que se acercan por la otra vía desde su derecha (alternativa c). La prioridad no depende del tamaño ni de la velocidad de los vehículos, sino de esta regla de la derecha.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10534,7 +10534,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El que se acerca al cruce por la izquierda del otro..",
+    "explicacion": "Es la misma regla de la prioridad de la derecha vista desde el otro lado: como debe cederse el paso a quien viene por la derecha, el que queda obligado a ceder es el vehículo que se aproxima al cruce por la izquierda del otro (alternativa d). El tamaño del vehículo o el ancho de las pistas no determinan quién cede el paso.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10557,7 +10557,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Usted está bien situado para virar a la izquierda. | Si después de virar usted volverá a virar nuevamente a la izquierda en el siguiente cruce, lo mejor es que se mantenga en la pista izquierda de la calle hacia la cual está virando..",
+    "explicacion": "En una calle de un solo sentido, para virar a la izquierda lo correcto es ubicarse bien a la izquierda, por lo que usted está bien situado (a); y si en el cruce siguiente volverá a doblar a la izquierda, conviene mantenerse en la pista izquierda de la calle a la que ingresa (b). Es falso que nunca pueda saber el sentido de la calle de destino (c) y también que no sea necesario señalizar (d), pues siempre debe advertir su intención de virar con anticipación.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10581,7 +10581,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: A | B | D.",
+    "explicacion": "Usted puede virar a la izquierda sin detenerse siempre en aquellas situaciones en que tiene el derecho preferente de paso y la vía está despejada, sin tránsito en sentido contrario ni peatones o ciclistas cruzando que lo obliguen a parar (alternativas A, B y D). Debe detenerse, en cambio, cuando carece de prioridad o cuando la presencia de otros vehículos o peatones hace necesario cederles el paso antes de completar el viraje.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10604,7 +10604,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: B | D.",
+    "explicacion": "Debe detenerse siempre frente a las indicaciones que obligan a una detención total, como la señal PARE y la luz roja del semáforo (alternativas B y D): ante PARE se detiene y solo reanuda la marcha cuando no exista posibilidad de siniestro, y ante luz roja la detención es obligatoria. En cambio, señales como CEDA EL PASO o la luz verde no obligan a detenerse siempre, sino solo a reducir la velocidad o ceder el paso cuando la proximidad de otros vehículos constituya un riesgo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10625,7 +10625,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Justo a la derecha de la línea de centro de calzada..",
+    "explicacion": "El libro indica que para virar a la izquierda desde una vía de doble sentido debe aproximarse en forma segura al costado derecho del eje o línea central de la calzada, es decir, justo a la derecha de la línea de centro (alternativa c). Ubicarse a la izquierda de ese eje lo dejaría invadiendo el sentido contrario, y mantenerse a la derecha de la calzada no permite realizar correctamente el viraje.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10646,7 +10646,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: C.",
+    "explicacion": "Según las señales manuales que describe el libro, el brazo extendido horizontalmente indica viraje a la izquierda (alternativa C). El brazo en ángulo recto hacia arriba indica viraje a la derecha y el brazo extendido hacia abajo indica disminución de velocidad o detención, por lo que no corresponden a la maniobra consultada.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10671,7 +10671,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La distancia al vehículo que viene en sentido contrario. | La longitud de la distancia de adelantamiento. | El punto de encuentro con el vehículo que viene en contra..",
+    "explicacion": "Lo más difícil de juzgar al adelantar es la distancia al vehículo que viene en sentido contrario (c), la longitud de la distancia total de adelantamiento (d) y el punto donde se producirá el encuentro con el vehículo que viene en contra (e), estimaciones que el libro describe como muy inciertas y en las que suele subestimarse la velocidad ajena. La velocidad del vehículo que va adelante y el ancho del espacio a su izquierda son más fáciles de apreciar, por lo que no son las principales dificultades.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10694,7 +10694,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conduce lo más a la derecha posible. | No acelera..",
+    "explicacion": "El libro señala que el conductor que es adelantado debe mantenerse lo más cerca posible del borde derecho de la calzada (a) y no aumentar su velocidad hasta que el otro complete la maniobra (d), facilitando así un adelantamiento seguro. Por eso no debe desplazarse a la berma para circular por ella (b) ni encender y apagar las luces (c), acciones que no ayudan y pueden confundir.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10718,7 +10718,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se mantiene lo más a la derecha posible. | Mantiene o disminuye su velocidad..",
+    "explicacion": "Aunque usted circule al máximo permitido, si otro vehículo insiste en adelantarlo debe mantenerse lo más a la derecha posible (b) y conservar o disminuir su velocidad para facilitar la maniobra (c), tal como indica el libro respecto del vehículo adelantado. Es peligroso e incorrecto acelerar para impedir el adelantamiento, acercarse a la línea de centro para bloquearlo o encender el intermitente izquierdo, ya que aumentan el riesgo del encuentro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10740,7 +10740,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Usted tiene la obligación de esperar a que la pista del sentido contrario esté libre de vehículos para luego adelantar..",
+    "explicacion": "El libro establece que ningún vehículo debe usar la pista del sentido contrario para adelantar sin que la maniobra sea segura, por lo que la obligación de esperar a que esa pista esté libre de vehículos que vienen en contra recae en quien adelanta (alternativa d). Ni el camión ni el auto que viene en sentido contrario están obligados a correrse a la berma para hacerle espacio; la responsabilidad de adelantar con seguridad es suya.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10762,7 +10762,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para tener una mejor visual hacia adelante sobre la vía..",
+    "explicacion": "Antes de adelantar a un vehículo de gran tamaño conviene mantenerse suficientemente atrás de él para tener una mejor visual hacia adelante sobre la vía y comprobar que el camino está despejado (alternativa a). No debe seguirlo de cerca esperando señales de su conductor ni pensando en acelerar en las curvas, ni por temor a que retroceda; la razón es la visibilidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10784,7 +10784,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque los camiones son más largos que los autos..",
+    "explicacion": "Adelantar a un camión es más arriesgado que adelantar a un auto porque los camiones son más largos, lo que exige recorrer una mayor distancia y demorar más tiempo invadiendo el sentido contrario (alternativa b). El libro destaca justamente que adelantar vehículos largos requiere disponer de una buena distancia despejada por delante; su mayor riesgo proviene de la longitud, no de detenciones sorpresivas ni de sus frenos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10806,7 +10806,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mantenerse bien atrás del vehículo para tener una mayor visual..",
+    "explicacion": "Antes de adelantar a un vehículo pesado debe mantenerse bien atrás de él para tener una mayor visual del camino y verificar que existe espacio seguro para la maniobra (alternativa b). No corresponde tocar la bocina, acercarse para adelantar rápido ni esperar que el conductor del camión le avise cuándo es seguro; la decisión y la visibilidad son responsabilidad del conductor que adelanta.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10828,7 +10828,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: 100 km/hr.",
+    "explicacion": "Según el libro, en zonas no urbanas y cuando la calzada tiene una sola pista por sentido, la velocidad máxima para vehículos livianos es de 100 km/h. Por eso la correcta es 100 km/h. Los 50 km/h corresponden a zona urbana, y los 120 km/h solo se permiten cuando hay dos o más pistas en un mismo sentido, situación que aquí no se da.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10850,7 +10850,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: 50 km/hr.",
+    "explicacion": "El libro señala que en zonas urbanas la velocidad máxima para vehículos livianos, como automóviles y motocicletas, es de 50 km/h. Por eso la respuesta correcta es 50 km/h, sin importar que la calle tenga dos pistas en sentido único. Los valores de 30, 60 u 80 km/h no corresponden al límite general urbano.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10872,7 +10872,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: disminuir la velocidad, para luego acelerar gradualmente mientras la va recorriendo..",
+    "explicacion": "El libro recomienda reducir la velocidad con tiempo antes de la curva y acelerar suavemente a la salida, ya que la fuerza centrífuga aumenta con la velocidad y con lo cerrada que sea la curva. Por eso la correcta es disminuir la velocidad y luego acelerar gradualmente al ir saliendo. Acelerar antes o durante la curva incrementa el riesgo de salirse, y reducir la velocidad solo si está mojada es insuficiente: siempre se debe llegar frenado a la curva.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10895,7 +10895,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: A | B.",
+    "explicacion": "El libro enumera los lugares donde está prohibido estacionar y detenerse, como pasos de peatones, dobles filas, dentro de un cruce, puentes o a menos de 10 metros de una esquina. Están mal estacionados los vehículos que ocupan esos lugares prohibidos (A y B). Las demás situaciones cumplen las normas de ubicación al costado derecho y sin obstruir la circulación.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10918,7 +10918,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: B | D.",
+    "explicacion": "El libro permite detenerse en un lugar donde está prohibido estacionar solo por el tiempo mínimo para tomar o dejar pasajeros, siempre al costado derecho y sin constituir un riesgo ni obstruir a los demás. Por eso son correctas las detenciones B y D, que respetan esas condiciones. Las otras se realizan en lugares que estorban la circulación o al lado incorrecto.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10942,7 +10942,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Frente a una entrada de autos de una propiedad. | En o al llegar a una parada de locomoción colectiva. | En un paso de peatones..",
+    "explicacion": "El libro prohíbe estacionar frente a puertas de garajes de casas particulares, en o al llegar a una parada de locomoción colectiva y en los pasos de peatones, precisamente porque en esos lugares se causa daño u obstrucción a otros usuarios. Por eso las correctas son las alternativas a, b y c. Un espacio delimitado para estacionar está habilitado para ese fin y no genera obstrucción.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10964,7 +10964,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando ello sea necesario para evitar un accidente..",
+    "explicacion": "El libro prohíbe detenerse o estacionar sobre los pasos de peatones, ya que están destinados solo al tránsito de éstos. La única situación en que usted quedaría detenido justo sobre un cruce cebra es cuando ello sea necesario para evitar un accidente, es decir, una maniobra de emergencia. En cualquier otro caso, aunque no haya peatones o sea de noche, no debe detenerse allí.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -10986,7 +10986,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Al estacionar, usted debe hacerlo al costado derecho y preocupándose de dejar una distancia de a lo menos 10 m. entre su vehículo y la esquina..",
+    "explicacion": "El libro indica que se debe estacionar al costado derecho de la calzada, en forma paralela a la cuneta, y que no se puede estacionar a menos de 10 metros de una esquina. Por eso la correcta es la alternativa c. Detenerse en doble fila está prohibido, y la distancia mínima a la esquina es de 10 metros, no de 5, aunque el cruce esté semaforizado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11008,7 +11008,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Sólo al lado derecho según el sentido del tránsito..",
+    "explicacion": "El libro establece como regla general que el estacionamiento se hace al lado derecho de la calzada en el sentido del tránsito, y solo excepcionalmente al lado izquierdo cuando la señalización lo permita. Por eso, sin señales que indiquen otra cosa, solo puede estacionar al lado derecho. No es efectivo que se necesite una señal que lo permita ni que pueda usar ambos lados.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11033,7 +11033,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Al verse involucrado en un accidente. | Al enfrentar una luz roja de un semáforo. | Cuando un Carabinero se lo solicita..",
+    "explicacion": "Usted debe detener siempre su vehículo al verse involucrado en un accidente, al enfrentar la luz roja de un semáforo y cuando un Carabinero se lo solicita, según las normas de circulación del libro. Por eso las correctas son a, c y e. La señal CEDA EL PASO obliga a ceder pero no siempre a detenerse por completo, y ante un cruce cebra sin peatones no es obligatorio detenerse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11055,7 +11055,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: 10 metros.",
+    "explicacion": "El libro señala expresamente que usted no debe estacionar a menos de 10 metros de una esquina. Por eso lo más cerca que puede estacionar es a 10 metros. Distancias menores como 5 metros están prohibidas, y no es necesario alejarse 12 o 15 metros para cumplir la norma.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11081,7 +11081,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: En un paso de peatones. | En un puente. | A menos de 10 metros de una esquina. | En o al llegar a una parada de locomoción colectiva..",
+    "explicacion": "El libro prohíbe estacionar en pasos de peatones, en puentes, a menos de 10 metros de una esquina y en o al llegar a una parada de locomoción colectiva. Por eso las correctas son a, b, c y e. En cambio, estacionar al costado derecho de una vía urbana es precisamente la forma general permitida por la norma.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11103,7 +11103,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se detiene..",
+    "explicacion": "El libro indica que se debe ceder el paso a los peatones que cruzan por un paso peatonal. Por eso, ante un peatón en el cruce cebra, la conducta correcta es detenerse. Continuar a la misma velocidad, tocar la bocina o intentar pasar rápido pone en riesgo al peatón que tiene preferencia.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11125,7 +11125,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No, porque usted sólo está advirtiendo su intención de realizar una maniobra que hará cuando sea seguro hacerla..",
+    "explicacion": "El libro explica que al señalizar usted muestra a los demás la trayectoria que va a seguir; es decir, solo advierte su intención de maniobra, que debe ejecutar cuando sea seguro hacerlo. Por eso el uso de las luces indicadoras de viraje no le otorga ningún derecho ni preferencia sobre los demás, ni lo exime de responsabilidad. La correcta es la alternativa c.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11147,7 +11147,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Disminuye la velocidad y se prepara para detenerse..",
+    "explicacion": "El libro obliga a ceder el paso a los peatones que estén cruzando o esperando cruzar por un paso peatonal. Por eso, si hay peatones en la vereda esperando, usted debe disminuir la velocidad y prepararse para detenerse. Usar las luces o la bocina para indicarles que crucen no es correcto: usted debe ceder el paso, no dar instrucciones al peatón, y la preferencia no depende de la edad de éste.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11169,7 +11169,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La distancia entre usted y el vehículo que va adelante debería ser a lo menos igual a la que usted recorre en tres segundos..",
+    "explicacion": "El libro recomienda la Regla de los Tres Segundos para mantener una distancia prudente con el vehículo de adelante, especialmente a velocidades altas: al pasar éste por un punto de referencia, usted debe demorar al menos tres segundos en llegar al mismo punto. Por eso la correcta es que la distancia sea a lo menos la que usted recorre en tres segundos. Un segundo o el largo del vehículo resultan insuficientes.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11191,7 +11191,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No hace nada y se mantiene dentro del límite de velocidad..",
+    "explicacion": "Si el conductor de atrás lo sigue muy de cerca, lo más seguro es no hacer nada especial y mantenerse dentro del límite de velocidad, evitando maniobras bruscas. Frenar o desplazarse al centro de la calzada solo aumenta el riesgo de un choque por alcance, cuya principal causa, según el libro, es conducir demasiado cerca. Por eso la correcta es la alternativa c.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11213,7 +11213,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mantiene o disminuye la velocidad y permite el adelantamiento..",
+    "explicacion": "El libro indica que el vehículo que va a ser adelantado debe facilitar la maniobra, manteniéndose a la derecha y sin acelerar. Por eso, si alguien lo quiere adelantar, usted debe mantener o disminuir la velocidad y permitir el adelantamiento. Acercarse al vehículo de adelante para impedirlo o acelerar para no dejarse pasar son conductas peligrosas que obstaculizan al otro conductor.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11235,7 +11235,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Disminuye la velocidad y está atento para detenerse..",
+    "explicacion": "Cuando un vehículo se incorpora sorpresivamente delante suyo, la conducta segura es disminuir la velocidad y estar atento para detenerse, recuperando así una distancia de seguridad. Acelerar para pasarlo, esquivarlo o seguirlo muy de cerca encendiendo las luces son maniobras que aumentan el riesgo de colisión por alcance. Por eso la correcta es la alternativa b.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11257,7 +11257,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: las condiciones climáticas son buenas..",
+    "explicacion": "El libro precisa que la Regla de los Tres Segundos aplica cuando la visibilidad y las condiciones de la vía son buenas. Por eso, un espacio equivalente a tres segundos es suficiente solo con buenas condiciones climáticas. Con lluvia fuerte, pavimento recién mojado o neblina, la distancia de detención aumenta y se debe guardar una separación mayor.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11279,7 +11279,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No, en ningún momento..",
+    "explicacion": "El libro señala que el conductor adelantado debe facilitar la maniobra y no obstaculizarla. Por eso usted no debe tratar de evitar en ningún momento que otro vehículo lo adelante, aunque usted vaya al límite de velocidad. Impedir el adelantamiento es peligroso y no le corresponde a usted sancionar una eventual infracción del otro conductor.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11301,7 +11301,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El conducir demasiado cerca del vehículo que va adelante..",
+    "explicacion": "El libro explica que las colisiones por alcance (choques por la parte trasera) se producen cuando el vehículo de adelante frena y quien lo sigue no alcanza a detenerse, por ir demasiado cerca. Por eso el factor más frecuente en este tipo de colisiones es conducir demasiado cerca del vehículo que va adelante. La solución es mantener la distancia de seguimiento adecuada.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11323,7 +11323,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque las motocicletas son pequeñas y difíciles de ver..",
+    "explicacion": "El libro advierte que el menor tamaño de la motocicleta juega en contra de su visibilidad, por lo que otros conductores tienden a no verla. Por eso, al incorporarse a una vía principal, debe poner especial atención a las motocicletas porque son pequeñas y difíciles de ver. No es efectivo que tengan preferencia por ser motos ni que la razón sea la velocidad o las patrullas policiales.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11345,7 +11345,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Los que tienen menos de 25 años..",
+    "explicacion": "El libro indica que el grupo de mayor accidentabilidad son los jóvenes, y que los siniestros de tránsito son la primera causa de muerte en ellos. Por eso el grupo con mayores probabilidades de verse involucrado en un accidente es el de los conductores menores de 25 años, entre otras razones por sobrestimar sus habilidades y su menor experiencia. Los grupos de mayor edad presentan menor accidentabilidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11367,7 +11367,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Al ir usted en una curva a la derecha..",
+    "explicacion": "En una curva hacia la derecha la visual se cierra hacia el interior del camino, por lo que resulta más difícil ver lo que va delante, como personas a caballo. El libro insiste en la importancia de la visibilidad al enfrentar curvas y en mirar el punto de fuga. Por eso la respuesta correcta es la curva a la derecha, donde el ángulo de visión sobre el camino se ve más limitado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11389,7 +11389,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Esperar detrás del camión..",
+    "explicacion": "Los vehículos largos, como un camión articulado, a menudo necesitan abrirse hacia la izquierda para poder virar a la derecha, tal como muestra la situación. Por eso, aunque su desplazamiento parezca contradecir la señal, usted debe esperar detrás del camión y no intentar pasarlo por la derecha, donde quedaría atrapado por el giro. Advertir, denunciar o adelantar por la derecha son maniobras peligrosas o improcedentes.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11410,7 +11410,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No señalizar hasta que el auto lo haya pasado..",
+    "explicacion": "El libro indica que antes de iniciar un adelantamiento se debe comprobar por el espejo retrovisor que no exista peligro en la parte posterior y que nadie venga ya adelantándolo a usted. Como el auto de atrás ya se cambió de pista para sobrepasarlo, usted no debe señalizar ni cambiarse hasta que ese vehículo lo haya pasado. Hacerlo antes provocaría un choque lateral.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11432,7 +11432,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Ignora el error y permanece calmado..",
+    "explicacion": "Lo correcto es ignorar el error y permanecer calmado. El libro aconseja considerar que la conducta equivocada de otros conductores es producto de la ignorancia y no es intencionada, promoviendo la convivencia vial. Encender las luces, tocar la bocina para manifestar enojo o adelantarlo apresuradamente son reacciones agresivas que solo aumentan el riesgo; además, la bocina solo puede usarse para prevenir un siniestro, no para expresar molestia.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11454,7 +11454,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Tiene paciencia y espera..",
+    "explicacion": "Ante un paso cebra usted debe tener paciencia y esperar, porque en ese cruce el peatón tiene prioridad y hay que demostrarle consideración. Apurarlos con la bocina o con señas los presiona y puede hacerlos cruzar con inseguridad; además, la bocina está permitida solo para prevenir un siniestro. Proseguir la marcha sería invadir el paso que la ley reserva al peatón.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11476,7 +11476,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: al pasar cerca de ciclistas..",
+    "explicacion": "Con viento fuerte hay que tener especial cuidado al pasar cerca de ciclistas. El libro recomienda dejar al menos 1,5 m de espacio lateral porque el ciclista puede desviarse o tambalear, algo más probable justamente cuando hay viento fuerte o en subidas. Frenar, subir pendientes o virar a un camino angosto no se ven afectados de igual manera por las ráfagas como sí lo está el equilibrio de un ciclista.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11498,7 +11498,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Esperar que crucen..",
+    "explicacion": "Debe esperar a que los peatones terminen de cruzar. Al virar usted pierde la preferencia y debe ceder el paso a los peatones que cruzan la vía a la que ingresa, quienes además tienen prioridad. Hacerles señas, tocar la bocina o pasar rápido por delante los expone a un atropello y traslada a ellos una decisión que le corresponde tomar a usted como conductor.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11520,7 +11520,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Espera permitiéndoles que crucen..",
+    "explicacion": "Lo correcto es esperar y permitir que los peatones crucen. Al virar usted carece de preferencia y debe ceder el paso a los peatones que cruzan por el paso reglamentario. No tiene derecho preferente en esa maniobra, y hacerles señas para que retrocedan o tocar la bocina genera confusión y riesgo de atropello.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11542,7 +11542,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: En los cruces de calles..",
+    "explicacion": "El mayor cuidado con otros motociclistas debe tenerse en los cruces de calles. Los cruces son los puntos donde se concentran la mayoría de los conflictos y siniestros entre vehículos, y las motos, por su menor tamaño, pasan fácilmente inadvertidas para los demás. Las estaciones de servicio o los estacionamientos implican velocidades bajas y menos trayectorias que se cortan, por lo que el riesgo de colisión es mucho menor.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11564,7 +11564,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque pueden aparecer peatones detrás del bus..",
+    "explicacion": "Debe tener cuidado porque pueden aparecer peatones detrás (o delante) del bus. El libro indica reducir la velocidad y estar preparado para detenerse al pasar cerca de un bus detenido en una parada, ya que un peatón puede surgir sorpresivamente por delante o por detrás, o corriendo para alcanzarlo. Que el bus se ponga en marcha o quede en pana es secundario frente al peligro real de un peatón oculto por el vehículo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11586,7 +11586,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se mantiene detrás del ciclista hasta que éste haya pasado la intersección..",
+    "explicacion": "Debe mantenerse detrás del ciclista hasta que este haya pasado la intersección. El libro señala expresamente no adelantar a un ciclista antes ni en un cruce, especialmente si usted va a virar a la derecha, para no cortarle la trayectoria. Adelantarlo o rodearlo en el cruce provocaría un cierre peligroso, y situarse a su lado sin virar no resuelve su intención de doblar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11608,7 +11608,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Prepararse para reducir la velocidad..",
+    "explicacion": "Lo primero es prepararse para reducir la velocidad. El libro indica que al encontrarse con alguien montando a caballo hay que reflexionar y disponerse a bajar la velocidad, porque el jinete puede no conocer bien las reglas o el animal puede asustarse. Desplazarse al centro de la calzada, acelerar o señalizar sin antes moderar la marcha aumenta el riesgo de espantar al caballo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11630,7 +11630,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conduciendo lentamente y dejando bastante espacio lateral..",
+    "explicacion": "Debe adelantar conduciendo lentamente y dejando bastante espacio lateral. El libro recomienda mantener una buena distancia lateral y no hacer señales luminosas ni acústicas ni acelerar el motor cerca del caballo, porque puede asustarse. Por eso la velocidad sí importa (contrario a lo que dice la alternativa que solo valora el espacio), y tocar la bocina es precisamente lo que no debe hacerse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11652,7 +11652,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: es muy probable que el peatón muera..",
+    "explicacion": "A unos 65 km/h es muy probable que el peatón muera. El libro precisa que los peatones tienen menos del 50% de probabilidad de sobrevivir a impactos de 45 km/h o más, y que a 65 km/h lo más probable es que el atropellado fallezca. No es un resultado seguro en ningún sentido, pero la alta velocidad hace muy improbable la sobrevivencia.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11674,7 +11674,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: estar consciente de que las reacciones del conductor pueden no ser tan rápidas como las suyas..",
+    "explicacion": "Debe estar consciente de que las reacciones de una persona de edad pueden no ser tan rápidas como las suyas. El libro advierte que los adultos mayores necesitan más tiempo para percibir y actuar, por lo que hay que darles margen y conducir con consideración. No cabe dar por seguro que manejará mal ni presionarlo adelantando o siguiéndolo muy de cerca, actitudes que solo aumentan el riesgo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11696,7 +11696,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: justo antes de doblar a la derecha..",
+    "explicacion": "Nunca debe adelantar a un ciclista justo antes de doblar a la derecha. El libro lo indica expresamente, porque al virar usted le cortaría la trayectoria al ciclista que sigue recto por su derecha, con alto riesgo de atropello. Por eso lo indicado es esperar a que el ciclista pase la intersección antes de virar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11718,7 +11718,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque el ciclista podría desviarse bruscamente..",
+    "explicacion": "Se deja el máximo espacio lateral porque el ciclista podría desviarse bruscamente. El libro recomienda al menos 1,5 m de separación, ya que el ciclista puede tambalear o desviarse de forma inesperada, sobre todo con viento o en subidas. No se trata de que cambie de pista o vire deliberadamente, sino de un movimiento repentino e involuntario que ese margen permite absorber.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11740,7 +11740,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: De la posible presencia de escolares..",
+    "explicacion": "La señal advierte de la posible presencia de escolares. Es una señal de advertencia (amarilla) que anuncia una zona de escuela o alto tránsito de estudiantes, para que el conductor reduzca la velocidad y extreme la atención. No corresponde a un cruce peatonal común, a niños jugando ni a la cercanía de un parque, que tienen sus propias señales.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11764,7 +11764,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: tener mucho cuidado porque nuestra capacidad visual se ve reducida. | estar muy atento a las curvas que pueda tener el camino..",
+    "explicacion": "De noche al adelantar hay que tener mucho cuidado porque la capacidad visual se ve reducida y estar muy atento a las curvas del camino. El libro explica que en la oscuridad se aprecian peor las distancias y que la visibilidad es limitada, por lo que un cruce de vehículos con luces bajas apenas deja ver unos 15 a 20 metros. Mantener siempre luces altas encandilaría a los demás, y tocar la bocina o cambiar de luces repetidamente no aporta seguridad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11786,7 +11786,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: A lo menos, el equivalente a lo que recorre en 4 segundos..",
+    "explicacion": "Con la calzada mojada debe mantener al menos el equivalente a 4 segundos respecto del vehículo de adelante. El libro advierte que el asfalto mojado es más resbaladizo y aumenta la distancia de frenado, por lo que la separación de 2 a 3 segundos usada en seco resulta insuficiente y debe ampliarse. Los tiempos menores no dejan margen para detenerse si el vehículo de adelante frena de improviso.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11808,7 +11808,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Reduce la velocidad o se detiene..",
+    "explicacion": "Al ser encandilado debe reducir la velocidad o detenerse. Mientras la vista no recupera la visibilidad, bajar la velocidad da tiempo para reaccionar ante obstáculos que no alcanza a ver; el libro recomienda además dirigir la mirada hacia el borde derecho de la calzada. Cerrar los ojos o acelerar es peligroso, y hacer parpadear las luces no elimina el deslumbramiento.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11832,7 +11832,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Nuestra limitada capacidad para ver de noche aumenta los riesgos de accidentes. | Nuestra capacidad de apreciar distancias en la noche se ve disminuida. | El color de las ropas de un peatón influye en que éste pueda ser más o menos visible para los conductores..",
+    "explicacion": "Son correctas que la limitada capacidad de ver de noche aumenta el riesgo de accidentes, que se reduce la apreciación de distancias y que el color de la ropa del peatón influye en su visibilidad. El libro respalda estos puntos al describir las limitaciones del ojo en la oscuridad. Es falsa la afirmación de que con luces bajas se vean las marcas del pavimento a 200 m o más: en un cruce con luces bajas la visibilidad no supera los 15 a 20 metros y, sin cruce, unos 70 metros.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11855,7 +11855,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Al cruzarse con otro vehículo siempre hay que poner luces bajas para no encandilar a su conductor. | Al acercarse por atrás a otro vehículo hay que poner luces bajas..",
+    "explicacion": "Son correctas poner luces bajas al cruzarse con otro vehículo y al acercarse por atrás a otro vehículo. El libro indica cambiar a luces bajas para no cegar a quien viene en sentido contrario ni deslumbrar por el espejo a quien va adelante. Es falso que con un ciclista no sea necesario bajarlas (el libro aclara que también aplica a ciclistas) y que la anchura del camino exima de hacerlo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11877,7 +11877,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Independientemente del estado de los neumáticos, el riesgo de que éstos patinen es mayor mientras mayor es la velocidad..",
+    "explicacion": "Es correcto que, independientemente del estado de los neumáticos, el riesgo de patinar es mayor mientras mayor sea la velocidad. El libro explica que a más velocidad los neumáticos deben desalojar más agua y sus surcos se saturan, favoreciendo el aquaplaning. Por eso los neumáticos nuevos no eliminan el riesgo, el peligro no es menor al comenzar a llover (la vía queda muy resbaladiza) y unos buenos frenos no impiden el patinaje.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11900,7 +11900,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Neumáticos desgastados. | Exceso de velocidad en relación a las condiciones de la calzada..",
+    "explicacion": "Las dos causas más comunes de resbalones con agua en la calzada son los neumáticos desgastados y el exceso de velocidad para las condiciones. El libro señala que con surcos bajo cierto límite hay riesgo severo de hidroplaneo y que, a mayor velocidad, más agua se acumula bajo las ruedas. Las fallas de frenos o de dirección son problemas mecánicos distintos, no la causa habitual del deslizamiento sobre agua.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11922,7 +11922,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Bajar la velocidad y eventualmente detenerse..",
+    "explicacion": "Al ser encandilado por un vehículo que viene en sentido contrario debe bajar la velocidad y eventualmente detenerse. El libro recomienda dirigir la mirada al borde derecho de la calzada y reducir la marcha mientras la vista se recupera. Acelerar, poner luces altas (que agravaría el deslumbramiento mutuo) o taparse los ojos son maniobras peligrosas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11944,7 +11944,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Bajar la velocidad o detenerse..",
+    "explicacion": "Frente al encandilamiento de un vehículo que viene en contra debe bajar la velocidad o detenerse. Mientras la visión se recupera no puede ver bien los obstáculos, por lo que moderar la marcha es la respuesta segura. Frenar de golpe, acelerar o hacer parpadear las luces no resuelven el deslumbramiento y aumentan el riesgo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11966,7 +11966,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Soltar el freno completamente..",
+    "explicacion": "Si al frenar en calzada mojada el vehículo comienza a patinar, lo primero es soltar el freno por completo. Con las ruedas patinando se pierde la adherencia y el control; al liberar el freno los neumáticos vuelven a girar y a recuperar tracción y dirección. Seguir apretando o presionar el embrague prolonga el bloqueo, y acelerar agrava el deslizamiento.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -11988,7 +11988,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conduciendo lentamente en la marcha más alta posible..",
+    "explicacion": "Sobre hielo se evita el patinaje conduciendo lentamente y en la marcha más alta posible. El libro recomienda mantener una velocidad muy baja en la marcha más alta para que la transmisión entregue poca fuerza a la rueda y esta no derrape. Frenar cuando las ruedas patinan, ir siempre en primera (mucha fuerza al eje) o circular en neutro (sin frenado de motor ni control) aumentan el riesgo de caída.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12010,7 +12010,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: 10 veces la distancia normal..",
+    "explicacion": "Con la calzada cubierta de hielo la distancia de frenado puede llegar a ser hasta 10 veces la distancia normal. El libro advierte que el hielo reduce drásticamente la adherencia al pavimento, por lo que las precauciones deben extremarse. Esa enorme pérdida de agarre alarga la detención mucho más que las condiciones de solo lluvia, haciendo insuficientes valores como 2, 5 o 7 veces.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12031,7 +12031,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La luz delantera baja..",
+    "explicacion": "Con neblina de día se usa la luz delantera baja porque, según el libro, su uso es obligatorio y se refleja menos en la niebla, permitiendo mejor visibilidad. La luz alta se refleja en las partículas de agua y encandila, empeorando la visión. Las intermitentes de viraje solo sirven para señalizar maniobras, no para iluminar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12053,7 +12053,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque los neumáticos tienen menos adherencia a la calzada..",
+    "explicacion": "Sobre hielo la dirección se siente más liviana porque los neumáticos pierden adherencia con el pavimento: el libro señala que la nieve y el hielo reducen el agarre y aumentan el riesgo de deslizamiento. No es por más adherencia (sería lo contrario) ni por la presión de los neumáticos, que es un problema distinto.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12075,7 +12075,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando está lloviendo..",
+    "explicacion": "La distancia total de detención se alarga mucho más con lluvia porque el asfalto mojado es más resbaladizo que el seco y los neumáticos tienen menos adherencia, lo que aumenta la distancia de frenado. La neblina y la noche reducen la visibilidad pero no el agarre, y la temperatura alta no alarga la detención.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12097,7 +12097,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conduciendo a una v elocidad baja en el cambio más alto posible..",
+    "explicacion": "Para no patinar en una calzada con hielo se conduce a baja velocidad en el cambio más alto posible, tal como recomienda el libro para nieve y hielo: así se entrega poca fuerza a la rueda y se evita el derrape. Frenar o acelerar de forma brusca o repetida, o ir siempre en cambio bajo, transmite más impulso a las ruedas y provoca el patinaje.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12119,7 +12119,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Suelta el acelerador..",
+    "explicacion": "Cuando bajo lluvia intensa la dirección se vuelve muy liviana se está produciendo aquaplaning; el libro indica que ante ello lo correcto es no frenar ni acelerar, es decir, soltar el acelerador para que los neumáticos vuelvan a pisar terreno firme. Frenar o cambiar de marcha bruscamente desestabiliza la moto, y buscar la zona seca no devuelve por sí solo el control inmediato.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12141,7 +12141,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para ayudar a evitar que las ruedas patinen..",
+    "explicacion": "En nieve conviene ir en la marcha más alta posible para ayudar a evitar que las ruedas patinen, ya que así el motor entrega menos fuerza a la rueda y reduce el riesgo de derrape. No se busca frenar rápido ni tener disponible un cambio bajo; el objetivo es la suavidad para conservar el agarre.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12163,7 +12163,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque sus neumáticos tendrán menos adherencia sobre la calzada..",
+    "explicacion": "Tras una lluvia torrencial la distancia de detención es mayor principalmente porque los neumáticos tienen menos adherencia sobre la calzada mojada, que es más resbaladiza que la seca. La reducción de visibilidad y las pozas influyen, pero la razón principal del mayor recorrido para detenerse es la pérdida de agarre.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12185,7 +12185,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Circulando a baja velocidad y aumentando la distancia al vehículo que va adelante..",
+    "explicacion": "Con mucha neblina y llevando ya la luz baja, la mejor medida adicional es circular a baja velocidad y aumentar la distancia con el vehículo de adelante; el libro exige más espacio y velocidad reducida en condiciones adversas para poder reaccionar a tiempo. Usar luz alta empeora el reflejo en la niebla y acercarse al de adelante aumenta el riesgo de colisión.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12207,7 +12207,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Disminuir su velocidad hasta recuperar una distancia segura respecto del que va adelante..",
+    "explicacion": "Si sobre pavimento mojado otro vehículo se mete en el espacio que dejaba, debe disminuir la velocidad hasta recobrar una distancia segura respecto del que va adelante. El libro insiste en mantener mayor separación en condiciones adversas para reaccionar ante un imprevisto. Adelantar o hacer señales de luces no restablece el margen de seguridad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12229,7 +12229,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conduciendo lentamente en el cambio más alto posible..",
+    "explicacion": "Para controlar mejor la moto sobre nieve se conduce lentamente en el cambio más alto posible, evitando movimientos bruscos, tal como indica el libro para conducción en nieve. Ir en primera o mantener el motor acelerado con el embrague presionado entrega o descontrola la fuerza a la rueda y favorece el derrape.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12251,7 +12251,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: su vehículo esté en pana en la berma..",
+    "explicacion": "La moto debe llevar el foco delantero encendido siempre que esté circulando, incluso de día, porque la norma lo exige para ser más visible; la excepción es cuando el vehículo está en pana en la berma, ya que entonces no está circulando. La cercanía de otros vehículos, la velocidad o que la vía esté iluminada no eximen de mantenerlo encendido.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12273,7 +12273,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Lenta y suavemente..",
+    "explicacion": "En una curva con hielo se debe conducir lenta y suavemente, sin movimientos ni frenadas bruscas, porque el libro exige suavidad y baja velocidad cuando la calzada está deslizante. Frenar mientras se toma la curva o usar embrague y freno a la vez favorece el derrape; ir en primera no es la clave, sino la suavidad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12295,7 +12295,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Continuar con mucho cuidado..",
+    "explicacion": "Con mucha neblina y un auto que aparenta ir muy cerca detrás, lo correcto es continuar con mucho cuidado, manteniendo baja velocidad y buena distancia con el de adelante. Detenerse de inmediato o acelerar para alejarse aumenta el riesgo de colisión, y hacerle señales de luces solo distrae; el propio comportamiento seguro es la mejor protección.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12315,7 +12315,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La luz baja..",
+    "explicacion": "De noche y cerca de vehículos que van adelante se mantiene la luz baja para no encandilar a sus conductores a través del espejo retrovisor, tal como indica el libro sobre el manejo de luces al alcanzar a otro vehículo. La luz alta en esa situación deslumbra y puede provocar un siniestro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12337,7 +12337,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Porque es más difícil ver lo que hay más adelante..",
+    "explicacion": "Siempre se reduce la velocidad con neblina porque es más difícil ver lo que hay más adelante: la visibilidad se ve afectada y se necesita más margen para reaccionar. Los frenos y el motor no son el problema, y aunque las luces de otros puedan molestar, la razón de fondo es la menor visibilidad de la vía.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12359,7 +12359,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cede el paso al tránsito que viene en sentido contrario..",
+    "explicacion": "En una calle de una sola pista por sentido, si su pista está obstruida usted debe ceder el paso al tránsito que viene en sentido contrario, ya que para sortear el obstáculo tendría que invadir la pista de ellos y por tanto carece de preferencia. Continuar, acelerar o exigir la pasada genera un riesgo de choque frontal.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12380,7 +12380,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Por la pista de la izquierda..",
+    "explicacion": "Las tachas reflectantes rojas se asocian a la línea continua del eje central, que separa los flujos opuestos y no se debe traspasar, mientras que las blancas delimitan las pistas de un mismo sentido. Si las rojas quedan a su izquierda y las blancas a su derecha, el eje central está a su izquierda, por lo que usted circula por la pista de la izquierda.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12402,7 +12402,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que usted no debe exceder esta velocidad..",
+    "explicacion": "La señal de velocidad máxima es reglamentaria y obligatoria: significa que usted no debe exceder la velocidad indicada. No es una recomendación ni admite ir más rápido, y rige todos los días, con o sin tránsito; tampoco obliga a ir siempre por debajo de ese valor, sino a no superarlo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12424,7 +12424,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Usted no debe exceder la velocidad indicada..",
+    "explicacion": "Esta señal fija la velocidad máxima permitida: usted no debe exceder la velocidad indicada, pues las señales reglamentarias imponen obligaciones y prohibiciones. No es una velocidad aconsejada ni una simple recomendación para horas de congestión, sino un límite que debe respetarse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12446,7 +12446,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando en la salida del cruce tenga espacio suficiente como para no quedar detenido en él..",
+    "explicacion": "Las franjas amarillas diagonales que forman cuadrados en un cruce advierten que no debe bloquear la intersección; según el libro, solo puede ingresar cuando a la salida tenga espacio suficiente para no quedar detenido dentro del cruce. Que el semáforo esté en verde no basta si al otro lado no hay lugar para despejarlo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12468,7 +12468,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Pavimento resbaladizo..",
+    "explicacion": "Se trata de una señal preventiva (rombo amarillo con símbolo negro) que advierte pavimento resbaladizo, es decir, un tramo donde la calzada puede reducir el agarre. No indica gravilla suelta, riesgo de pinchazos ni curvas, que corresponden a otras señales de advertencia.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12490,7 +12490,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No adelantar..",
+    "explicacion": "Es una señal reglamentaria que significa No adelantar: prohíbe rebasar a otros vehículos en ese tramo por falta de condiciones seguras. No corresponde a mantenerse a la derecha, ceder preferencia ni a la prohibición de cambiar de pista, que son señales distintas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12512,7 +12512,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Detenerse siempre..",
+    "explicacion": "Ante la señal PARE usted debe detenerse siempre y permitir el paso de quienes circulan por la otra vía, reanudando la marcha solo cuando no exista posibilidad de siniestro. La detención es obligatoria en todos los casos, no depende de que venga un vehículo, haya peatones o esté pintada la leyenda en la calzada.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12534,7 +12534,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Proximidad de semáforo..",
+    "explicacion": "Esta señal preventiva indica la proximidad de un semáforo: advierte al conductor que más adelante encontrará un cruce regulado por semáforo, para que se aproxime preparado. No señala que el semáforo esté fuera de servicio, activado por peatones ni sincronizado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12556,7 +12556,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que usted debe detenerse antes de la línea de detención de vehículos..",
+    "explicacion": "La luz roja del semáforo indica detención: los vehículos que la enfrentan deben detenerse antes de la línea de detención de vehículos y no avanzar hasta que aparezca la luz verde. No permite seguir aunque no venga nadie, y detenerse sobre el paso de peatones invade el espacio de los peatones.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12578,7 +12578,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Para advertir acerca de peligros..",
+    "explicacion": "Las señales de forma de rombo y fondo amarillo son las preventivas o de advertencia de peligro: sirven para advertir sobre peligros o riesgos en la vía. Entregar información corresponde a las informativas y dar órdenes a las reglamentarias, que tienen otras formas y colores.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12600,7 +12600,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que usted debe detenerse antes de entrar al cruce, a menos que no alcance a hacerlo en forma segura..",
+    "explicacion": "La luz amarilla del semáforo indica prevención: usted debe detenerse antes de entrar al cruce, a menos que le sorprenda tan próximo que ya no pueda detenerse con seguridad, en cuyo caso continúa con precaución. No significa prepararse para avanzar ni habilita a cruzar por virar o por ausencia de peatones.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12622,7 +12622,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Dos sentidos de tránsito más adelante..",
+    "explicacion": "La señal de advertencia de peligro \"Dos sentidos de tránsito\" previene que más adelante la vía pasa a tener circulación en ambos sentidos, por lo que corresponde la alternativa d). Al ser una señal preventiva (rombo amarillo con símbolo negro), solo avisa un riesgo permanente y obliga a extremar precauciones y evitar adelantamientos, no anuncia un angostamiento, una doble calzada ni una preferencia de paso, que son mensajes de otras señales distintas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12644,7 +12644,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cruce de peatones..",
+    "explicacion": "La señal corresponde a la advertencia de \"Cruce de peatones\" (Proximidad de paso de cebra), que previene que más adelante hay un punto habilitado para el cruce de personas, por lo que la correcta es b). No es \"Zona de escuela\" ni \"Niños jugando\" (señales específicas de menores con tonalidad verdosa) ni una indicación de que el peatón deba transitar por la izquierda; simplemente advierte la presencia de un cruce peatonal donde el conductor debe reducir la velocidad y estar preparado para ceder el paso.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12666,7 +12666,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: B.",
+    "explicacion": "La serie de curvas se advierte con la señal de \"Zona de curvas\" o \"Curva y contracurva\", que representa el trazado sinuoso del camino con varios giros sucesivos, correspondiendo a la alternativa B. Las demás opciones muestran una sola curva simple o cerrada, que solo previene un giro aislado y no una sucesión de curvas; por tratarse de señales preventivas amarillas, obligan a reducir la velocidad y a no adelantar una vez pasada la señal.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12688,7 +12688,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que se acerca a una zona donde es muy probable la presencia de ciclistas en la vía..",
+    "explicacion": "La señal \"Ciclistas en la vía\" es una advertencia de peligro que avisa que se aproxima una zona donde es muy probable la presencia de ciclistas compartiendo la calzada, por lo que la correcta es d). Al ser una señal preventiva (amarilla, incluso con tonalidad verdosa por tratarse de usuarios vulnerables), solo advierte un riesgo y no impone prohibiciones ni obligaciones de circulación; no prohíbe las bicicletas ni ordena que circulen por una pista o en sentido determinado, lo que correspondería a señales reglamentarias.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12710,7 +12710,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: A.",
+    "explicacion": "La señal que advierte la proximidad de un cruce de peatones es la preventiva amarilla con el símbolo de una persona caminando (Proximidad de paso de cebra), que corresponde a la alternativa A. Las otras figuras representan señales distintas (como zona de escuela, niños jugando u otras advertencias), que aunque también son preventivas no anuncian específicamente el paso peatonal; ante esta señal el conductor debe reducir la velocidad y estar atento para ceder el paso a quienes crucen.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12737,7 +12737,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Puente angosto | Angostamiento de la vía | Bifurcación o cruce en T | Cruce ferroviario.",
+    "explicacion": "Las señales de advertencia de peligro tienen forma de cuadrado apoyado sobre una diagonal (aspecto de rombo), con fondo amarillo y símbolo negro; por eso son amarillas romboidales \"Puente angosto\", \"Angostamiento de la vía\", \"Bifurcación o cruce en T\" y \"Cruce ferroviario\", todas preventivas. En cambio \"Dirección obligada\" y \"Mantenga su derecha\" son señales reglamentarias (que notifican obligaciones), de forma y color distintos, por lo que no forman parte del grupo de las preventivas amarillas en rombo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12759,7 +12759,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Primero la roja y luego la verde..",
+    "explicacion": "Según el libro, la luz amarilla indica prevención y advierte que a continuación aparecerá la roja, la que ordena detención; una vez cumplido el rojo, el ciclo continúa con la luz verde que indica paso. Por eso el orden correcto es rojo y luego verde (alternativa b). Las demás secuencias no respetan el ciclo del semáforo, ya que tras el amarillo nunca vuelve directamente el verde ni se repite el amarillo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12781,7 +12781,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No, porque los vehículos no pueden detenerse ni circular por zonas achuradas..",
+    "explicacion": "Las áreas achuradas se demarcan para canalizar mejor los flujos, y el libro es explícito en que el conductor no debe circular ni menos aún detenerse o estacionar sobre ellas; por eso es incorrecto que el vehículo permanezca detenido allí esperando virar en U, correspondiendo la alternativa c). No importa que la zona solo separe sentidos o que no tenga tachas: la prohibición de detenerse y circular sobre el achurado rige igual, de modo que las opciones que lo permiten son falsas.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12801,7 +12801,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: No.",
+    "explicacion": "De acuerdo con las circunstancias del cruce (obligación de ceder el paso, presencia de otros usuarios o señalización que lo impide), no sería correcto que el vehículo continuara derecho, por lo que la respuesta es No. El libro recuerda que en los cruces existen reglas de prioridad y que se debe respetar el derecho preferente de paso de los demás vehículos y peatones, deteniéndose cuando su avance pueda provocar un siniestro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12823,7 +12823,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que usted está obligado a ceder el paso a los vehículos que se aproximen por la otra vía..",
+    "explicacion": "La señal de la fotografía es \"CEDA EL PASO\", señal reglamentaria ante la cual, según el libro, el conductor debe reducir la velocidad hasta detenerse si es necesario y ceder el paso a los vehículos que se aproximan por la otra vía cuya proximidad constituya riesgo; por eso la correcta es c). No obliga siempre a detenerse (esa es la señal PARE) ni es una mera recomendación o advertencia de peligro: impone la obligación de dar preferencia al otro flujo.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12846,7 +12846,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Cuando ya ha ingresado al cruce. | Cuando está tan cerca del cruce que su detención puede oc asionar un accidente..",
+    "explicacion": "El libro señala que la luz amarilla obliga a detenerse antes de entrar al cruce, salvo dos excepciones: si ya se ingresó al cruce, caso en que se debe continuar con precaución, y si la luz sorprende tan próximo al cruce que ya no es posible detenerse con seguridad. Por eso las correctas son c) y d). Cuando el cambio es sorpresivo o se va demasiado rápido, ello no autoriza a pasar: es responsabilidad del conductor circular a una velocidad que le permita detenerse.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12868,7 +12868,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Siga, pero sólo si su pista está expedita justo después del cruce..",
+    "explicacion": "La luz verde indica paso, pero el libro advierte que aun teniendo verde no se debe avanzar si, pasado el cruce, no se dispone de al menos 10 metros expeditos en la propia pista; por eso la correcta es b). Avanzar solo porque aparece el verde puede dejar al vehículo detenido dentro del cruce bloqueándolo, de modo que la luz verde autoriza a seguir únicamente cuando la vía después de la intersección está despejada.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12892,7 +12892,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: La mantiene tendida con la pierna herida en alto. | Aplica presión manual firme sobre la herida con un paño limpio y luego la venda..",
+    "explicacion": "Ante una hemorragia fuerte en la pierna, lo indicado es mantener a la persona tendida con la extremidad herida en alto y aplicar presión manual firme sobre la herida con un paño limpio y luego vendarla, por lo que son correctas b) y c). Sentar a la persona o darle algo caliente de beber puede agravar el shock y la pérdida de sangre; los primeros auxilios buscan controlar la hemorragia y no dejar sola ni movilizar innecesariamente a la víctima.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12914,7 +12914,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Sí, debe dar cuenta del hecho a la autoridad policial más inmediata a la brevedad..",
+    "explicacion": "Cuando en un accidente resultan personas lesionadas, aunque sean lesiones leves, el conductor involucrado debe dar cuenta del hecho a la autoridad policial más inmediata y a la brevedad, por lo que la correcta es d). No corresponde dejar la decisión al lesionado ni omitir el aviso por tratarse de lesiones leves, ni esperar un plazo de días: la obligación de informar a la policía es inmediata cuando hay heridos.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12939,7 +12939,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Mantener abrigadas y cómodas a las personas heridas. | Mantener tranquilas a las personas heridas hablándoles alentadoramente. | Asegurarse de que no queden solos los heridos..",
+    "explicacion": "Frente a personas heridas en un accidente, lo adecuado es mantenerlas abrigadas y cómodas, tranquilizarlas hablándoles de forma alentadora y no dejarlas solas, por lo que son correctas c), d) y e). No se debe hacer caminar a los lesionados ni darles líquidos, porque el movimiento y la ingesta pueden agravar sus lesiones o dificultar una eventual atención médica; la prioridad es estabilizarlos y acompañarlos hasta que lleguen los servicios de emergencia.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12962,7 +12962,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Se asegura de que estén apagados los motores de los vehículos involucrados. | Se asegura de que alguien llame al 133 de Carabineros..",
+    "explicacion": "Ante heridos graves lo primordial es reducir riesgos y activar el auxilio: asegurarse de que estén apagados los motores de los vehículos involucrados (para evitar incendios) y de que alguien llame al 133 de Carabineros, por lo que son correctas a) y b). No se debe dar de beber a los heridos ni sacarlos de los autos, ya que mover a un lesionado grave puede empeorar sus lesiones; esa maniobra solo se justifica ante un peligro inminente como fuego.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -12984,7 +12984,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Averiguar de qué clase de producto químico se trata mirando los rótulos y letreros que tiene el camión..",
+    "explicacion": "El libro indica que ante un accidente con materiales peligrosos se debe tomar nota de qué material se trata, mirando los rótulos y letreros del camión, antes de llamar a los servicios de emergencia, para entregarles información precisa; por eso la correcta es c). No se debe mover el camión ni manipular o intentar diluir los productos químicos, pues ello puede provocar reacciones, derrames o intoxicaciones; lo prudente es alejarse del peligro e informar.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13006,7 +13006,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que el motociclista no se saque el casco..",
+    "explicacion": "Si un motociclista accidentado está consciente pero en estado de shock, hay que asegurarse de que no se saque el casco, por lo que la correcta es b). Retirar el casco de forma inadecuada puede agravar una posible lesión de cuello o columna; tampoco corresponde ayudarlo a ponerse de pie ni darle de beber, ya que lo indicado es mantenerlo quieto y tranquilo hasta que llegue personal capacitado.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13028,7 +13028,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Continúa hasta donde haya un teléfono para avisar a la policía o a los servicios de emergencia..",
+    "explicacion": "Si de un camión cae una caja en la autopista, lo seguro es continuar hasta donde haya un teléfono para avisar a la policía o a los servicios de emergencia, por lo que la correcta es d). Detenerse junto al obstáculo, bajarse a recogerlo o intentar alcanzar al camión implica exponerse al tránsito de alta velocidad y crear un riesgo mayor; lo correcto es advertir del peligro a las autoridades para que lo retiren.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13050,7 +13050,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El conductor, su acompañante y cualquier tercero afectado en un accidente de tránsito en que participe la motocicleta asegurada..",
+    "explicacion": "El libro precisa que el Seguro Obligatorio de Accidentes Personales (SOAP) cubre, con independencia de quién sea culpable, la muerte y lesiones corporales que sufran el conductor del vehículo, las personas transportadas en él y cualquier tercero afectado; por eso la correcta es d). Las demás alternativas limitan indebidamente la cobertura solo al conductor o al acompañante, en circunstancias que el seguro protege a todos los involucrados en el siniestro.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13073,7 +13073,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El certificado de inscripción en el Registro Nacional de Vehículos Motorizados..",
+    "explicacion": "Según el libro, el conductor debe portar siempre el permiso de circulación, el certificado del Seguro Obligatorio, la licencia de conducir y el certificado de revisión técnica u homologación vigentes. En cambio, el certificado de inscripción en el Registro Nacional de Vehículos Motorizados no está entre los documentos que se exige llevar a bordo, por lo que la correcta es e); ese registro respalda la propiedad del vehículo, pero no se porta obligatoriamente al conducir.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13098,7 +13098,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Conducir un vehículo bajo los efectos del alcohol es una infracción gravísima. | No respetar una señal PARE es una infracción gravísima. | La comisión de una infracción gravísima es sancionada no sólo con una multa, sino que también con la suspensión de la licencia de conducir del infractor..",
+    "explicacion": "Conducir bajo los efectos del alcohol y no respetar una señal PARE son infracciones gravísimas, y toda infracción gravísima se sanciona con multa y, además, con la suspensión de la licencia (entre 5 y 45 días), por lo que son correctas a), b) y c). Es falso que solo el no respetar la luz roja y el exceso de velocidad sean gravísimas, y también es falso que la licencia nunca pueda cancelarse, pues el juez sí puede llegar a suspenderla o cancelarla.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13123,7 +13123,7 @@
     ],
     "esDoblePuntaje": true,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Las infracciones gravísimas son sancionadas con multas y, además, con la suspensión de la licencia de conducir del infractor. | Dos infracciones graves cometidas en un período de 12 meses dan origen a una suspensión de la licencia de conducir del infractor. | No respetar una señal Ceda el Paso es una infracción gravísima si a consecuencia de la infracción se produce un accidente. RESPUESTAS EXAMEN TEORICO DE CONDUCCION CUESTIONARIO GENERAL LICENCIAS CLASE C.",
+    "explicacion": "Las infracciones gravísimas se sancionan con multa y además con la suspensión de la licencia del infractor, y la acumulación de dos infracciones graves (o gravísimas) en un período de doce meses también da origen a la suspensión de la licencia; asimismo, no respetar una señal Ceda el Paso es gravísima si a consecuencia de ello se produce un accidente. Por eso son correctas b), c) y e). Es falso que las únicas gravísimas sean el alcohol y la velocidad, y no respetar el derecho preferente de paso de un peatón es una infracción grave, no leve.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13146,7 +13146,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: El conductor del auto rojo estima que dicho punto será el 3. | El conductor del auto azul estima que dicho punto será el 3.. A mayor velocidad se tiende a subestimar la rapidez de aproximación, por lo que ambos conductores estiman el punto de encuentro más lejos (punto 3).",
+    "explicacion": "Al aproximarse dos vehículos a un cruce, los conductores tienden a subestimar la velocidad del otro y a sobrestimar el tiempo disponible, por lo que ambos suelen ubicar el punto de encuentro más adelante de lo real; por eso tanto el conductor del auto rojo como el del azul estiman que el encuentro será en el punto 3 (correctas a y d). Esta apreciación errónea de velocidad y distancia es una de las causas de siniestros en intersecciones que el libro advierte.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13168,7 +13168,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: Que no puede ser traspasada por un conductor que va por la pista B. La línea de eje es segmentada hacia la pista A (puede traspasarse para adelantar) y continua hacia la pista B (no puede traspasarla).",
+    "explicacion": "Cuando la demarcación de eje de calzada es mixta (una línea segmentada junto a una continua), el libro indica que solo puede ser traspasada por los vehículos que circulan por el lado en que la línea es segmentada. Como en la figura el conductor de la pista B enfrenta la línea continua, no puede traspasarla ni adelantar, por lo que la correcta es b); en cambio, quien va por la pista A, del lado segmentado, sí podría adelantar si se dan las condiciones de seguridad.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13190,7 +13190,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "Respuesta correcta: opción c. Es una señal reglamentaria de prohibición (círculo con borde rojo y línea diagonal), que indica que algo está prohibido. La azul cuadrada (a) es informativa y los rombos amarillos (b y d) son preventivas.",
+    "explicacion": "La imagen muestra una señal reglamentaria de prohibición, reconocible por su forma circular con orla roja y el símbolo que indica que NO se debe hacer una determinada maniobra (como No virar o No adelantar), correspondiendo a la opción c). Las demás opciones corresponden a otros grupos de señales (preventivas amarillas en rombo que advierten peligro, o informativas que orientan), las cuales no ordenan abstenerse de una acción como sí lo hace la señal de prohibición.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   },
@@ -13238,7 +13238,7 @@
     ],
     "esDoblePuntaje": false,
     "pesoExamen": 4,
-    "explicacion": "1: Curva a la derecha. 2: Curvas sucesivas (primera a la izquierda). 3: Prohibido virar a la derecha. 4: No adelantar. 5: Pavimento resbaladizo. 6: Curva y contracurva a la derecha.",
+    "explicacion": "Cada señal numerada se asocia a su significado según los grupos del libro: la 1 es \"Curva a la derecha\" (preventiva amarilla que anuncia un giro simple hacia la derecha); la 2 es \"Curvas sucesivas, primera a la izquierda\" (zona de curvas que comienza girando a la izquierda); la 3 es \"Prohibido virar a la derecha\" (reglamentaria circular con orla roja que prohíbe ese viraje); la 4 es \"No adelantar\" (reglamentaria que prohíbe sobrepasar); la 5 es \"Pavimento resbaladizo\" (preventiva que advierte una superficie de menor adherencia); y la 6 es \"Curva y contracurva a la derecha\" (preventiva que anuncia una curva seguida de otra en sentido contrario, iniciando a la derecha). Las amarillas en rombo advierten peligros y obligan a reducir la velocidad y no adelantar, mientras que las circulares rojas imponen prohibiciones.",
     "referencia": "Cuestionario General Licencias Clase C",
     "fuente": "Cuestionario Clase C – conducirmotos.cl"
   }
