@@ -180,11 +180,11 @@ export class InicioComponent {
   /** Fondo de la tarjeta: foto (.jpg) o ilustración (.svg) + degradado para legibilidad del texto. */
   fondo(modo: ModoTarjeta): string {
     const ext = modo.foto ? 'jpg' : 'svg';
-    // Capa 1: tinte oscuro parejo sobre TODA la foto (cohesión + contraste del texto).
-    // Capa 2: degradado extra a la izquierda para reforzar la legibilidad del título.
+    // Velo oscuro casi UNIFORME sobre toda la foto (para que no se vea "partida"),
+    // con un leve refuerzo a la izquierda/abajo para la legibilidad del texto.
     return (
-      'linear-gradient(90deg, rgba(20,20,22,0.92) 0%, rgba(20,20,22,0.60) 55%, rgba(20,20,22,0.45) 100%), ' +
-      'linear-gradient(rgba(20,20,22,0.35), rgba(20,20,22,0.45)), ' +
+      'linear-gradient(rgba(20,20,22,0.58), rgba(20,20,22,0.68)), ' +
+      'linear-gradient(90deg, rgba(20,20,22,0.55) 0%, rgba(20,20,22,0.30) 55%, rgba(20,20,22,0.28) 100%), ' +
       `url('/assets/img/modos/${modo.clave}.${ext}')`
     );
   }
