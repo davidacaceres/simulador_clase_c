@@ -94,26 +94,15 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
               <span>{{ it.puntaje }} / {{ it.puntajeMaximo }}</span>
             </div>
 
-            <!-- Certificado: solo exámenes aprobados -->
-            <div class="cert" *ngIf="it.modo === 'examen' && it.aprobado">
-              <ng-container *ngIf="it.certificado as c; else formEmision">
-                <span class="folio">N° {{ c.folio }} · {{ c.nombre }}</span>
-                <button class="btn btn-secundario btn-sm" (click)="reimprimir(it)">
-                  Reimprimir y enviar por WhatsApp
-                </button>
-              </ng-container>
-              <ng-template #formEmision>
-                <form class="cert-form" (submit)="emitir(it, nom.value, cor.value); $event.preventDefault()">
-                  <input #nom type="text" placeholder="Nombre completo" />
-                  <input #cor type="email" placeholder="Correo" />
-                  <button class="btn btn-primario btn-sm" type="submit">Emitir y enviar por WhatsApp</button>
-                </form>
-              </ng-template>
+            <!-- Certificado: solo se puede REIMPRIMIR si fue emitido al finalizar el examen -->
+            <div class="cert" *ngIf="it.modo === 'examen' && it.aprobado && it.certificado as c">
+              <span class="folio">N° {{ c.folio }} · {{ c.nombre }}</span>
+              <button class="btn btn-secundario btn-sm" (click)="reimprimir(it)">
+                Reimprimir y enviar por WhatsApp
+              </button>
             </div>
           </div>
         </div>
-
-        <p class="cert-error" *ngIf="certError()">{{ certError() }}</p>
 
         <button class="btn btn-secundario btn-bloque mt-24" (click)="limpiar()">Borrar historial</button>
       </ng-container>
@@ -180,7 +169,6 @@ export class HistorialComponent implements OnInit {
 
   intentos = signal<Intento[]>(this.historial.obtenerIntentos());
   examenes = computed(() => this.intentos().filter((i) => i.modo === 'examen'));
-  certError = signal('');
   private bancoMap = signal<Map<string, Pregunta>>(new Map());
 
   /** Diagnóstico por categoría: aciertos/total y % sobre todo el detalle registrado. */
@@ -251,26 +239,6 @@ export class HistorialComponent implements OnInit {
       reimpresion: new Date(),
     });
     this.certificadoSrv.abrirWhatsApp(c.folio, it.puntaje, it.puntajeMaximo);
-  }
-
-  /** Emite por primera vez el certificado desde el historial y lo guarda. */
-  emitir(it: Intento, nombre: string, correo: string): void {
-    const n = nombre.trim();
-    const co = correo.trim();
-    if (n.length < 3) { this.certError.set('Ingresa el nombre completo.'); return; }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(co)) { this.certError.set('Correo inválido.'); return; }
-    this.certError.set('');
-    const emitido = new Date();
-    const folio = this.certificadoSrv.generarFolio(emitido);
-    this.certificadoSrv.generar({
-      datos: { nombre: n, correo: co },
-      resultado: this.construirResultado(it),
-      folio,
-      emitido,
-    });
-    this.historial.guardarCertificado(it.id, { folio, nombre: n, correo: co, emitido: emitido.toISOString() });
-    this.intentos.set(this.historial.obtenerIntentos());
-    this.certificadoSrv.abrirWhatsApp(folio, it.puntaje, it.puntajeMaximo);
   }
 
   tasaAprobacion = computed(() => {
