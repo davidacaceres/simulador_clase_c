@@ -180,13 +180,9 @@ export class InicioComponent {
   /** Fondo de la tarjeta: foto (.jpg) o ilustración (.svg) + degradado para legibilidad del texto. */
   fondo(modo: ModoTarjeta): string {
     const ext = modo.foto ? 'jpg' : 'svg';
-    // Tinte PLANO uniforme (misma opacidad en toda la tarjeta): cubre por igual
-    // arriba, abajo y los lados, sin franjas claras. La legibilidad del texto se
-    // refuerza con text-shadow (ver estilos), no con un gradiente.
-    return (
-      'linear-gradient(rgba(20,20,22,0.62), rgba(20,20,22,0.62)), ' +
-      `url('/assets/img/modos/${modo.clave}.${ext}')`
-    );
+    // El oscurecido va HORNEADO dentro de cada imagen (tinte + viñeta), así que
+    // el fondo es solo la foto: sin overlays ni gradientes en el CSS.
+    return `url('/assets/img/modos/${modo.clave}.${ext}')`;
   }
 
   modos: ModoTarjeta[] = [
