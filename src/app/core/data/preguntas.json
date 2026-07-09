@@ -4283,7 +4283,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Ceda el paso». Indica a los conductores que la enfrentan que deben “ceder el paso” a los vehículos que circulan por la calle a la cual se aproximan. No es necesario detenerse, si es que existe el espacio y tiempo suficiente para cruzar.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4305,7 +4305,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Circulación en ambos sentidos». Es utilizada para indicar a los conductores de vehículos que están circulando por una vía de un sentido que a partir de esta señal, la vía se transforma en una arteria de dos sentidos de tránsito.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4349,7 +4349,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Dirección obligada». Es utilizada para señalar a los conductores de vehículos la obligación de circular en la dirección y sentido indicado por la flecha. Hacia arriba indica la obligación de continuar de frente.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4371,7 +4371,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Estacionamiento permitido». Se utiliza para indicar a los conductores la existencia de un lugar autorizado para estacionar vehículos.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4393,7 +4393,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Fin prohibición o restricción». Indica a los conductores el término de una prohibición o restricción previamente establecida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4437,7 +4437,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Mantenga su derecha». Se instala para indicar a los conductores que deben circular por la derecha, para dejar libre las pistas de la izquierda y facilitar así la circulación de los demás vehículos. 4",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4459,7 +4459,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «No adelantar». Es utilizada para indicar la prohibición de adelantar o sobrepasar a un vehículo, debido a que no se cumplen las condiciones de seguridad para efectuar la maniobra.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4481,7 +4481,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «No bloquear cruce». Indica la prohibición a los conductores de quedar detenido dentro de un cruce por cualquier razón, de manera de no interrupir la circulación de los demás vehículos.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4503,7 +4503,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «No cambiar de pista». Es utilizada para indicar al conductor que no podrá cambiar de pista por la cual va circulando.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4525,7 +4525,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «No entrar». Esta señal prohíbe la continuación del movimiento directo de los vehículos que la enfrentan, es decir, no pueden pasar más allá del lugar en que la señal se encuentra instalada.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4547,7 +4547,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «No peatones». Se emplea para prohibir la circulación de peatones. Generalmente se utiliza en zonas rurales, donde exista alto flujo vehicular. 5",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4569,7 +4569,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «No virar a la derecha». Se emplea para indicar al conductor que no podrá virar a la derecha en el punto donde se encuentra la señal.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4591,7 +4591,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «No virar a la izquierda». Se emplea para indicar al conductor que no podrá virar a la izquierda en el punto donde se encuentra la señal.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4613,7 +4613,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «No virar en U». Se usa para indicar al conductor que no puede virar en 180 grados aproximadamente. Al hacerlo interrumpe la circulación de otros vehículos y constituye un factor de riesgo.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4635,7 +4635,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Pare». Su propósito es ordenar al conductor que detenga completamente su vehículo y sólo avanzar cuando elimine totalmente la posibilidad de accidente. El hecho de no respetarla puede provocar un gravísimo accidente.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4657,7 +4657,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Pare niños». Esta señal obliga al conductor a detener totalmente su vehículo en el lugar donde se encuentra para permitir el paso seguro de escolares. Esta señal es portátil y debe ser usada por personal instruido por Carabineros de Chile. 6",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4679,7 +4679,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Paso obligado a la derecha». Es utilizada para indicar a los conductores que deben continuar circulando por el lado de la calzada que indica la punta de la flecha.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4701,7 +4701,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Paso obligado a la izquierda». Es utilizada para indicar a los conductores que deben continuar circulando por el lado de la calzada que indica la punta de la flecha.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4745,7 +4745,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Permitido virar derecha con luz roja». Se emplea para indicar a los conductores que accedan a una intersección controlada por semáforos, que está permitido el viraje hacia la derecha con luz roja, previa detención y dando preferencia a peatones.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4811,7 +4811,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Preferencia al sentido contrario». Se usa para indicar a los conductores que los vehículos que circulan en sentido opuesto tienen prioridad. Por ejemplo: en puentes estrechos, angostamiento de calzadas, etc.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4833,7 +4833,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Prohibida circulación de bicicletas». Esta señal indica la prohibición para circular en bicicleta. Como por ejemplo en autopistas, autovías y túneles.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4855,7 +4855,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Prohibida circulación de buses». Esta señal indica la prohibición de circulación de buses.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4921,7 +4921,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Prohibida circulación de motocicletas». Esta señal indica la prohibición de circulación de motocicletas o similares.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4965,7 +4965,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Prohibida circulación de vehículos motorizados». Se utiliza para indicar la prohibición de circulación de vehículos motorizados. Su uso se restringe a áreas peatonales y a vías para vehículos de tracción animal y/o bicicletas.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -4987,7 +4987,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Prohibida circulación vehículos de carga». Se usa para indicar la prohibición de circulación de vehículos de carga. 9",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5009,7 +5009,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Prohibido estacionar». Se usa para indicar la prohibición de estacionar a partir de donde se encuentra la señal, ya que al hacerlo puede interrumpir la circulación de los demás vehículos.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5031,7 +5031,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Prohibido estacionar y detenerse». Se usa para indicar la prohibición de estacionar y/o detener un vehículo, a partir del lugar donde ella se encuentra. Al hacerlo se interrumpe la libre circulación de los demás vehículos.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5075,7 +5075,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Solo bicicletas». Es utilizada para indicar la existencia de una pista o vía exclusiva para bicicletas.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5097,7 +5097,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Solo motocicletas». Esta señal tiene aplicación netamente urbana y se usa para indicar que una pista o vía es exclusiva para la circulación de motocicletas. 10",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5141,7 +5141,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Tránsito de peatones». Es usada para informar a los peatones que deben caminar enfrentando el tránsito vehicular. Su empleo en zonas urbanas no es recomendable.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5163,7 +5163,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Tránsito en ambos sentidos». Se utiliza para indicar dos sentidos de tránsito en una calle o vía. Puede estar unida lateralmente a otra placa que informe el nombre y numeración de la calle o vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5185,7 +5185,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Tránsito en un sentido». Es usada para indicar el sentido del tránsito en una vía. Generalmente está unida a otra señal que informa el nombre y numeración de la calle o vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5229,7 +5229,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Velocidad máxima». Se utiliza para indicar la velocidad máxima permitida a la que los vehículos pueden circular en un tramo de vía determinado.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5251,7 +5251,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal reglamentaria «Velocidad mínima». Se usa para establecer la velocidad mínima permitida a la que los vehículos pueden circular en un tramo de vía determinado.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5273,7 +5273,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal reglamentaria «Vía segregada buses». Es utilizada para indicar la existencia de una pista o vía exclusiva para buses. 12",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5339,7 +5339,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Angostamiento a ambos lados». Se usa para prevenir la proximidad de un estrechamiento de la vía a ambos lados.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5361,7 +5361,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Angostamiento a la derecha». Se usa para señalar la proximidad de un estrechamiento de la vía al costado derecho de la calzada.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5383,7 +5383,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Animales en la vía». Se usa para alertar a los conductores de vehículos de la posible presencia de animales en la vía, sean domésticos o de ganado 14",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5405,7 +5405,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Badén». Se utiliza para advertir a los conductores de la proximidad de una irregularidad física de tipo cóncavo en la superficie de la vía, la cual puede representar riesgos para la conducción lo que obliga a tomar precauciones",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5427,7 +5427,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Barrera». Su aplicación puede ser: Permanente: Se usa para indicar el punto donde finaliza una vía o rampa.Temporal: Se usa para prevenir el cierre momentáneo de la vía en un cruce ferroviario o peaje.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5471,7 +5471,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Ciclistas en la vía». Se utiliza para advertir la probable presencia de ciclistas en la vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5493,7 +5493,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Cruce». Sirve para indicar la proximidad de una calle que cruza en forma perpendicular la vía por la cual un conductor transita, de tal forma de disminuir la velocidad, estando atento para evitar algún accidente. 15",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5515,7 +5515,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Cruce en T». Es utilizada para advertir a los conductores la proximidad de un cruce en “T”. En el ejemplo, se muestran flujos equivalentes.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5537,7 +5537,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Cruce ferroviario a nivel con barreras». Se utiliza para advertir la proximidad de un cruce ferroviario a nivel, provisto de barreras accionadas manualmente o en forma automática.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5559,7 +5559,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Cruce ferroviaro a nivel sin barrera». Es utilizada para alertar a los conductores de la proximidad de un cruce de trenes a nivel, el cual no posee barreras.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5581,7 +5581,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Cruz de San Andrés». Se utiliza como señal complementaria a la señal de cruce ferroviario, se instala lo más cerca posible de la vía férrea.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5603,7 +5603,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Curva a la derecha». Se utiliza para advertir la proximidad de una curva cuya velocidad de diseño es menor que la velocidad máxima o de operación del resto de la vía. 16",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5625,7 +5625,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Curva a la derecha». Se utiliza para advertir la proximidad de una curva cuya velocidad de diseño es menor que la velocidad máxima o de operación del resto de la vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5647,7 +5647,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Curva y contracurva a la derecha». Estas señales se usan para advertir la proximidad de dos curvas consecutivas y en sentido contrario y cuya velocidad de diseño es menor que la velocidad máxima o de operación de la vía",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5669,7 +5669,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Curva y contracurva cerrada a la derecha». Es utilizada para advertir la proximidad de dos curvas consecutivas y en sentido contrario, cuando al menos una de ellas es cerrada.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5713,7 +5713,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Dos sentidos de tránsito». Es usada para indicar a los conductores que se encuentran circulando por una vía de un sentido, que más adelante el tránsito será de dos sentidos. 17",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5757,7 +5757,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Ensanchamiento a ambos lados». Se utiliza para advertir al conductor de un ensanche de la calzada a ambos lados.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5779,7 +5779,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Ensanchamiento a la derecha». Se utiliza para advertir al conductor de un ensanche de la calzada al costado derecho.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5845,7 +5845,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Niños jugando». Se utiliza para indicar a los conductores la posible presencia de niños jugando en la vía o en sus proximidades.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5867,7 +5867,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Pavimento resbaladizo». Se instala para indicar la existencia de pavimento resbaladizo en la vía, situación que se agrava con el agua.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5889,7 +5889,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Peligro». Se usa para advertir la proximidad de un peligro o riesgo no suceptible de ser prevenido.Se complementa con una placa que contiene una leyenda que especifica la naturaleza del peligro.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5911,7 +5911,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Pendiente fuerte de bajada». Es utilizada para advertir la proximidad de una pendiente fuerte de bajada. Esta señal puede estar complementada con una placa que contenga el porcentaje de dicha pendiente, expresado en números enteros.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5933,7 +5933,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Pendiente fuerte de subida». Es usada para advertir la proximidad de una pendiente fuerte de subida. Esta señal puede estar unida con una placa que contenga el porcentaje de dicha pendiente, expresado en números enteros. 19",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -5999,7 +5999,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Proximidad de semáforo». Se utiliza para indicar la proximidad de una intersección semaforizada, cuando ésta constituye una situación puntual y aislada en la vía, por lo tanto, inesperada para el conductor.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6021,7 +6021,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Proximidad paso de cebra». Se utiliza, para advertir la proximidad de un cruce peatonal. Se instala antes de Pasos Cebra, donde el peatón tiene siempre prioridad.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6043,7 +6043,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Proximidad rotonda». Está instalada para avisar al conductor de la proximidad de una rotonda, por lo cual debe reducir la velocidad y ceder el paso antes de ingresar a la misma. 20",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6065,7 +6065,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Proximidad túnel». Es utilizada para alertar a los conductores que se aproximan a un túnel.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6087,7 +6087,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Proyección de gravilla». Se utiliza para prevenir la presencia de grava o material suelto que puede ser proyectado por los vehículos, dañando a terceros.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6109,7 +6109,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Puente angosto». Se utiliza para advertir la proximidad de un puente u otra obra civil, cuyo ancho total disponible es menor que el que tiene el resto de la vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6131,7 +6131,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Resalto». Se utiliza para advetir la proximidad de un resalto o de un reductor de velocidad en la superficie de la calzada.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6153,7 +6153,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Resaltos sucesivos». Esta señal se emplea para advertir la proximidad de una secuencia de resaltos en la superficie de la calzada. 21",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6197,7 +6197,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Viento lateral». Es utilizada para indicar la probable existencia de vientos laterales fuertes, que pueden afectar la estabilidad de vehículos livianos.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6219,7 +6219,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Zona de curvas a la derecha». Estas señales se usan para advertir la proximidad de una zona con tres o más curvas consecutivas de sentidos opuestos y cuya velocidad de diseño es menor que la velocidad máxima o de operación de la vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6241,7 +6241,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal de advertencia de peligro «Zona de derrumbes». Se utiliza para advertir la proximidad de zonas de derrumbes o rodados, con posible desprendimiento de materiales y su presencia en la vía.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6263,7 +6263,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Zona de escuela». Se usa para indicar a los conductores la posible presencia de escolares en la vía, por la existencia de colegios. 22",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6285,7 +6285,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 3,
     "explicacion": "Es la señal de advertencia de peligro «Zona de peatones». Se usa para advertir la probable presencia de peatones en la vía. 23",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6439,7 +6439,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Baliza 100 metros». Se emplea para indicar en autopista el inicio de la pista de desaceleración de salida en 100 metros.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6461,7 +6461,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Baliza 200 metros». Se emplea para indicar en autopista el inicio de la pista de desaceleración de salida en 200 metros.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6483,7 +6483,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Baliza 300 metros». Se emplea para indicar en autopista el inicio de la pista de desaceleración de salida en 300 metros.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6879,7 +6879,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Estación de servicio». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -6945,7 +6945,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Fin de autopista». Se utiliza para indicar el fin de autopista. 30",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7099,7 +7099,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Hospedaje». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7121,7 +7121,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Inicio autopista». Se utiliza para indicar el inicio de autopista.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7341,7 +7341,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Oficina de informaciones». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7385,7 +7385,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Parada de buses». Esta señal indica el lugar donde está autorizada la detención de buses de transporte público para tomar o dejar pasajeros. Tratándose de sistemas de paradas diferidas se puede utilizar una señal especial, la que debe ser aprobada…",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7495,7 +7495,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Pista solo buses». Esta señal informa la proximidad de pistas exclusivas para buses. Debe ser instalada de manera de indicar con la suficiente anticipación el inicio de tal modalidad. Tiene fondo verde y su símbolo es blanco. 35",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7539,7 +7539,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Plaza de peaje». Esta señal se utiliza para informar la proximidad de una plaza de peaje; debe acompañarse de una placa adicional que indique la distancia de ella.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7561,7 +7561,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Plaza de pesaje». Esta señal se utiliza para informar la proximidad de una plaza de pesaje; debe acompañarse de una placa adicional que indique la distancia de ella.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7583,7 +7583,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Primeros auxilios». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7605,7 +7605,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Proximidad de autopista». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida. 36",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7649,7 +7649,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Retorno autopista». Se emplea para indicar la posibilidad de realizar el movimiento de retorno a desnivel en la siguiente salida lateral de la autopista.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7693,7 +7693,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Salida». Se emplea para indicar donde nace la bifurcación hacia la salida. 37",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7715,7 +7715,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Salida antes de autopista». Se emplea para indicar la última salida antes de ingresar a la autopista.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7737,7 +7737,7 @@
       0
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Salida lateral derecha». Se emplea para indicar la salida de la autopista.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7759,7 +7759,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Servicios higiénicos». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7847,7 +7847,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Solo televía». Se emplea para indicar que sólo pueden ingresar aquellos vehículos que cuenten con el sistema Televía (TAG) o sistema habilitado.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7869,7 +7869,7 @@
       1
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Télefono». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7891,7 +7891,7 @@
       3
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Télefono de emergencia». Cuadrada, de fondo AZUL en autopistas y VERDES en vías convencionales; símbolo y leyenda blanco. Si está al inicio de la salida que conduce a la instalación, puede llevar flecha apuntando en la dirección de la salida.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"
@@ -7957,7 +7957,7 @@
       2
     ],
     "esDoblePuntaje": false,
-    "pesoExamen": 1,
+    "pesoExamen": 2,
     "explicacion": "Es la señal informativa «Vía perpendicular con pista solo buses». Esta señal se utiliza para informar que en la próxima vía perpendicular existe una pista exclusiva para buses, cuando el viraje a la derecha no está restringido.",
     "referencia": "Señales de tránsito — Catálogo CONASET / Ministerio de Transportes",
     "fuente": "Catálogo de Señales de Tránsito (CONASET / MTT)"

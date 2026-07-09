@@ -41,9 +41,10 @@ export interface Pregunta {
   /** true si pertenece a un tema de doble puntaje (velocidad, alcohol, cinturón, casco, retención infantil). */
   esDoblePuntaje: boolean;
   /**
-   * Peso / probabilidad relativa de aparecer en el Modo Examen.
-   * 1 = normal, mayor = más probable, 0 = nunca aparece en el examen.
-   * (No afecta a los modos de práctica, que usan todo el banco.)
+   * Peso / probabilidad relativa según su frecuencia de uso real.
+   * 1 = normal, mayor = más frecuente, 0 = nunca aparece en el examen.
+   * En el Modo Examen aumenta la probabilidad de ser seleccionada; en los modos
+   * de práctica ordena las preguntas para que las más frecuentes salgan primero.
    */
   pesoExamen: number;
   /** Explicación que se muestra en la revisión / práctica. */

@@ -6,7 +6,7 @@ import { Pregunta } from '../../core/models/pregunta.model';
 import { Intento, ModoIntento } from '../../core/models/intento.model';
 import { Categoria } from '../../core/enums/categoria.enum';
 import { HistorialService } from '../../core/services/historial.service';
-import { mezclar } from '../../core/utils/aleatorio';
+import { mezclarPonderado } from '../../core/utils/aleatorio';
 
 import { PreguntaCardComponent } from '../pregunta-card/pregunta-card.component';
 import { EmparejamientoCardComponent } from '../emparejamiento-card/emparejamiento-card.component';
@@ -213,7 +213,9 @@ export class PracticaRunnerComponent implements OnInit {
   }
 
   reiniciar(): void {
-    const mezcladas = mezclar(this.preguntas);
+    // Orden ponderado: las preguntas de mayor pesoExamen (señales frecuentes,
+    // cuestionario) tienden a aparecer primero para estudiarlas antes.
+    const mezcladas = mezclarPonderado(this.preguntas, (p) => p.pesoExamen ?? 1);
     this.preguntasMezcladas.set(mezcladas);
     this.seleccionados.set(
       mezcladas.map((p) =>

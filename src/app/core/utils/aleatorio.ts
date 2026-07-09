@@ -28,3 +28,12 @@ export function elegirPonderado<T>(
     .slice(0, n)
     .map((x) => x.it);
 }
+
+/**
+ * Mezcla ponderada: devuelve TODOS los elementos en un orden aleatorio en el
+ * que los de mayor peso tienden a aparecer primero. Útil para la práctica, para
+ * que las preguntas más frecuentes se estudien antes. Cada vez el orden cambia.
+ */
+export function mezclarPonderado<T>(items: readonly T[], peso: (item: T) => number): T[] {
+  return elegirPonderado(items, items.length, peso);
+}
