@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300"><g opacity="0.85"><g transform="translate(384,28)"><circle cx="46" cy="46" r="40" fill="none" stroke="#FFAD33" stroke-width="6"/><circle cx="46" cy="46" r="24" fill="none" stroke="#FFAD33" stroke-width="6"/><circle cx="46" cy="46" r="8" fill="#FFAD33"/></g></g><g opacity="0.30" transform="translate(70,32) scale(0.95)"><circle cx="150" cy="200" r="58" fill="none" stroke="#FFAD33" stroke-width="16"/><circle cx="150" cy="200" r="38" fill="none" stroke="#FFAD33" stroke-width="4" opacity="0.7"/><line x1="150" y1="200" x2="150.0" y2="238.0" stroke="#FFAD33" stroke-width="9"/><line x1="150" y1="200" x2="117.1" y2="181.0" stroke="#FFAD33" stroke-width="9"/><line x1="150" y1="200" x2="182.9" y2="181.0" stroke="#FFAD33" stroke-width="9"/><circle cx="150" cy="200" r="13" fill="#FFAD33"/><circle cx="368" cy="200" r="58" fill="none" stroke="#FFAD33" stroke-width="16"/><circle cx="368" cy="200" r="38" fill="none" stroke="#FFAD33" stroke-width="4" opacity="0.7"/><line x1="368" y1="200" x2="368.0" y2="238.0" stroke="#FFAD33" stroke-width="9"/><line x1="368" y1="200" x2="335.1" y2="181.0" stroke="#FFAD33" stroke-width="9"/><line x1="368" y1="200" x2="400.9" y2="181.0" stroke="#FFAD33" stroke-width="9"/><circle cx="368" cy="200" r="13" fill="#FFAD33"/>
+    <g fill="#FFAD33" stroke="#FFAD33" stroke-linejoin="round" stroke-linecap="round">
+      <!-- swingarm -->
+      <line x1="150" y1="200" x2="215" y2="188" stroke-width="13"/>
+      <!-- front fork -->
+      <line x1="298" y1="150" x2="368" y2="200" stroke-width="13"/>
+      <!-- engine block -->
+      <path d="M196 170 h86 a10 10 0 0 1 10 10 v22 a10 10 0 0 1 -10 10 h-86 a10 10 0 0 1 -10 -10 v-22 a10 10 0 0 1 10 -10 Z" stroke-width="2"/>
+      <!-- exhaust -->
+      <path d="M250 206 C210 226 185 228 150 226" fill="none" stroke-width="9" opacity="0.85"/>
+      <!-- seat + tail -->
+      <path d="M120 150 L150 150 L222 146 L222 166 L150 168 L120 168 Z" stroke-width="2"/>
+      <!-- fuel tank -->
+      <path d="M214 150 C222 126 250 120 276 124 C300 128 306 142 300 152 L214 152 Z" stroke-width="2"/>
+      <!-- handlebar -->
+      <line x1="300" y1="150" x2="316" y2="122" stroke-width="9"/>
+      <line x1="308" y1="118" x2="332" y2="128" stroke-width="8"/>
+      <!-- headlight fairing -->
+      <path d="M300 150 L318 150 L306 172 L292 168 Z" stroke-width="2"/>
+    </g></g></svg>

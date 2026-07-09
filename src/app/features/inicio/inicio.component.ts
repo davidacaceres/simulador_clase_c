@@ -5,11 +5,14 @@ import { BancoPreguntasService } from '../../core/services/banco-preguntas.servi
 
 /** Descripción de un modo para la pantalla de inicio. */
 interface ModoTarjeta {
-  icono: string;
+  /** Clave usada para la imagen de fondo (/assets/img/modos/{clave}.{svg|jpg}). */
+  clave: string;
   titulo: string;
   descripcion: string;
   ruta: string | null;
   etapa: string;
+  /** true si tiene foto real (.jpg); si no, usa la ilustración .svg. */
+  foto?: boolean;
 }
 
 @Component({
@@ -79,11 +82,11 @@ interface ModoTarjeta {
           *ngFor="let modo of modos"
           class="card modo"
           [class.deshabilitado]="!modo.ruta"
+          [style.backgroundImage]="fondo(modo)"
           [disabled]="!modo.ruta"
           type="button"
           (click)="abrir(modo)"
         >
-          <span class="modo-icono" aria-hidden="true">{{ modo.icono }}</span>
           <span class="modo-titulo">{{ modo.titulo }}</span>
           <span class="modo-desc">{{ modo.descripcion }}</span>
           <span class="modo-etapa" *ngIf="!modo.ruta">Próximamente · {{ modo.etapa }}</span>
@@ -147,17 +150,18 @@ interface ModoTarjeta {
       .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
       @media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
       .modo {
-        display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
-        text-align: left; cursor: pointer; color: var(--color-texto);
-        border: 2px solid transparent;
+        display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end;
+        gap: 4px; min-height: 150px; text-align: left; cursor: pointer; color: var(--color-texto);
+        border: 2px solid transparent; overflow: hidden;
+        background-color: var(--color-superficie);
+        background-size: cover; background-position: right center; background-repeat: no-repeat;
         transition: border-color 0.15s ease, transform 0.05s ease;
       }
       .modo:not(.deshabilitado):hover { border-color: var(--color-primario); }
       .modo:active { transform: scale(0.99); }
       .modo.deshabilitado { opacity: 0.6; cursor: not-allowed; }
-      .modo-icono { font-size: 1.8rem; }
-      .modo-titulo { font-weight: 700; font-size: 1.05rem; }
-      .modo-desc { font-size: 0.85rem; color: var(--color-texto-suave); }
+      .modo-titulo { font-weight: 700; font-size: 1.15rem; }
+      .modo-desc { font-size: 0.85rem; color: var(--color-texto-suave); max-width: 64%; }
       .modo-etapa { margin-top: 4px; font-size: 0.72rem; color: var(--color-acento); font-weight: 600; }
     `,
   ],
@@ -170,13 +174,22 @@ export class InicioComponent {
   ir(ruta: string): void { this.router.navigate([ruta]); }
   abrir(modo: ModoTarjeta): void { if (modo.ruta) this.router.navigate([modo.ruta]); }
 
+  /** Fondo de la tarjeta: foto (.jpg) o ilustración (.svg) + degradado para legibilidad del texto. */
+  fondo(modo: ModoTarjeta): string {
+    const ext = modo.foto ? 'jpg' : 'svg';
+    return (
+      'linear-gradient(90deg, rgba(20,20,22,0.96) 0%, rgba(20,20,22,0.80) 42%, rgba(20,20,22,0.15) 100%), ' +
+      `url('/assets/img/modos/${modo.clave}.${ext}')`
+    );
+  }
+
   modos: ModoTarjeta[] = [
-    { icono: '📝', titulo: 'Modo Examen', descripcion: '35 preguntas, 45 minutos y reglas reales del examen.', ruta: '/examen', etapa: 'Etapa 3' },
-    { icono: '🎯', titulo: 'Modo Práctica', descripcion: 'Sin tiempo, con feedback inmediato tras cada respuesta.', ruta: '/practica', etapa: 'Etapa 4' },
-    { icono: '🏍️', titulo: 'Práctica Conducir Motos', descripcion: 'Solo preguntas del cuestionario de conducirmotos.cl.', ruta: '/conducir-motos', etapa: '' },
-    { icono: '📚', titulo: 'Práctica por Tema', descripcion: 'Estudia una categoría específica del temario.', ruta: '/por-tema', etapa: 'Etapa 4' },
-    { icono: '🔁', titulo: 'Repaso de errores', descripcion: 'Repite solo las preguntas que fallaste.', ruta: '/repaso', etapa: 'Etapa 4' },
-    { icono: '★', titulo: 'Repaso de favoritas', descripcion: 'Practica las preguntas que marcaste como difíciles.', ruta: '/favoritas', etapa: '' },
-    { icono: '📊', titulo: 'Historial y estadísticas', descripcion: 'Revisa tus intentos y tu progreso.', ruta: '/historial', etapa: 'Etapa 6' },
+    { clave: 'examen', titulo: 'Modo Examen', descripcion: '35 preguntas, 45 minutos y reglas reales del examen.', ruta: '/examen', etapa: 'Etapa 3', foto: true },
+    { clave: 'practica', titulo: 'Modo Práctica', descripcion: 'Sin tiempo, con feedback inmediato tras cada respuesta.', ruta: '/practica', etapa: 'Etapa 4', foto: true },
+    { clave: 'conducir-motos', titulo: 'Práctica Conducir Motos', descripcion: 'Solo preguntas del cuestionario de conducirmotos.cl.', ruta: '/conducir-motos', etapa: '', foto: true },
+    { clave: 'por-tema', titulo: 'Práctica por Tema', descripcion: 'Estudia una categoría específica del temario.', ruta: '/por-tema', etapa: 'Etapa 4', foto: true },
+    { clave: 'repaso', titulo: 'Repaso de errores', descripcion: 'Repite solo las preguntas que fallaste.', ruta: '/repaso', etapa: 'Etapa 4', foto: true },
+    { clave: 'favoritas', titulo: 'Repaso de favoritas', descripcion: 'Practica las preguntas que marcaste como difíciles.', ruta: '/favoritas', etapa: '', foto: true },
+    { clave: 'historial', titulo: 'Historial y estadísticas', descripcion: 'Revisa tus intentos y tu progreso.', ruta: '/historial', etapa: 'Etapa 6', foto: true },
   ];
 }
