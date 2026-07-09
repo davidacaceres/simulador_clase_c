@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Pregunta } from '../../core/models/pregunta.model';
+import { FavoritosService } from '../../core/services/favoritos.service';
 
 /**
  * Muestra una pregunta con sus alternativas. Soporta selección ÚNICA (radio) y
@@ -16,6 +17,17 @@ import { Pregunta } from '../../core/models/pregunta.model';
   imports: [CommonModule],
   template: `
     <div class="card pregunta">
+      <button
+        type="button"
+        class="fav"
+        [class.activa]="fav.esFavorita(pregunta.id)"
+        [attr.aria-pressed]="fav.esFavorita(pregunta.id)"
+        (click)="fav.alternar(pregunta.id)"
+        title="Marcar como difícil / favorita"
+      >
+        {{ fav.esFavorita(pregunta.id) ? '★' : '☆' }}
+      </button>
+
       <span class="tipo-badge" [class.multi]="esMultiple">
         {{ esMultiple ? '☑ Selección múltiple · marca todas las que correspondan' : '◉ Selección única' }}
       </span>
@@ -137,6 +149,20 @@ import { Pregunta } from '../../core/models/pregunta.model';
         -webkit-user-select: none;
         user-select: none;
       }
+      .fav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: var(--color-texto-suave);
+        font-size: 1.4rem;
+        line-height: 1;
+        cursor: pointer;
+        padding: 2px 4px;
+      }
+      .fav.activa { color: var(--color-acento); }
+      .fav:hover { color: var(--color-acento); }
       .id-interno {
         position: absolute;
         bottom: 6px;
@@ -151,6 +177,7 @@ import { Pregunta } from '../../core/models/pregunta.model';
   ],
 })
 export class PreguntaCardComponent {
+  readonly fav = inject(FavoritosService);
   @Input({ required: true }) pregunta!: Pregunta;
   /** Índices actualmente marcados por el usuario. */
   @Input() seleccionados: number[] = [];

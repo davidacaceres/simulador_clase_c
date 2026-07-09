@@ -42,6 +42,11 @@ export const routes: Routes = [
       import('./features/repaso/repaso.component').then((m) => m.RepasoComponent),
   },
   {
+    path: 'favoritas',
+    loadComponent: () =>
+      import('./features/favoritas/favoritas.component').then((m) => m.FavoritasComponent),
+  },
+  {
     path: 'historial',
     loadComponent: () =>
       import('./features/historial/historial.component').then((m) => m.HistorialComponent),

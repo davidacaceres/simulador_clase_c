@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Pregunta } from '../../core/models/pregunta.model';
+import { FavoritosService } from '../../core/services/favoritos.service';
 
 /**
  * Tarjeta para preguntas de tipo 'emparejamiento': muestra la imagen con los
@@ -14,6 +15,17 @@ import { Pregunta } from '../../core/models/pregunta.model';
   imports: [CommonModule],
   template: `
     <div class="card pregunta">
+      <button
+        type="button"
+        class="fav"
+        [class.activa]="fav.esFavorita(pregunta.id)"
+        [attr.aria-pressed]="fav.esFavorita(pregunta.id)"
+        (click)="fav.alternar(pregunta.id)"
+        title="Marcar como difícil / favorita"
+      >
+        {{ fav.esFavorita(pregunta.id) ? '★' : '☆' }}
+      </button>
+
       <span class="tipo-badge">🔗 Emparejamiento · asocia cada número con su significado</span>
 
       <p class="enunciado">{{ pregunta.enunciado }}</p>
@@ -121,6 +133,20 @@ import { Pregunta } from '../../core/models/pregunta.model';
         -webkit-user-select: none;
         user-select: none;
       }
+      .fav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: var(--color-texto-suave);
+        font-size: 1.4rem;
+        line-height: 1;
+        cursor: pointer;
+        padding: 2px 4px;
+      }
+      .fav.activa { color: var(--color-acento); }
+      .fav:hover { color: var(--color-acento); }
       .id-interno {
         position: absolute;
         bottom: 6px;
@@ -135,6 +161,7 @@ import { Pregunta } from '../../core/models/pregunta.model';
   ],
 })
 export class EmparejamientoCardComponent {
+  readonly fav = inject(FavoritosService);
   @Input({ required: true }) pregunta!: Pregunta;
   /** seleccionados[i] = índice de alternativa elegida para el ítem i (-1 = sin elegir). */
   @Input() seleccionados: number[] = [];

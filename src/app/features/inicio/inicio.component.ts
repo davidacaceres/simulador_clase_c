@@ -176,6 +176,7 @@ export class InicioComponent {
     { icono: '🏍️', titulo: 'Práctica Conducir Motos', descripcion: 'Solo preguntas del cuestionario de conducirmotos.cl.', ruta: '/conducir-motos', etapa: '' },
     { icono: '📚', titulo: 'Práctica por Tema', descripcion: 'Estudia una categoría específica del temario.', ruta: '/por-tema', etapa: 'Etapa 4' },
     { icono: '🔁', titulo: 'Repaso de errores', descripcion: 'Repite solo las preguntas que fallaste.', ruta: '/repaso', etapa: 'Etapa 4' },
+    { icono: '★', titulo: 'Repaso de favoritas', descripcion: 'Practica las preguntas que marcaste como difíciles.', ruta: '/favoritas', etapa: '' },
     { icono: '📊', titulo: 'Historial y estadísticas', descripcion: 'Revisa tus intentos y tu progreso.', ruta: '/historial', etapa: 'Etapa 6' },
   ];
 }
