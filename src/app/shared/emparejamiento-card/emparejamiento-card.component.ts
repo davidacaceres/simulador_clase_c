@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Pregunta } from '../../core/models/pregunta.model';
 import { FavoritosService } from '../../core/services/favoritos.service';
+import libroCfg from '../../core/data/libro.config.json';
 
 /**
  * Tarjeta para preguntas de tipo 'emparejamiento': muestra la imagen con los
@@ -68,7 +69,17 @@ import { FavoritosService } from '../../core/services/favoritos.service';
 
       <div class="feedback" *ngIf="mostrarFeedback">
         <p class="explicacion"><strong>Explicación:</strong> {{ pregunta.explicacion }}</p>
-        <p class="referencia">{{ pregunta.referencia }}</p>
+        <div class="ref-libro" *ngIf="pregunta.referencia">
+          <span class="ref-icono" aria-hidden="true">📖</span>
+          <span class="ref-texto">{{ pregunta.referencia }}</span>
+          <a
+            class="ref-link"
+            [href]="libro.enlace"
+            target="_blank"
+            rel="noopener"
+            [title]="libro.titulo"
+          >{{ libro.textoEnlace }} →</a>
+        </div>
         <p class="fuente"><strong>Fuente:</strong> {{ pregunta.fuente }}</p>
       </div>
 
@@ -124,9 +135,20 @@ import { FavoritosService } from '../../core/services/favoritos.service';
       .sel.incorrecta { border-color: var(--color-error); background: rgba(255, 69, 58, 0.15); }
       .correcto { font-size: 0.85rem; color: var(--color-exito); font-weight: 700; }
       .feedback { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--color-borde); }
-      .explicacion { margin: 0 0 6px; font-size: 0.95rem; }
-      .referencia { margin: 0; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
-      .fuente { margin: 4px 0 0; font-size: 0.78rem; color: var(--color-texto-suave); }
+      .explicacion { margin: 0 0 10px; font-size: 0.95rem; }
+      .ref-libro {
+        display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+        padding: 8px 12px; border-radius: var(--radio);
+        background: var(--color-superficie-2); border: 1px solid var(--color-borde);
+      }
+      .ref-icono { flex: 0 0 auto; }
+      .ref-texto { flex: 1; min-width: 140px; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
+      .ref-link {
+        flex: 0 0 auto; font-size: 0.8rem; font-weight: 700; color: var(--color-acento);
+        text-decoration: none; white-space: nowrap;
+      }
+      .ref-link:hover { text-decoration: underline; }
+      .fuente { margin: 8px 0 0; font-size: 0.78rem; color: var(--color-texto-suave); }
       .pregunta {
         position: relative;
         padding-bottom: 26px;
@@ -168,6 +190,8 @@ export class EmparejamientoCardComponent {
   @Input() mostrarFeedback = false;
   @Input() deshabilitado = false;
   @Output() emparejar = new EventEmitter<{ item: number; opcion: number }>();
+
+  readonly libro = libroCfg;
 
   onCambio(item: number, ev: Event): void {
     const opcion = Number((ev.target as HTMLSelectElement).value);

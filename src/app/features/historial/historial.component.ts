@@ -26,6 +26,34 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
       <h2>Historial y estadísticas</h2>
 
       <ng-container *ngIf="intentos().length > 0; else vacio">
+        <!-- Preparación + racha -->
+        <div class="resumen mt-16">
+          <div class="card listo-card">
+            <div class="anillo" [style.--pct]="listo()" [class.completo]="listo() >= 100">
+              <span class="anillo-num">{{ listo() }}%</span>
+            </div>
+            <div class="listo-info">
+              <strong>{{ listoLabel() }}</strong>
+              <p *ngIf="listo() < 100">
+                Meta: ≥ {{ META_CAT }}% en todas las categorías.
+                Te faltan <strong>{{ categoriasBajoMeta() }}</strong>.
+              </p>
+              <p *ngIf="listo() >= 100">Dominas todo el temario. ¡A dar el examen!</p>
+            </div>
+          </div>
+
+          <div class="card racha-card">
+            <div class="racha-num">🔥 {{ racha() }}</div>
+            <div class="racha-info">
+              <strong>{{ racha() === 1 ? '1 día' : racha() + ' días' }} de racha</strong>
+              <p>Hoy: {{ preguntasHoy() }}/{{ META_DIARIA }} preguntas</p>
+              <div class="meta-bar">
+                <div class="meta-fill" [class.completa]="metaPct() >= 100" [style.width.%]="metaPct()"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Estadísticas -->
         <div class="stats mt-16">
           <div class="card stat">
@@ -116,6 +144,26 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
   `,
   styles: [
     `
+      .resumen { display: grid; grid-template-columns: 1fr; gap: 12px; }
+      @media (min-width: 560px) { .resumen { grid-template-columns: 1fr 1fr; } }
+      .listo-card, .racha-card { display: flex; align-items: center; gap: 16px; padding: 16px; }
+      .anillo {
+        position: relative; flex: 0 0 auto; width: 76px; height: 76px; border-radius: 50%;
+        background: conic-gradient(var(--color-primario) calc(var(--pct) * 1%), var(--color-superficie-2) 0);
+      }
+      .anillo.completo { background: conic-gradient(var(--color-exito) 100%, var(--color-exito) 0); }
+      .anillo-num {
+        position: absolute; inset: 8px; background: var(--color-superficie); border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem;
+        font-variant-numeric: tabular-nums;
+      }
+      .listo-info strong, .racha-info strong { display: block; font-size: 1.05rem; }
+      .listo-info p, .racha-info p { margin: 4px 0 0; font-size: 0.82rem; color: var(--color-texto-suave); }
+      .racha-num { flex: 0 0 auto; font-size: 1.9rem; font-weight: 800; color: var(--color-primario); white-space: nowrap; }
+      .racha-info { flex: 1; }
+      .meta-bar { margin-top: 8px; height: 8px; border-radius: 999px; background: var(--color-superficie-2); overflow: hidden; }
+      .meta-fill { height: 100%; border-radius: 999px; background: var(--color-acento); transition: width 0.3s ease; }
+      .meta-fill.completa { background: var(--color-exito); }
       .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
       @media (min-width: 560px) { .stats { grid-template-columns: repeat(4, 1fr); } }
       .stat { text-align: center; padding: 16px; }
@@ -170,6 +218,68 @@ export class HistorialComponent implements OnInit {
   intentos = signal<Intento[]>(this.historial.obtenerIntentos());
   examenes = computed(() => this.intentos().filter((i) => i.modo === 'examen'));
   private bancoMap = signal<Map<string, Pregunta>>(new Map());
+
+  /** Meta de acierto por categoría (mismo umbral de aprobación del examen). */
+  readonly META_CAT = 87;
+  /** Meta de preguntas a responder por día. */
+  readonly META_DIARIA = 20;
+
+  /**
+   * Preparación global (0–100): promedio sobre las 7 categorías del acierto
+   * limitado a la meta. Las categorías sin practicar cuentan como 0, así que
+   * llegar a 100% exige cubrir TODO el temario con ≥ META_CAT % de acierto.
+   */
+  listo = computed(() => {
+    const porCat = new Map(this.diagnostico().map((d) => [d.clave, d.porcentaje]));
+    let suma = 0;
+    for (const c of CATEGORIAS) suma += Math.min(porCat.get(c.clave) ?? 0, this.META_CAT) / this.META_CAT;
+    return Math.round((suma / CATEGORIAS.length) * 100);
+  });
+
+  /** Categorías del temario que aún tienen acierto bajo la meta (o sin practicar). */
+  categoriasBajoMeta = computed(() => {
+    const porCat = new Map(this.diagnostico().map((d) => [d.clave, d.porcentaje]));
+    return CATEGORIAS.filter((c) => (porCat.get(c.clave) ?? 0) < this.META_CAT).length;
+  });
+
+  listoLabel = computed(() => {
+    const v = this.listo();
+    if (v >= 100) return '¡Listo para el examen!';
+    if (v >= 85) return 'Casi listo';
+    if (v >= 60) return 'Buen avance';
+    if (v >= 30) return 'Vas avanzando';
+    return 'Recién comienzas';
+  });
+
+  /** Clave local YYYY-MM-DD de una fecha (para agrupar por día). */
+  private claveDia(d: Date): string {
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  }
+
+  /** Racha de días consecutivos con al menos un intento (con gracia si hoy aún no practica). */
+  racha = computed(() => {
+    const dias = new Set(this.intentos().map((i) => this.claveDia(new Date(i.fecha))));
+    if (dias.size === 0) return 0;
+    const cursor = new Date();
+    if (!dias.has(this.claveDia(cursor))) cursor.setDate(cursor.getDate() - 1);
+    let n = 0;
+    while (dias.has(this.claveDia(cursor))) {
+      n++;
+      cursor.setDate(cursor.getDate() - 1);
+    }
+    return n;
+  });
+
+  /** Preguntas respondidas hoy (suma de puntajeMaximo de los intentos de hoy). */
+  preguntasHoy = computed(() => {
+    const hoy = this.claveDia(new Date());
+    return this.intentos()
+      .filter((i) => this.claveDia(new Date(i.fecha)) === hoy)
+      .reduce((s, i) => s + i.puntajeMaximo, 0);
+  });
+
+  /** Progreso de la meta diaria en % (tope 100). */
+  metaPct = computed(() => Math.min(100, Math.round((this.preguntasHoy() / this.META_DIARIA) * 100)));
 
   /** Diagnóstico por categoría: aciertos/total y % sobre todo el detalle registrado. */
   diagnostico = computed(() => {

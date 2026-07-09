@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Pregunta } from '../../core/models/pregunta.model';
 import { FavoritosService } from '../../core/services/favoritos.service';
+import libroCfg from '../../core/data/libro.config.json';
 
 /**
  * Muestra una pregunta con sus alternativas. Soporta selección ÚNICA (radio) y
@@ -66,7 +67,17 @@ import { FavoritosService } from '../../core/services/favoritos.service';
 
       <div class="feedback" *ngIf="mostrarFeedback">
         <p class="explicacion"><strong>Explicación:</strong> {{ pregunta.explicacion }}</p>
-        <p class="referencia">{{ pregunta.referencia }}</p>
+        <div class="ref-libro" *ngIf="pregunta.referencia">
+          <span class="ref-icono" aria-hidden="true">📖</span>
+          <span class="ref-texto">{{ pregunta.referencia }}</span>
+          <a
+            class="ref-link"
+            [href]="libro.enlace"
+            target="_blank"
+            rel="noopener"
+            [title]="libro.titulo"
+          >{{ libro.textoEnlace }} →</a>
+        </div>
         <p class="fuente"><strong>Fuente:</strong> {{ pregunta.fuente }}</p>
       </div>
 
@@ -140,9 +151,20 @@ import { FavoritosService } from '../../core/services/favoritos.service';
       /* casilla cuadrada para selección múltiple */
       .alternativa.multi .marca { border-radius: 6px; }
       .feedback { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--color-borde); }
-      .explicacion { margin: 0 0 6px; font-size: 0.95rem; }
-      .referencia { margin: 0; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
-      .fuente { margin: 4px 0 0; font-size: 0.78rem; color: var(--color-texto-suave); }
+      .explicacion { margin: 0 0 10px; font-size: 0.95rem; }
+      .ref-libro {
+        display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+        padding: 8px 12px; border-radius: var(--radio);
+        background: var(--color-superficie-2); border: 1px solid var(--color-borde);
+      }
+      .ref-icono { flex: 0 0 auto; }
+      .ref-texto { flex: 1; min-width: 140px; font-size: 0.82rem; color: var(--color-texto-suave); font-style: italic; }
+      .ref-link {
+        flex: 0 0 auto; font-size: 0.8rem; font-weight: 700; color: var(--color-acento);
+        text-decoration: none; white-space: nowrap;
+      }
+      .ref-link:hover { text-decoration: underline; }
+      .fuente { margin: 8px 0 0; font-size: 0.78rem; color: var(--color-texto-suave); }
       .pregunta {
         position: relative;
         padding-bottom: 26px;
@@ -186,6 +208,7 @@ export class PreguntaCardComponent {
   @Output() seleccionar = new EventEmitter<number>();
 
   readonly letras = ['A', 'B', 'C', 'D', 'E', 'F'];
+  readonly libro = libroCfg;
 
   get esMultiple(): boolean {
     return this.pregunta.tipo === 'multiple';
