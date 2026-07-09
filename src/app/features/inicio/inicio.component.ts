@@ -163,8 +163,8 @@ interface ModoTarjeta {
       .modo:not(.deshabilitado):hover { border-color: var(--color-primario); }
       .modo:active { transform: scale(0.99); }
       .modo.deshabilitado { opacity: 0.6; cursor: not-allowed; }
-      .modo-titulo { font-weight: 700; font-size: 1.15rem; }
-      .modo-desc { font-size: 0.85rem; color: var(--color-texto-suave); max-width: 64%; }
+      .modo-titulo { font-weight: 700; font-size: 1.15rem; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85); }
+      .modo-desc { font-size: 0.85rem; color: var(--color-texto-suave); max-width: 64%; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85); }
       .modo-etapa { margin-top: 4px; font-size: 0.72rem; color: var(--color-acento); font-weight: 600; }
     `,
   ],
@@ -180,11 +180,11 @@ export class InicioComponent {
   /** Fondo de la tarjeta: foto (.jpg) o ilustración (.svg) + degradado para legibilidad del texto. */
   fondo(modo: ModoTarjeta): string {
     const ext = modo.foto ? 'jpg' : 'svg';
-    // Velo oscuro casi UNIFORME sobre toda la foto (para que no se vea "partida"),
-    // con un leve refuerzo a la izquierda/abajo para la legibilidad del texto.
+    // Tinte PLANO uniforme (misma opacidad en toda la tarjeta): cubre por igual
+    // arriba, abajo y los lados, sin franjas claras. La legibilidad del texto se
+    // refuerza con text-shadow (ver estilos), no con un gradiente.
     return (
-      'linear-gradient(rgba(20,20,22,0.58), rgba(20,20,22,0.68)), ' +
-      'linear-gradient(90deg, rgba(20,20,22,0.55) 0%, rgba(20,20,22,0.30) 55%, rgba(20,20,22,0.28) 100%), ' +
+      'linear-gradient(rgba(20,20,22,0.62), rgba(20,20,22,0.62)), ' +
       `url('/assets/img/modos/${modo.clave}.${ext}')`
     );
   }
