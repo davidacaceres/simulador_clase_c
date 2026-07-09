@@ -251,6 +251,11 @@ export class PracticaRunnerComponent implements OnInit {
       puntajeMaximo: preguntas.length,
       aprobado: false,
       idsFalladas,
+      // detalle por pregunta (para el diagnóstico por categoría)
+      detalle: preguntas.map((p, i) => {
+        const sel = this.seleccionados()[i] ?? [];
+        return { id: p.id, seleccion: sel, correcta: this.esCorrecta(p, sel) };
+      }),
     };
     this.historial.guardarIntento(intento);
   }

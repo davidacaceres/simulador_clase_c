@@ -1,11 +1,13 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { HistorialService } from '../../core/services/historial.service';
 import { BancoPreguntasService } from '../../core/services/banco-preguntas.service';
 import { CertificadoService } from '../../core/services/certificado.service';
 import { Intento, ModoIntento } from '../../core/models/intento.model';
 import { Pregunta } from '../../core/models/pregunta.model';
 import { Resultado } from '../../core/models/resultado.model';
+import { CATEGORIAS } from '../../core/enums/categoria.enum';
 
 const NOMBRE_MODO: Record<ModoIntento, string> = {
   examen: 'Examen',
@@ -18,7 +20,7 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
 @Component({
   selector: 'app-historial',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
     <div class="contenedor">
       <h2>Historial y estadísticas</h2>
@@ -41,6 +43,35 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
           <div class="card stat">
             <span class="valor">{{ mejorExamen() }}</span>
             <span class="etq">Mejor puntaje</span>
+          </div>
+        </div>
+
+        <!-- Diagnóstico por categoría -->
+        <div class="diag mt-24" *ngIf="diagnostico().length > 0">
+          <h3>Diagnóstico por categoría</h3>
+          <p class="diag-rec" *ngIf="recomendadas().length > 0">
+            Te conviene repasar:
+            <a
+              class="rec-chip"
+              *ngFor="let c of recomendadas()"
+              [routerLink]="['/por-tema']"
+              [queryParams]="{ cat: c.clave }"
+            >{{ c.nombre }}</a>
+          </p>
+          <div class="diag-list">
+            <div class="diag-row" *ngFor="let c of diagnostico()">
+              <span class="diag-nom">{{ c.nombre }}</span>
+              <div class="diag-bar">
+                <div
+                  class="diag-fill"
+                  [class.baja]="c.porcentaje < 60"
+                  [class.media]="c.porcentaje >= 60 && c.porcentaje < 80"
+                  [class.alta]="c.porcentaje >= 80"
+                  [style.width.%]="c.porcentaje"
+                ></div>
+              </div>
+              <span class="diag-pct">{{ c.porcentaje }}% <small>({{ c.aciertos }}/{{ c.total }})</small></span>
+            </div>
           </div>
         </div>
 
@@ -121,6 +152,24 @@ const NOMBRE_MODO: Record<ModoIntento, string> = {
       }
       .btn-sm { padding: 8px 12px; font-size: 0.8rem; }
       .cert-error { color: var(--color-error); font-size: 0.85rem; margin-top: 8px; }
+      .diag h3 { margin: 0 0 8px; }
+      .diag-rec { font-size: 0.9rem; color: var(--color-texto-suave); margin: 0 0 12px; }
+      .rec-chip {
+        display: inline-block; margin: 0 4px 4px 0; padding: 4px 10px; border-radius: 999px;
+        background: var(--color-superficie-2); border: 1px solid var(--color-acento);
+        color: var(--color-acento); text-decoration: none; font-weight: 600; font-size: 0.82rem;
+      }
+      .rec-chip:hover { background: var(--color-acento); color: var(--color-sobre-primario); }
+      .diag-list { display: flex; flex-direction: column; gap: 8px; }
+      .diag-row { display: flex; align-items: center; gap: 10px; }
+      .diag-nom { flex: 0 0 42%; font-size: 0.85rem; }
+      .diag-bar { flex: 1; height: 8px; border-radius: 999px; background: var(--color-superficie-2); overflow: hidden; }
+      .diag-fill { height: 100%; border-radius: 999px; }
+      .diag-fill.baja { background: var(--color-error); }
+      .diag-fill.media { background: var(--color-acento); }
+      .diag-fill.alta { background: var(--color-exito); }
+      .diag-pct { flex: 0 0 auto; font-size: 0.82rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .diag-pct small { color: var(--color-texto-suave); }
     `,
   ],
 })
@@ -132,11 +181,41 @@ export class HistorialComponent implements OnInit {
   intentos = signal<Intento[]>(this.historial.obtenerIntentos());
   examenes = computed(() => this.intentos().filter((i) => i.modo === 'examen'));
   certError = signal('');
-  private bancoMap = new Map<string, Pregunta>();
+  private bancoMap = signal<Map<string, Pregunta>>(new Map());
+
+  /** Diagnóstico por categoría: aciertos/total y % sobre todo el detalle registrado. */
+  diagnostico = computed(() => {
+    const mapa = this.bancoMap();
+    if (mapa.size === 0) return [];
+    const acc: Record<string, { aciertos: number; total: number }> = {};
+    for (const it of this.intentos()) {
+      for (const d of it.detalle ?? []) {
+        const p = mapa.get(d.id);
+        if (!p) continue;
+        const a = acc[p.categoria] ?? { aciertos: 0, total: 0 };
+        a.total++;
+        if (d.correcta) a.aciertos++;
+        acc[p.categoria] = a;
+      }
+    }
+    return CATEGORIAS.filter((c) => acc[c.clave]).map((c) => {
+      const a = acc[c.clave];
+      return {
+        clave: c.clave,
+        nombre: c.nombre,
+        aciertos: a.aciertos,
+        total: a.total,
+        porcentaje: Math.round((a.aciertos / a.total) * 100),
+      };
+    }).sort((x, y) => x.porcentaje - y.porcentaje);
+  });
+
+  /** Categorías recomendadas para repasar (bajo 80% de acierto). */
+  recomendadas = computed(() => this.diagnostico().filter((c) => c.porcentaje < 80).slice(0, 3));
 
   ngOnInit(): void {
     this.banco.obtenerTodas().subscribe((ps) => {
-      this.bancoMap = new Map(ps.map((p) => [p.id, p]));
+      this.bancoMap.set(new Map(ps.map((p) => [p.id, p])));
     });
   }
 
@@ -144,7 +223,7 @@ export class HistorialComponent implements OnInit {
   private construirResultado(it: Intento): Resultado {
     const revision = (it.detalle ?? [])
       .map((d) => {
-        const pregunta = this.bancoMap.get(d.id);
+        const pregunta = this.bancoMap().get(d.id);
         return pregunta
           ? { pregunta, indicesElegidos: d.seleccion, correcta: d.correcta }
           : null;

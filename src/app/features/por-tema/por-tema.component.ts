@@ -1,5 +1,6 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 import { BancoPreguntasService } from '../../core/services/banco-preguntas.service';
 import { Pregunta } from '../../core/models/pregunta.model';
 import { Categoria, CATEGORIAS, CategoriaInfo } from '../../core/enums/categoria.enum';
@@ -61,6 +62,7 @@ import { PracticaRunnerComponent } from '../../shared/practica-runner/practica-r
 })
 export class PorTemaComponent implements OnInit {
   private banco = inject(BancoPreguntasService);
+  private ruta = inject(ActivatedRoute);
 
   readonly categorias = CATEGORIAS;
   conteos = signal<Record<string, number>>({});
@@ -73,6 +75,10 @@ export class PorTemaComponent implements OnInit {
       ps.forEach((p) => (conteo[p.categoria] = (conteo[p.categoria] || 0) + 1));
       this.conteos.set(conteo);
     });
+    // Preselección por URL: /por-tema?cat=alcohol (desde el diagnóstico)
+    const cat = this.ruta.snapshot.queryParamMap.get('cat');
+    const info = CATEGORIAS.find((c) => c.clave === cat);
+    if (info) this.elegir(info);
   }
 
   elegir(cat: CategoriaInfo): void {
