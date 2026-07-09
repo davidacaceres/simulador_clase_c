@@ -8,6 +8,8 @@ import { HistorialService } from '../../core/services/historial.service';
 import { PreguntaCardComponent } from '../../shared/pregunta-card/pregunta-card.component';
 import { EmparejamientoCardComponent } from '../../shared/emparejamiento-card/emparejamiento-card.component';
 import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-badge.component';
+// Textos y datos de contacto de los CTA (editables en este JSON).
+import contactoCfg from '../../core/data/contacto.config.json';
 
 @Component({
   selector: 'app-resultado',
@@ -53,6 +55,29 @@ import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-
             adjunta el archivo descargado para enviarlo. Documento de práctica, no oficial.
           </p>
         </div>
+      </div>
+
+      <!-- CTA contextual (Conducir Motos) -->
+      <div class="card cta text-centro mt-16">
+        <ng-container *ngIf="!r.aprobado; else ctaAprob">
+          <h3>{{ cta.ctaReprobado.titulo }}</h3>
+          <p class="cta-txt">{{ cta.ctaReprobado.texto }}</p>
+          <button class="btn btn-primario btn-wa" (click)="whatsapp(cta.ctaReprobado.mensaje)">
+            💬 {{ cta.ctaReprobado.boton }}
+          </button>
+        </ng-container>
+        <ng-template #ctaAprob>
+          <h3>{{ cta.ctaAprobado.titulo }}</h3>
+          <p class="cta-txt">{{ cta.ctaAprobado.texto }}</p>
+          <div class="cta-acciones">
+            <button class="btn btn-primario btn-wa" (click)="whatsapp(cta.ctaAprobado.mensaje)">
+              💬 {{ cta.ctaAprobado.boton }}
+            </button>
+            <button class="btn btn-secundario" (click)="compartir()">
+              🔗 {{ cta.ctaAprobado.botonCompartir }}
+            </button>
+          </div>
+        </ng-template>
       </div>
 
       <h2 class="mt-24">Revisión</h2>
@@ -151,6 +176,13 @@ import { ResultadoBadgeComponent } from '../../shared/resultado-badge/resultado-
       }
       .cert-error { color: var(--color-error); font-size: 0.85rem; margin: 8px 0 0; }
       .cert-nota { margin: 10px 0 0; font-size: 0.75rem; color: var(--color-texto-suave); }
+      .cta { border: 1px solid var(--color-acento); }
+      .cta h3 { margin: 0 0 6px; }
+      .cta-txt { margin: 0 0 14px; color: var(--color-texto-suave); }
+      .cta-acciones { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+      .cta-acciones .btn { flex: 1 1 auto; }
+      .btn-wa { background: #25d366; color: #05391f; }
+      .btn-wa:hover { background: #1eb455; }
     `,
   ],
 })
@@ -161,6 +193,7 @@ export class ResultadoComponent implements OnInit {
   private router = inject(Router);
 
   readonly minimo = EXAMEN_CONFIG.puntajeMinimo;
+  readonly cta = contactoCfg;
   resultado = this.examenSrv.ultimoResultado;
   certError = signal('');
 
@@ -204,6 +237,26 @@ export class ResultadoComponent implements OnInit {
     }
     // abre WhatsApp de Conducir Motos con el mensaje (el PDF se adjunta manualmente)
     this.certificadoSrv.abrirWhatsApp(folio, r.puntaje, r.puntajeMaximo);
+  }
+
+  /** Abre WhatsApp de Conducir Motos con el mensaje del CTA. */
+  whatsapp(mensaje: string): void {
+    const url = `https://wa.me/${this.cta.whatsappNumero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  }
+
+  /** Comparte el simulador (Web Share API si existe; si no, por WhatsApp). */
+  compartir(): void {
+    const url = window.location.origin + window.location.pathname + '#/';
+    const texto = this.cta.ctaAprobado.textoCompartir;
+    const nav = navigator as Navigator & {
+      share?: (data: { title?: string; text?: string; url?: string }) => Promise<void>;
+    };
+    if (nav.share) {
+      nav.share({ title: 'Simulador Examen Clase C', text: texto, url }).catch(() => {});
+    } else {
+      window.open(`https://wa.me/?text=${encodeURIComponent(texto + ' ' + url)}`, '_blank');
+    }
   }
 
   inicio(): void { this.router.navigate(['/']); }

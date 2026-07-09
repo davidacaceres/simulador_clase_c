@@ -1,0 +1,18 @@
+{
+  "whatsappNumero": "56991206186",
+  "sitioClases": "https://www.conducirmotos.cl/clases",
+  "ctaReprobado": {
+    "titulo": "¿Te quedó cerca? Nosotros te ayudamos",
+    "texto": "Agenda una clase con Conducir Motos y prepárate para aprobar a la primera.",
+    "boton": "Agenda tu clase por WhatsApp",
+    "mensaje": "Hola Conducir Motos, quiero agendar una clase para preparar mi examen teórico Clase C."
+  },
+  "ctaAprobado": {
+    "titulo": "¡Vas por buen camino!",
+    "texto": "Da el siguiente paso: inscríbete en Conducir Motos y obtén tu licencia Clase C.",
+    "boton": "Inscríbete por WhatsApp",
+    "mensaje": "Hola Conducir Motos, aprobé el simulador y quiero inscribirme en el curso Clase C.",
+    "botonCompartir": "Compartir el simulador",
+    "textoCompartir": "Estoy practicando para mi licencia Clase C con el simulador de Conducir Motos:"
+  }
+}
