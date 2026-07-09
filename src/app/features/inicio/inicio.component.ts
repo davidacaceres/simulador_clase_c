@@ -13,6 +13,8 @@ interface ModoTarjeta {
   etapa: string;
   /** true si tiene foto real (.jpg); si no, usa la ilustración .svg. */
   foto?: boolean;
+  /** Posición del fondo (background-position). Por defecto 'right center'. */
+  pos?: string;
 }
 
 @Component({
@@ -83,6 +85,7 @@ interface ModoTarjeta {
           class="card modo"
           [class.deshabilitado]="!modo.ruta"
           [style.backgroundImage]="fondo(modo)"
+          [style.backgroundPosition]="modo.pos || 'right center'"
           [disabled]="!modo.ruta"
           type="button"
           (click)="abrir(modo)"
@@ -177,8 +180,11 @@ export class InicioComponent {
   /** Fondo de la tarjeta: foto (.jpg) o ilustración (.svg) + degradado para legibilidad del texto. */
   fondo(modo: ModoTarjeta): string {
     const ext = modo.foto ? 'jpg' : 'svg';
+    // Capa 1: tinte oscuro parejo sobre TODA la foto (cohesión + contraste del texto).
+    // Capa 2: degradado extra a la izquierda para reforzar la legibilidad del título.
     return (
-      'linear-gradient(90deg, rgba(20,20,22,0.96) 0%, rgba(20,20,22,0.80) 42%, rgba(20,20,22,0.15) 100%), ' +
+      'linear-gradient(90deg, rgba(20,20,22,0.92) 0%, rgba(20,20,22,0.60) 55%, rgba(20,20,22,0.45) 100%), ' +
+      'linear-gradient(rgba(20,20,22,0.35), rgba(20,20,22,0.45)), ' +
       `url('/assets/img/modos/${modo.clave}.${ext}')`
     );
   }
@@ -186,7 +192,7 @@ export class InicioComponent {
   modos: ModoTarjeta[] = [
     { clave: 'examen', titulo: 'Modo Examen', descripcion: '35 preguntas, 45 minutos y reglas reales del examen.', ruta: '/examen', etapa: 'Etapa 3', foto: true },
     { clave: 'practica', titulo: 'Modo Práctica', descripcion: 'Sin tiempo, con feedback inmediato tras cada respuesta.', ruta: '/practica', etapa: 'Etapa 4', foto: true },
-    { clave: 'conducir-motos', titulo: 'Práctica Conducir Motos', descripcion: 'Solo preguntas del cuestionario de conducirmotos.cl.', ruta: '/conducir-motos', etapa: '', foto: true },
+    { clave: 'conducir-motos', titulo: 'Práctica Conducir Motos', descripcion: 'Solo preguntas del cuestionario de conducirmotos.cl.', ruta: '/conducir-motos', etapa: '', foto: true, pos: 'right top' },
     { clave: 'por-tema', titulo: 'Práctica por Tema', descripcion: 'Estudia una categoría específica del temario.', ruta: '/por-tema', etapa: 'Etapa 4', foto: true },
     { clave: 'repaso', titulo: 'Repaso de errores', descripcion: 'Repite solo las preguntas que fallaste.', ruta: '/repaso', etapa: 'Etapa 4', foto: true },
     { clave: 'favoritas', titulo: 'Repaso de favoritas', descripcion: 'Practica las preguntas que marcaste como difíciles.', ruta: '/favoritas', etapa: '', foto: true },
