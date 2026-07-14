@@ -52,6 +52,11 @@ export const routes: Routes = [
       import('./features/historial/historial.component').then((m) => m.HistorialComponent),
   },
   {
+    path: 'circuito',
+    loadComponent: () =>
+      import('./features/circuito/circuito.component').then((m) => m.CircuitoComponent),
+  },
+  {
     path: 'pregunta/:id',
     loadComponent: () =>
       import('./features/ver-pregunta/ver-pregunta.component').then((m) => m.VerPreguntaComponent),
