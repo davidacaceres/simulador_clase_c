@@ -14,5 +14,11 @@
     "mensaje": "Hola Conducir Motos, aprobé el simulador y quiero inscribirme en el curso Clase C.",
     "botonCompartir": "Compartir el simulador",
     "textoCompartir": "Estoy practicando para mi licencia Clase C con el simulador de Conducir Motos:"
+  },
+  "ctaCircuito": {
+    "titulo": "Ya sabes qué te van a pedir. Ahora hay que hacerlo.",
+    "texto": "El zigzag, el ocho y el viraje en U no se aprenden en pantalla: se aprenden arriba de la moto, con alguien al lado corrigiéndote. Eso es lo que hacemos en Conducir Motos.",
+    "boton": "Agenda tu práctica en moto",
+    "mensaje": "Hola Conducir Motos, vi el circuito del examen práctico en el simulador y quiero agendar clases prácticas para preparar la Clase C."
   }
 }
